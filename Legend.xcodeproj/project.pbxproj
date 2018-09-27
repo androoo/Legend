@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		4AD11397CD3534CC13315B98 /* Pods_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B80F537EF6C61C85AFE1D /* Pods_LegendTests.framework */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
-		5A360C6D2153D16600943DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6C2153D16600943DDC /* ViewController.swift */; };
-		5A360C702153D16600943DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C6E2153D16600943DDC /* Main.storyboard */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
 		5A360C802153D16900943DDC /* LegendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C7F2153D16900943DDC /* LegendTests.swift */; };
+		5A360C97215522A900943DDC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C96215522A900943DDC /* Theme.swift */; };
+		5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C982157FB1D00943DDC /* UIColorExtension.swift */; };
 		981FE967C9DE58430551B3FE /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083A6AE117497A326F19F90A /* Pods_Legend.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,14 +34,14 @@
 		16FF19D011959DABD863C3A8 /* Pods-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A360C6C2153D16600943DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A360C6F2153D16600943DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A360C742153D16900943DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A360C762153D16900943DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A360C7B2153D16900943DDC /* LegendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C7F2153D16900943DDC /* LegendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendTests.swift; sourceTree = "<group>"; };
 		5A360C812153D16900943DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A360C96215522A900943DDC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5A360C982157FB1D00943DDC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A93BD55468D17393DE0B273D /* Pods-Legend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Legend/Pods-Legend.release.xcconfig"; sourceTree = "<group>"; };
 		DD9B80F537EF6C61C85AFE1D /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,11 +98,18 @@
 		5A360C692153D16600943DDC /* Legend */ = {
 			isa = PBXGroup;
 			children = (
+				5A360C912155169900943DDC /* Models */,
+				5A360C8B2155167700943DDC /* API */,
+				5A360C8C2155167D00943DDC /* Controllers */,
+				5A360C902155169300943DDC /* Managers */,
+				5A360C8D2155168300943DDC /* Extensions */,
+				5A360C94215516AB00943DDC /* Views */,
+				5A360C93215516A300943DDC /* Storyboards */,
+				5A360C922155169D00943DDC /* Resources */,
+				5A360C8E2155168900943DDC /* External */,
+				5A360C95215516E100943DDC /* Theme */,
+				5A360C8F2155168E00943DDC /* Helpers */,
 				5A360C6A2153D16600943DDC /* AppDelegate.swift */,
-				5A360C6C2153D16600943DDC /* ViewController.swift */,
-				5A360C6E2153D16600943DDC /* Main.storyboard */,
-				5A360C712153D16900943DDC /* Assets.xcassets */,
-				5A360C732153D16900943DDC /* LaunchScreen.storyboard */,
 				5A360C762153D16900943DDC /* Info.plist */,
 			);
 			path = Legend;
@@ -115,6 +122,87 @@
 				5A360C812153D16900943DDC /* Info.plist */,
 			);
 			path = LegendTests;
+			sourceTree = "<group>";
+		};
+		5A360C8B2155167700943DDC /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5A360C8C2155167D00943DDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A360C8D2155168300943DDC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A360C982157FB1D00943DDC /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A360C8E2155168900943DDC /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		5A360C8F2155168E00943DDC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5A360C902155169300943DDC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5A360C912155169900943DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A360C922155169D00943DDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A360C712153D16900943DDC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A360C93215516A300943DDC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5A360C732153D16900943DDC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5A360C94215516AB00943DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A360C95215516E100943DDC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5A360C96215522A900943DDC /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		EB011561EA1177B1D087646C /* Pods */ = {
@@ -215,7 +303,6 @@
 			files = (
 				5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */,
 				5A360C722153D16900943DDC /* Assets.xcassets in Resources */,
-				5A360C702153D16600943DDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A360C6D2153D16600943DDC /* ViewController.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
+				5A360C97215522A900943DDC /* Theme.swift in Sources */,
+				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,14 +423,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A360C6E2153D16600943DDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A360C6F2153D16600943DDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A360C732153D16900943DDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
