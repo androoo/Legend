@@ -89,15 +89,15 @@ class Theme: NSObject {
     
     static let light = Theme(
         backgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),
-        focusedBackground: .RCNavigationBarColor(),
+        focusedBackground: .LGNavigationBarColor(),
         auxiliaryBackground: #colorLiteral(red: 0.937, green: 0.937, blue: 0.957, alpha: 1),
         titleText: #colorLiteral(red: 0.05143930763, green: 0.0585193634, blue: 0.07106169313, alpha: 1),
         bodyText: #colorLiteral(red: 0.1843137255, green: 0.2039215686, blue: 0.2392156863, alpha: 1),
         controlText: #colorLiteral(red: 0.3294117647, green: 0.3450980392, blue: 0.368627451, alpha: 1),
         auxiliaryText: #colorLiteral(red: 0.6117647059, green: 0.6352941176, blue: 0.6588235294, alpha: 1),
-        tintColor: .RCBlue(),
+        tintColor: .LGBlue(),
         auxiliaryTintColor: #colorLiteral(red: 0.03921568627, green: 0.2666666667, blue: 0.4117647059, alpha: 1),
-        hyperlink: .RCBlue(),
+        hyperlink: .LGBlue(),
         mutedAccent: #colorLiteral(red: 0.7960784314, green: 0.7960784314, blue: 0.8, alpha: 1),
         strongAccent: nil,
         appearence: .light
