@@ -1,16 +1,16 @@
 PODS:
-  - Nuke (7.3.2)
+  - Nuke (7.4.2)
   - Realm (3.10.0):
     - Realm/Headers (= 3.10.0)
   - Realm/Headers (3.10.0)
   - RealmSwift (3.10.0):
     - Realm (= 3.10.0)
   - Starscream (3.0.5)
-  - SwiftyJSON (4.1.0)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Nuke (~> 7.0)
-  - RealmSwift
+  - RealmSwift (~> 3.10)
   - Starscream (~> 3.0.2)
   - SwiftyJSON (~> 4.0)
 
@@ -23,12 +23,12 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Nuke: a9a31bbd6c6723753ab024ef22057dcaaf046c1b
+  Nuke: aee5c42001369902798f7b844611b8ae930ce333
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 6e245eb454c41e9c55d88a310de059c89d5b92ef
+PODFILE CHECKSUM: c4018f86486f89cd9b0d4c26dd5820724bc653a4
 
 COCOAPODS: 1.5.3
