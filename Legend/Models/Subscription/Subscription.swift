@@ -1,0 +1,107 @@
+//
+//  Subscription.swift
+//  Legend
+//
+//  Created by Andrew Ervin Gierke on 10/3/18.
+//  Copyright © 2018 And. All rights reserved.
+//
+
+import Foundation
+import RealmSwift
+import SwiftyJSON
+
+enum SubscriptionType: String, Equatable {
+    case directMessage = "d"
+    case channel = "c"
+    case group = "p"
+}
+
+typealias RoomType = SubscriptionType
+
+final class Subscription: BaseModel {
+    @objc dynamic var auth: Auth?
+    
+    @objc internal dynamic var privateType = SubscriptionType.channel.rawValue
+    var type: SubscriptionType {
+        get { return SubscriptionType(rawValue: privateType) ?? SubscriptionType.group }
+        set { privateType = newValue.rawValue }
+    }
+    
+    @objc dynamic var rid = ""
+    
+    // Name of the subscription
+    @objc dynamic var name = ""
+    
+    // Full name of the user
+    @objc dynamic var fname = ""
+    
+    @objc dynamic var unread = 0
+    @objc dynamic var userMentions = 0
+    @objc dynamic var groupMentions = 0
+    @objc dynamic var open = false
+    @objc dynamic var alert = false
+    @objc dynamic var favorite = false
+    
+    @objc dynamic var createdAt: Date?
+    @objc dynamic var lastSeen: Date?
+    
+    @objc dynamic var roomTopic: String?
+    @objc dynamic var roomDescription: String?
+    @objc dynamic var roomReadOnly = false
+    @objc dynamic var roomUpdatedAt: Date?
+    @objc dynamic var roomLastMessage: Message?
+    @objc dynamic var roomLastMessageText: String?
+    @objc dynamic var roomLastMessageDate: Date?
+    @objc dynamic var roomBroadcast = false
+    
+    let roomMuted = List<String>()
+    
+    @objc dynamic var roomOwnerId: String?
+    @objc dynamic var otherUserId: String?
+    
+    let messages = LinkingObjects(fromType: Message.self, property: "subscription")
+    
+    let usersRoles = List<RoomRoles>()
+    
+    // MARK: Internal
+    @objc dynamic var privateOtherUserStatus: String?
+    var otherUserStatus: UserStatus? {
+        if let privateOtherUserStatus = privateOtherUserStatus {
+            return UserStatus(rawValue: privateOtherUserStatus)
+        } else {
+            return nil
+        }
+    }
+}
+
+final class RoomRoles: Object {
+    @objc dynamic var user: User?
+    var roles = List<String>()
+}
+
+// MARK: Failed Messages
+
+extension Subscription {
+    
+    func avatarURL(auth: Auth? = nil) -> URL? {
+        guard
+            let auth = auth ?? AuthManager.isAuthenticated(),
+            let baseURL = auth.baseURL(),
+            let encodedName = name.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            else {
+                return nil
+        }
+        
+        return URL(string: "\(baseURL)/avatar/%22\(encodedName)?format=jpeg")
+    }
+    
+    func setTemporaryMessagesFailed() {
+        try? realm?.write {
+            messages.filter("temporary = true").forEach {
+                $0.temporary = false
+                $0.failed = true
+            }
+        }
+    }
+    
+}
