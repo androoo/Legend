@@ -39,7 +39,7 @@ enum MessageType: String {
     }
     
     var actionable: Bool {
-        let actionable: [MessageType] = [.text, .textAttachment, .image, .audio, .video, .url]
+        let actionable: [MessageType] = [.text, .textAttachment, .image, .video, .url]
         return actionable.contains(self)
     }
 }
@@ -48,5 +48,57 @@ final class Message: BaseModel {
     @objc dynamic var subscription: Subscription?
     @objc dynamic var internalType: String = ""
     @objc dynamic var rid = ""
+    @objc dynamic var createdAt: Date?
+    @objc dynamic var updatedAt: Date?
+    @objc dynamic var user: User?
+    @objc dynamic var text = ""
     
+    @objc dynamic var userBlocked: Bool = false
+    @objc dynamic var unread: Bool = false
+    
+    @objc dynamic var alias = ""
+    @objc dynamic var avatar: String?
+    @objc dynamic var role = ""
+    @objc dynamic var temporary = false
+    @objc dynamic var groupable = true
+    @objc dynamic var failed = false
+    
+    var starred = List<String>()
+    var mentions = List<Mentions>()
+    var channels = List<Channel>()
+    var attachments = List<Attachment>()
+    var urls = List<MessageURL>()
+    
+    var type: MessageType {
+        if let type = MessageType(rawValue: internalType) {
+            return type
+        }
+        
+        if let attachement = attachments.first {
+            return attachement.type
+        }
+        
+        if let url = urls.first {
+            if url.isValid() {
+                return .url
+            }
+        }
+        
+        return .text
+    }
+    
+    // Internal
+    @objc dynamic var markedForDeletion: Bool = false
+}
+
+extension Message {
+    static func == (lhs: Message, rhs: Message) -> Bool {
+        return
+            lhs.identifier == rhs.identifier &&
+            lhs.temporary == rhs.temporary &&
+            lhs.failed == rhs.failed &&
+            lhs.mentions.count == rhs.mentions.count &&
+            lhs.channels.count == rhs.channels.count &&
+            lhs.updatedAt?.timeIntervalSince1970 == rhs.updatedAt?.timeIntervalSince1970
+    }
 }
