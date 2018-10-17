@@ -14,6 +14,7 @@ enum MessageType: String {
     case text
     case textAttachment
     case image
+    case audio
     case video
     case url
     
@@ -64,7 +65,7 @@ final class Message: BaseModel {
     @objc dynamic var failed = false
     
     var starred = List<String>()
-    var mentions = List<Mentions>()
+    var mentions = List<Mention>()
     var channels = List<Channel>()
     var attachments = List<Attachment>()
     var urls = List<MessageURL>()

@@ -18,6 +18,14 @@
 		5A0452852165BE7200F2B2B6 /* RealmCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452842165BE7200F2B2B6 /* RealmCurrent.swift */; };
 		5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452872165C06C00F2B2B6 /* Subscription.swift */; };
 		5A04528B216AE64F00F2B2B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04528A216AE64F00F2B2B6 /* Message.swift */; };
+		5A04528D2177817500F2B2B6 /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04528C2177817500F2B2B6 /* Mention.swift */; };
+		5A04528F217781B300F2B2B6 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04528E217781B300F2B2B6 /* Channel.swift */; };
+		5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045290217781F200F2B2B6 /* MessageURL.swift */; };
+		5A0452932177834200F2B2B6 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452922177834200F2B2B6 /* Attachment.swift */; };
+		5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529421778BEC00F2B2B6 /* AuthExtensions.swift */; };
+		5A04529821778CEA00F2B2B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529721778CEA00F2B2B6 /* User.swift */; };
+		5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529921778E0700F2B2B6 /* Localiezd.swift */; };
+		5A04529C21778E3800F2B2B6 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529B21778E3800F2B2B6 /* Email.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -55,6 +63,14 @@
 		5A0452842165BE7200F2B2B6 /* RealmCurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCurrent.swift; sourceTree = "<group>"; };
 		5A0452872165C06C00F2B2B6 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		5A04528A216AE64F00F2B2B6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5A04528C2177817500F2B2B6 /* Mention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
+		5A04528E217781B300F2B2B6 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		5A045290217781F200F2B2B6 /* MessageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageURL.swift; sourceTree = "<group>"; };
+		5A0452922177834200F2B2B6 /* Attachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
+		5A04529421778BEC00F2B2B6 /* AuthExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExtensions.swift; sourceTree = "<group>"; };
+		5A04529721778CEA00F2B2B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A04529921778E0700F2B2B6 /* Localiezd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localiezd.swift; sourceTree = "<group>"; };
+		5A04529B21778E3800F2B2B6 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,8 +170,20 @@
 			isa = PBXGroup;
 			children = (
 				5A04528A216AE64F00F2B2B6 /* Message.swift */,
+				5A04528C2177817500F2B2B6 /* Mention.swift */,
+				5A04528E217781B300F2B2B6 /* Channel.swift */,
+				5A045290217781F200F2B2B6 /* MessageURL.swift */,
+				5A04529B21778E3800F2B2B6 /* Email.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		5A04529621778CE200F2B2B6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5A04529721778CEA00F2B2B6 /* User.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		5A360C5E2153D16600943DDC = {
@@ -243,6 +271,7 @@
 		5A360C8F2155168E00943DDC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5A04529921778E0700F2B2B6 /* Localiezd.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -259,11 +288,14 @@
 		5A360C912155169900943DDC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A04529621778CE200F2B2B6 /* User */,
 				5A045289216AE64400F2B2B6 /* Message */,
 				5A0452862165C06300F2B2B6 /* Subscription */,
 				5A0452812165BD6B00F2B2B6 /* Base */,
 				5A04527A2165AEC000F2B2B6 /* Auth */,
 				5A04527F2165BAAF00F2B2B6 /* AuthSettings.swift */,
+				5A0452922177834200F2B2B6 /* Attachment.swift */,
+				5A04529421778BEC00F2B2B6 /* AuthExtensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -538,15 +570,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
+				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
+				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
 				5A0452852165BE7200F2B2B6 /* RealmCurrent.swift in Sources */,
+				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
 				5A0452792165AE4000F2B2B6 /* AuthManager.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
+				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
+				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
+				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
+				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
+				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,
