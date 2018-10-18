@@ -26,6 +26,11 @@
 		5A04529821778CEA00F2B2B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529721778CEA00F2B2B6 /* User.swift */; };
 		5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529921778E0700F2B2B6 /* Localiezd.swift */; };
 		5A04529C21778E3800F2B2B6 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529B21778E3800F2B2B6 /* Email.swift */; };
+		5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529D2178258100F2B2B6 /* UserDefaults+Group.swift */; };
+		5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04529F217825BB00F2B2B6 /* AppGroup.swift */; };
+		5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A12178262600F2B2B6 /* DatabaseManager.swift */; };
+		5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A3217827EB00F2B2B6 /* String+Random.swift */; };
+		5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A52178288400F2B2B6 /* LogManager.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -71,6 +76,11 @@
 		5A04529721778CEA00F2B2B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5A04529921778E0700F2B2B6 /* Localiezd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localiezd.swift; sourceTree = "<group>"; };
 		5A04529B21778E3800F2B2B6 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		5A04529D2178258100F2B2B6 /* UserDefaults+Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Group.swift"; sourceTree = "<group>"; };
+		5A04529F217825BB00F2B2B6 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		5A0452A12178262600F2B2B6 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5A0452A3217827EB00F2B2B6 /* String+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Random.swift"; sourceTree = "<group>"; };
+		5A0452A52178288400F2B2B6 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,6 +267,8 @@
 				5A360C9A2164613D00943DDC /* UIColorCSSColorsExtension.swift */,
 				5A04527D2165B07600F2B2B6 /* URLExtension.swift */,
 				5A0452842165BE7200F2B2B6 /* RealmCurrent.swift */,
+				5A04529D2178258100F2B2B6 /* UserDefaults+Group.swift */,
+				5A0452A3217827EB00F2B2B6 /* String+Random.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				5A04529921778E0700F2B2B6 /* Localiezd.swift */,
+				5A04529F217825BB00F2B2B6 /* AppGroup.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -281,6 +294,8 @@
 			children = (
 				5A0452762165AE2800F2B2B6 /* Model */,
 				5A0452732165AB5000F2B2B6 /* Launcher */,
+				5A0452A12178262600F2B2B6 /* DatabaseManager.swift */,
+				5A0452A52178288400F2B2B6 /* LogManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -569,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
 				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
@@ -576,6 +592,9 @@
 				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
 				5A0452792165AE4000F2B2B6 /* AuthManager.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
+				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
+				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
+				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
@@ -585,6 +604,7 @@
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
+				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
