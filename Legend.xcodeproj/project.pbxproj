@@ -31,6 +31,8 @@
 		5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A12178262600F2B2B6 /* DatabaseManager.swift */; };
 		5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A3217827EB00F2B2B6 /* String+Random.swift */; };
 		5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A52178288400F2B2B6 /* LogManager.swift */; };
+		5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */; };
+		5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A92178D18800F2B2B6 /* Weak.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -81,6 +83,8 @@
 		5A0452A12178262600F2B2B6 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		5A0452A3217827EB00F2B2B6 /* String+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Random.swift"; sourceTree = "<group>"; };
 		5A0452A52178288400F2B2B6 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		5A0452A92178D18800F2B2B6 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,7 +223,6 @@
 		5A360C692153D16600943DDC /* Legend */ = {
 			isa = PBXGroup;
 			children = (
-				5A360C9C2165139500943DDC /* Legend.entitlements */,
 				5A360C912155169900943DDC /* Models */,
 				5A360C8B2155167700943DDC /* API */,
 				5A360C8C2155167D00943DDC /* Controllers */,
@@ -233,6 +236,7 @@
 				5A360C8F2155168E00943DDC /* Helpers */,
 				5A360C6A2153D16600943DDC /* AppDelegate.swift */,
 				5A360C762153D16900943DDC /* Info.plist */,
+				5A360C9C2165139500943DDC /* Legend.entitlements */,
 			);
 			path = Legend;
 			sourceTree = "<group>";
@@ -285,6 +289,7 @@
 			children = (
 				5A04529921778E0700F2B2B6 /* Localiezd.swift */,
 				5A04529F217825BB00F2B2B6 /* AppGroup.swift */,
+				5A0452A92178D18800F2B2B6 /* Weak.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				5A360C96215522A900943DDC /* Theme.swift */,
+				5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -598,6 +604,7 @@
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
+				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
@@ -611,6 +618,7 @@
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,
 				5A04528B216AE64F00F2B2B6 /* Message.swift in Sources */,
+				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
