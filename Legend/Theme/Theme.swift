@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol Themable {
+@objc protocol Themeable {
     func applyTheme()
 }
 

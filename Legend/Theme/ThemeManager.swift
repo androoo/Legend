@@ -30,7 +30,7 @@ struct ThemeManager {
     static let userDefaultsKey = "LGTheme"
     static let themes: [(title: String, theme: Theme)] = [("light", .light), ("dark", .dark), ("black", .black)]
     
-    static var observers = [Weak<Themable>]()
+    static var observers = [Weak<Themeable>]()
     
     /**
      Allows for 'applyTheme' to be called automatically on the `observer` when the `ThemeManager.theme` changes.
@@ -38,7 +38,7 @@ struct ThemeManager {
      ThemeManager holds a weak reference to the 'observer'
      */
     
-    static func addObserver(_ observer: Themable?) {
+    static func addObserver(_ observer: Themeable?) {
         observers = observers.compactMap { $0 }
         guard let observer = observer else { return }
         observer.applyTheme()

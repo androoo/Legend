@@ -50,6 +50,14 @@
 		5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452CB21796D7800F2B2B6 /* RCMarkdownParser.swift */; };
 		5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452CC21796D7900F2B2B6 /* RCBaseParser.swift */; };
 		5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */; };
+		5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D221796E0300F2B2B6 /* ThemeableViews.swift */; };
+		5A0452D521796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D421796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift */; };
+		5A0452D721796F5700F2B2B6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D621796F5700F2B2B6 /* StringExtensions.swift */; };
+		5A0452D92179729E00F2B2B6 /* MessageTextFontAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D82179729E00F2B2B6 /* MessageTextFontAttributes.swift */; };
+		5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452DA217973B300F2B2B6 /* DownloadManager.swift */; };
+		5A0452DE2179741500F2B2B6 /* UISearchBarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452DD2179741500F2B2B6 /* UISearchBarTextField.swift */; };
+		5A0452E02179746C00F2B2B6 /* ThemeableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452DF2179746C00F2B2B6 /* ThemeableViewControllers.swift */; };
+		5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452E12179753F00F2B2B6 /* NotThemeableViews.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -120,6 +128,14 @@
 		5A0452CB21796D7800F2B2B6 /* RCMarkdownParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCMarkdownParser.swift; sourceTree = "<group>"; };
 		5A0452CC21796D7900F2B2B6 /* RCBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCBaseParser.swift; sourceTree = "<group>"; };
 		5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownManager.swift; sourceTree = "<group>"; };
+		5A0452D221796E0300F2B2B6 /* ThemeableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableViews.swift; sourceTree = "<group>"; };
+		5A0452D421796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeAttributesThemeableView.swift; sourceTree = "<group>"; };
+		5A0452D621796F5700F2B2B6 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		5A0452D82179729E00F2B2B6 /* MessageTextFontAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextFontAttributes.swift; sourceTree = "<group>"; };
+		5A0452DA217973B300F2B2B6 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		5A0452DD2179741500F2B2B6 /* UISearchBarTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarTextField.swift; sourceTree = "<group>"; };
+		5A0452DF2179746C00F2B2B6 /* ThemeableViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableViewControllers.swift; sourceTree = "<group>"; };
+		5A0452E12179753F00F2B2B6 /* NotThemeableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotThemeableViews.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,6 +282,14 @@
 			path = MarkdownParser;
 			sourceTree = "<group>";
 		};
+		5A0452DC2179740500F2B2B6 /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452DD2179741500F2B2B6 /* UISearchBarTextField.swift */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
 		5A360C5E2153D16600943DDC = {
 			isa = PBXGroup;
 			children = (
@@ -333,12 +357,14 @@
 		5A360C8D2155168300943DDC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A0452DC2179740500F2B2B6 /* UISearchBar */,
 				5A360C982157FB1D00943DDC /* UIColorExtension.swift */,
 				5A360C9A2164613D00943DDC /* UIColorCSSColorsExtension.swift */,
 				5A04527D2165B07600F2B2B6 /* URLExtension.swift */,
 				5A0452842165BE7200F2B2B6 /* RealmCurrent.swift */,
 				5A04529D2178258100F2B2B6 /* UserDefaults+Group.swift */,
 				5A0452A3217827EB00F2B2B6 /* String+Random.swift */,
+				5A0452D621796F5700F2B2B6 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +382,7 @@
 				5A04529921778E0700F2B2B6 /* Localiezd.swift */,
 				5A04529F217825BB00F2B2B6 /* AppGroup.swift */,
 				5A0452A92178D18800F2B2B6 /* Weak.swift */,
+				5A0452D82179729E00F2B2B6 /* MessageTextFontAttributes.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -369,6 +396,7 @@
 				5A0452732165AB5000F2B2B6 /* Launcher */,
 				5A0452A12178262600F2B2B6 /* DatabaseManager.swift */,
 				5A0452A52178288400F2B2B6 /* LogManager.swift */,
+				5A0452DA217973B300F2B2B6 /* DownloadManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -418,6 +446,10 @@
 			children = (
 				5A360C96215522A900943DDC /* Theme.swift */,
 				5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */,
+				5A0452D221796E0300F2B2B6 /* ThemeableViews.swift */,
+				5A0452D421796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift */,
+				5A0452DF2179746C00F2B2B6 /* ThemeableViewControllers.swift */,
+				5A0452E12179753F00F2B2B6 /* NotThemeableViews.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -673,6 +705,7 @@
 				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
 				5A0452792165AE4000F2B2B6 /* AuthManager.swift in Sources */,
 				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
+				5A0452E02179746C00F2B2B6 /* ThemeableViewControllers.swift in Sources */,
 				5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
@@ -680,9 +713,12 @@
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
+				5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
+				5A0452DE2179741500F2B2B6 /* UISearchBarTextField.swift in Sources */,
 				5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */,
 				5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */,
+				5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
@@ -690,8 +726,10 @@
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
 				5A0452BE21796D3000F2B2B6 /* String+WordAtRange.swift in Sources */,
+				5A0452D92179729E00F2B2B6 /* MessageTextFontAttributes.swift in Sources */,
 				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
+				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
@@ -702,6 +740,8 @@
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,
 				5A04528B216AE64F00F2B2B6 /* Message.swift in Sources */,
+				5A0452D521796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift in Sources */,
+				5A0452D721796F5700F2B2B6 /* StringExtensions.swift in Sources */,
 				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
 				5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
