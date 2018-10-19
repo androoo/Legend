@@ -33,6 +33,23 @@
 		5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A52178288400F2B2B6 /* LogManager.swift */; };
 		5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */; };
 		5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452A92178D18800F2B2B6 /* Weak.swift */; };
+		5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452AE21796D2F00F2B2B6 /* ExpandedHitTestButton.swift */; };
+		5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452AF21796D2F00F2B2B6 /* UIButton+BottomHeightOffset.swift */; };
+		5A0452BE21796D3000F2B2B6 /* String+WordAtRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B021796D2F00F2B2B6 /* String+WordAtRange.swift */; };
+		5A0452BF21796D3000F2B2B6 /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B121796D2F00F2B2B6 /* MessageTextView.swift */; };
+		5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B221796D2F00F2B2B6 /* MessageAutocompleteController.swift */; };
+		5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B421796D2F00F2B2B6 /* UITextView+Prefixes.swift */; };
+		5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B521796D3000F2B2B6 /* MessageViewController.swift */; };
+		5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B621796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift */; };
+		5A0452C421796D3000F2B2B6 /* UIScrollView+StopScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B721796D3000F2B2B6 /* UIScrollView+StopScrolling.swift */; };
+		5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B821796D3000F2B2B6 /* MessageViewDelegate.swift */; };
+		5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452B921796D3000F2B2B6 /* MessageView.swift */; };
+		5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452BA21796D3000F2B2B6 /* UIView+iOS11.swift */; };
+		5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452BB21796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift */; };
+		5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452CA21796D7800F2B2B6 /* NSAttributedString+Markdown.swift */; };
+		5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452CB21796D7800F2B2B6 /* RCMarkdownParser.swift */; };
+		5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452CC21796D7900F2B2B6 /* RCBaseParser.swift */; };
+		5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -85,6 +102,24 @@
 		5A0452A52178288400F2B2B6 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		5A0452A72178CF1400F2B2B6 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		5A0452A92178D18800F2B2B6 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		5A0452AE21796D2F00F2B2B6 /* ExpandedHitTestButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedHitTestButton.swift; sourceTree = "<group>"; };
+		5A0452AF21796D2F00F2B2B6 /* UIButton+BottomHeightOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BottomHeightOffset.swift"; sourceTree = "<group>"; };
+		5A0452B021796D2F00F2B2B6 /* String+WordAtRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WordAtRange.swift"; sourceTree = "<group>"; };
+		5A0452B121796D2F00F2B2B6 /* MessageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextView.swift; sourceTree = "<group>"; };
+		5A0452B221796D2F00F2B2B6 /* MessageAutocompleteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageAutocompleteController.swift; sourceTree = "<group>"; };
+		5A0452B321796D2F00F2B2B6 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		5A0452B421796D2F00F2B2B6 /* UITextView+Prefixes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Prefixes.swift"; sourceTree = "<group>"; };
+		5A0452B521796D3000F2B2B6 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		5A0452B621796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ReplaceRange.swift"; sourceTree = "<group>"; };
+		5A0452B721796D3000F2B2B6 /* UIScrollView+StopScrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+StopScrolling.swift"; sourceTree = "<group>"; };
+		5A0452B821796D3000F2B2B6 /* MessageViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewDelegate.swift; sourceTree = "<group>"; };
+		5A0452B921796D3000F2B2B6 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		5A0452BA21796D3000F2B2B6 /* UIView+iOS11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+iOS11.swift"; sourceTree = "<group>"; };
+		5A0452BB21796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MessageViewController+MessageViewDelegate.swift"; sourceTree = "<group>"; };
+		5A0452CA21796D7800F2B2B6 /* NSAttributedString+Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Markdown.swift"; sourceTree = "<group>"; };
+		5A0452CB21796D7800F2B2B6 /* RCMarkdownParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCMarkdownParser.swift; sourceTree = "<group>"; };
+		5A0452CC21796D7900F2B2B6 /* RCBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCBaseParser.swift; sourceTree = "<group>"; };
+		5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownManager.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +235,37 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		5A0452AD21796BA000F2B2B6 /* TextViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452B221796D2F00F2B2B6 /* MessageAutocompleteController.swift */,
+				5A0452B121796D2F00F2B2B6 /* MessageTextView.swift */,
+				5A0452AE21796D2F00F2B2B6 /* ExpandedHitTestButton.swift */,
+				5A0452B921796D3000F2B2B6 /* MessageView.swift */,
+				5A0452B321796D2F00F2B2B6 /* MessageViewController.h */,
+				5A0452B521796D3000F2B2B6 /* MessageViewController.swift */,
+				5A0452BB21796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift */,
+				5A0452B821796D3000F2B2B6 /* MessageViewDelegate.swift */,
+				5A0452B021796D2F00F2B2B6 /* String+WordAtRange.swift */,
+				5A0452AF21796D2F00F2B2B6 /* UIButton+BottomHeightOffset.swift */,
+				5A0452B721796D3000F2B2B6 /* UIScrollView+StopScrolling.swift */,
+				5A0452B421796D2F00F2B2B6 /* UITextView+Prefixes.swift */,
+				5A0452B621796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift */,
+				5A0452BA21796D3000F2B2B6 /* UIView+iOS11.swift */,
+			);
+			path = TextViewController;
+			sourceTree = "<group>";
+		};
+		5A0452C921796D5F00F2B2B6 /* MarkdownParser */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452CA21796D7800F2B2B6 /* NSAttributedString+Markdown.swift */,
+				5A0452CC21796D7900F2B2B6 /* RCBaseParser.swift */,
+				5A0452CB21796D7800F2B2B6 /* RCMarkdownParser.swift */,
+			);
+			path = MarkdownParser;
+			sourceTree = "<group>";
+		};
 		5A360C5E2153D16600943DDC = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +363,8 @@
 		5A360C902155169300943DDC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5A0452C921796D5F00F2B2B6 /* MarkdownParser */,
+				5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */,
 				5A0452762165AE2800F2B2B6 /* Model */,
 				5A0452732165AB5000F2B2B6 /* Launcher */,
 				5A0452A12178262600F2B2B6 /* DatabaseManager.swift */,
@@ -339,6 +407,7 @@
 		5A360C94215516AB00943DDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A0452AD21796BA000F2B2B6 /* TextViewController */,
 				5A0452702165A9FD00F2B2B6 /* Notification */,
 			);
 			path = Views;
@@ -590,26 +659,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0452C421796D3000F2B2B6 /* UIScrollView+StopScrolling.swift in Sources */,
 				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
+				5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */,
 				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
+				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
+				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
+				5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */,
+				5A0452BF21796D3000F2B2B6 /* MessageTextView.swift in Sources */,
 				5A0452852165BE7200F2B2B6 /* RealmCurrent.swift in Sources */,
 				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
 				5A0452792165AE4000F2B2B6 /* AuthManager.swift in Sources */,
+				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
+				5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
+				5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */,
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
+				5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */,
+				5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */,
+				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
+				5A0452BE21796D3000F2B2B6 /* String+WordAtRange.swift in Sources */,
+				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
+				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
@@ -618,6 +702,8 @@
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,
 				5A04528B216AE64F00F2B2B6 /* Message.swift in Sources */,
+				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
+				5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
