@@ -68,6 +68,18 @@
 		5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452F2217A23B200F2B2B6 /* APIResponse.swift */; };
 		5A0452F6217A240B00F2B2B6 /* VersionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452F5217A240B00F2B2B6 /* VersionMiddleware.swift */; };
 		5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452F7217A248700F2B2B6 /* APIClient.swift */; };
+		5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452FA217A252C00F2B2B6 /* AuthClient.swift */; };
+		5A0452FF217A25C100F2B2B6 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0452FE217A25C100F2B2B6 /* LoginRequest.swift */; };
+		5A045301217A280800F2B2B6 /* RealmExecute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045300217A280800F2B2B6 /* RealmExecute.swift */; };
+		5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045303217B79AD00F2B2B6 /* SocketManager.swift */; };
+		5A045307217B7CA300F2B2B6 /* SocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045306217B7CA300F2B2B6 /* SocketResponse.swift */; };
+		5A045309217BE0DC00F2B2B6 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045308217BE0DC00F2B2B6 /* ResponseMessage.swift */; };
+		5A04530B217BE10F00F2B2B6 /* SocketError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04530A217BE10F00F2B2B6 /* SocketError.swift */; };
+		5A04530D217BE29700F2B2B6 /* SocketHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04530C217BE29700F2B2B6 /* SocketHandlers.swift */; };
+		5A04530F21820AF000F2B2B6 /* ModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04530E21820AF000F2B2B6 /* ModelHandler.swift */; };
+		5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531021820BC500F2B2B6 /* ModelMappeable.swift */; };
+		5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */; };
+		5A0453162182111200F2B2B6 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453152182111200F2B2B6 /* LoginService.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -156,6 +168,18 @@
 		5A0452F2217A23B200F2B2B6 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		5A0452F5217A240B00F2B2B6 /* VersionMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionMiddleware.swift; sourceTree = "<group>"; };
 		5A0452F7217A248700F2B2B6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5A0452FA217A252C00F2B2B6 /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		5A0452FE217A25C100F2B2B6 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		5A045300217A280800F2B2B6 /* RealmExecute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExecute.swift; sourceTree = "<group>"; };
+		5A045303217B79AD00F2B2B6 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		5A045306217B7CA300F2B2B6 /* SocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketResponse.swift; sourceTree = "<group>"; };
+		5A045308217BE0DC00F2B2B6 /* ResponseMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
+		5A04530A217BE10F00F2B2B6 /* SocketError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketError.swift; sourceTree = "<group>"; };
+		5A04530C217BE29700F2B2B6 /* SocketHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketHandlers.swift; sourceTree = "<group>"; };
+		5A04530E21820AF000F2B2B6 /* ModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHandler.swift; sourceTree = "<group>"; };
+		5A04531021820BC500F2B2B6 /* ModelMappeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMappeable.swift; sourceTree = "<group>"; };
+		5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceModelHandler.swift; sourceTree = "<group>"; };
+		5A0453152182111200F2B2B6 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				5A0452822165BD7200F2B2B6 /* BaseModel.swift */,
+				5A04530E21820AF000F2B2B6 /* ModelHandler.swift */,
+				5A04531021820BC500F2B2B6 /* ModelMappeable.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -326,6 +352,58 @@
 			path = Middlewares;
 			sourceTree = "<group>";
 		};
+		5A0452F9217A252000F2B2B6 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452FA217A252C00F2B2B6 /* AuthClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		5A0452FC217A259700F2B2B6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452FD217A25A400F2B2B6 /* Authentication */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5A0452FD217A25A400F2B2B6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5A0452FE217A25C100F2B2B6 /* LoginRequest.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5A045302217B79A200F2B2B6 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				5A045305217B7C9500F2B2B6 /* Response */,
+				5A045303217B79AD00F2B2B6 /* SocketManager.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		5A045305217B7C9500F2B2B6 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5A045306217B7CA300F2B2B6 /* SocketResponse.swift */,
+				5A045308217BE0DC00F2B2B6 /* ResponseMessage.swift */,
+				5A04530A217BE10F00F2B2B6 /* SocketError.swift */,
+				5A04530C217BE29700F2B2B6 /* SocketHandlers.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5A0453122182106500F2B2B6 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
 		5A360C5E2153D16600943DDC = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +457,8 @@
 		5A360C8B2155167700943DDC /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5A0452FC217A259700F2B2B6 /* Requests */,
+				5A0452F9217A252000F2B2B6 /* Clients */,
 				5A0452F4217A23FC00F2B2B6 /* Middlewares */,
 				5A0452EF217A237600F2B2B6 /* HTTP */,
 				5A0452E3217A1D0A00F2B2B6 /* API.swift */,
@@ -411,6 +491,7 @@
 				5A04529D2178258100F2B2B6 /* UserDefaults+Group.swift */,
 				5A0452A3217827EB00F2B2B6 /* String+Random.swift */,
 				5A0452D621796F5700F2B2B6 /* StringExtensions.swift */,
+				5A045300217A280800F2B2B6 /* RealmExecute.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -436,6 +517,7 @@
 		5A360C902155169300943DDC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5A045302217B79A200F2B2B6 /* Socket */,
 				5A0452C921796D5F00F2B2B6 /* MarkdownParser */,
 				5A0452D021796D8400F2B2B6 /* MarkdownManager.swift */,
 				5A0452762165AE2800F2B2B6 /* Model */,
@@ -450,6 +532,7 @@
 		5A360C912155169900943DDC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A0453122182106500F2B2B6 /* Handlers */,
 				5A04529621778CE200F2B2B6 /* User */,
 				5A045289216AE64400F2B2B6 /* Message */,
 				5A0452862165C06300F2B2B6 /* Subscription */,
@@ -458,6 +541,7 @@
 				5A04527F2165BAAF00F2B2B6 /* AuthSettings.swift */,
 				5A0452922177834200F2B2B6 /* Attachment.swift */,
 				5A04529421778BEC00F2B2B6 /* AuthExtensions.swift */,
+				5A0453152182111200F2B2B6 /* LoginService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -741,8 +825,10 @@
 				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
+				5A045309217BE0DC00F2B2B6 /* ResponseMessage.swift in Sources */,
 				5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */,
 				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
+				5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */,
 				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
@@ -753,17 +839,23 @@
 				5A0452792165AE4000F2B2B6 /* AuthManager.swift in Sources */,
 				5A0452E8217A20FF00F2B2B6 /* Version.swift in Sources */,
 				5A0452E6217A203800F2B2B6 /* APIError.swift in Sources */,
+				5A0452FF217A25C100F2B2B6 /* LoginRequest.swift in Sources */,
+				5A0453162182111200F2B2B6 /* LoginService.swift in Sources */,
 				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
 				5A0452E02179746C00F2B2B6 /* ThemeableViewControllers.swift in Sources */,
 				5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */,
+				5A045301217A280800F2B2B6 /* RealmExecute.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A0452F6217A240B00F2B2B6 /* VersionMiddleware.swift in Sources */,
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
+				5A04530D217BE29700F2B2B6 /* SocketHandlers.swift in Sources */,
 				5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */,
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */,
+				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
+				5A04530B217BE10F00F2B2B6 /* SocketError.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
 				5A0452DE2179741500F2B2B6 /* UISearchBarTextField.swift in Sources */,
 				5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */,
@@ -773,6 +865,7 @@
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452EA217A21E300F2B2B6 /* APIRequest.swift in Sources */,
 				5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */,
+				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
@@ -782,7 +875,9 @@
 				5A0452D92179729E00F2B2B6 /* MessageTextFontAttributes.swift in Sources */,
 				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
+				5A045307217B7CA300F2B2B6 /* SocketResponse.swift in Sources */,
 				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
+				5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
@@ -800,6 +895,7 @@
 				5A0452D721796F5700F2B2B6 /* StringExtensions.swift in Sources */,
 				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
 				5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */,
+				5A04530F21820AF000F2B2B6 /* ModelHandler.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
