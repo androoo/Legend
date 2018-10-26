@@ -80,6 +80,12 @@
 		5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531021820BC500F2B2B6 /* ModelMappeable.swift */; };
 		5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */; };
 		5A0453162182111200F2B2B6 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453152182111200F2B2B6 /* LoginService.swift */; };
+		5A04531821835ACA00F2B2B6 /* SubscriptionModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531721835ACA00F2B2B6 /* SubscriptionModelHandler.swift */; };
+		5A04531A21835B3500F2B2B6 /* UserModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531921835B3500F2B2B6 /* UserModelHandler.swift */; };
+		5A04531D21835EF200F2B2B6 /* UserModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531C21835EF200F2B2B6 /* UserModelMapping.swift */; };
+		5A04531F2183607100F2B2B6 /* SubscriptionModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04531E2183607100F2B2B6 /* SubscriptionModelMapping.swift */; };
+		5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453202183613100F2B2B6 /* MessageModelMapping.swift */; };
+		5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045322218362D900F2B2B6 /* AttachmentModelMapping.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -180,6 +186,12 @@
 		5A04531021820BC500F2B2B6 /* ModelMappeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMappeable.swift; sourceTree = "<group>"; };
 		5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceModelHandler.swift; sourceTree = "<group>"; };
 		5A0453152182111200F2B2B6 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5A04531721835ACA00F2B2B6 /* SubscriptionModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModelHandler.swift; sourceTree = "<group>"; };
+		5A04531921835B3500F2B2B6 /* UserModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelHandler.swift; sourceTree = "<group>"; };
+		5A04531C21835EF200F2B2B6 /* UserModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelMapping.swift; sourceTree = "<group>"; };
+		5A04531E2183607100F2B2B6 /* SubscriptionModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModelMapping.swift; sourceTree = "<group>"; };
+		5A0453202183613100F2B2B6 /* MessageModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelMapping.swift; sourceTree = "<group>"; };
+		5A045322218362D900F2B2B6 /* AttachmentModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModelMapping.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -400,8 +412,21 @@
 			isa = PBXGroup;
 			children = (
 				5A0453132182107D00F2B2B6 /* LoginServiceModelHandler.swift */,
+				5A04531721835ACA00F2B2B6 /* SubscriptionModelHandler.swift */,
+				5A04531921835B3500F2B2B6 /* UserModelHandler.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		5A04531B21835EE000F2B2B6 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				5A04531C21835EF200F2B2B6 /* UserModelMapping.swift */,
+				5A04531E2183607100F2B2B6 /* SubscriptionModelMapping.swift */,
+				5A0453202183613100F2B2B6 /* MessageModelMapping.swift */,
+				5A045322218362D900F2B2B6 /* AttachmentModelMapping.swift */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		5A360C5E2153D16600943DDC = {
@@ -532,6 +557,7 @@
 		5A360C912155169900943DDC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A04531B21835EE000F2B2B6 /* Mapping */,
 				5A0453122182106500F2B2B6 /* Handlers */,
 				5A04529621778CE200F2B2B6 /* User */,
 				5A045289216AE64400F2B2B6 /* Message */,
@@ -827,7 +853,9 @@
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
 				5A045309217BE0DC00F2B2B6 /* ResponseMessage.swift in Sources */,
 				5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */,
+				5A04531D21835EF200F2B2B6 /* UserModelMapping.swift in Sources */,
 				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
+				5A04531A21835B3500F2B2B6 /* UserModelHandler.swift in Sources */,
 				5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */,
 				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
@@ -846,6 +874,7 @@
 				5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */,
 				5A045301217A280800F2B2B6 /* RealmExecute.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
+				5A04531F2183607100F2B2B6 /* SubscriptionModelMapping.swift in Sources */,
 				5A0452F6217A240B00F2B2B6 /* VersionMiddleware.swift in Sources */,
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
 				5A04530D217BE29700F2B2B6 /* SocketHandlers.swift in Sources */,
@@ -858,9 +887,11 @@
 				5A04530B217BE10F00F2B2B6 /* SocketError.swift in Sources */,
 				5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */,
 				5A0452DE2179741500F2B2B6 /* UISearchBarTextField.swift in Sources */,
+				5A04531821835ACA00F2B2B6 /* SubscriptionModelHandler.swift in Sources */,
 				5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */,
 				5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */,
 				5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */,
+				5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452EA217A21E300F2B2B6 /* APIRequest.swift in Sources */,
@@ -887,6 +918,7 @@
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
+				5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */,
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,
 				5A0452EC217A221100F2B2B6 /* APIResource.swift in Sources */,
