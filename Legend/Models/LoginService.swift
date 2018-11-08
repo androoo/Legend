@@ -52,7 +52,7 @@ class LoginService: BaseModel {
     
     // true if LoginService has enough info to be used
     var isValid: Bool {
-        if type == .cas && loginURL != nil {
+        if type == .cas && loginUrl != nil {
             return true
         }
         
@@ -116,5 +116,15 @@ extension LoginService {
         }
         
         return object
+    }
+}
+
+//MARK: - Standard Login Services extensions
+
+extension LoginService {
+    static var cas: LoginService {
+        let service = LoginService()
+        service.mapCAS()
+        return service
     }
 }

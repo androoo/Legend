@@ -175,7 +175,7 @@ struct DatabaseManager {
     /**
      This method gets the realm associated with this server
      */
-    static func databaseInstace(index: Int) -> Realm? {
+    static func databaseInstance(index: Int) -> Realm? {
         guard let configuration = databaseConfiguration(index: index) else { return nil }
         return try? Realm(configuration: configuration)
     }

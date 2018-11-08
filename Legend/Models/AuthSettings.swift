@@ -26,10 +26,15 @@ final class AuthSettings: Object {
     
     //Server information
     @objc dynamic var serverName: String?
-    @objc dynamic var allowspecialCharsOnLegendNames = false
+    @objc dynamic var serverFaviconURL: String?
+    
+    // Layour: User Interface
+    @objc dynamic var useUserRealName = false 
+    @objc dynamic var allowspecialCharsOnRoomNames = false
     
     // Legends
-    @objc dynamic var followingLegends = true
+    @objc dynamic var isLDAPAuthenticationEnabled = false
+    @objc dynamic var favoriteRooms = true
     @objc dynamic var storeLastMessage = true
     
     // Authentication methods

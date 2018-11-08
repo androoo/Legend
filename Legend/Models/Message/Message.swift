@@ -20,7 +20,7 @@ enum MessageType: String {
     
     case roomNameChanged = "r"
     case userAdded = "au"
-    case userREmoved = "ru"
+    case userRemoved = "ru"
     case userJoined = "uj"
     case userLeft = "ul"
     case userMuted = "user-muted"
@@ -69,6 +69,8 @@ final class Message: BaseModel {
     var channels = List<Channel>()
     var attachments = List<Attachment>()
     var urls = List<MessageURL>()
+    
+    var reactions = List<MessageReaction>() 
     
     var type: MessageType {
         if let type = MessageType(rawValue: internalType) {
