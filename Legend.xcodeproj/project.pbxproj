@@ -123,6 +123,14 @@
 		5A04B3192195F82F00E362A6 /* SubscriptionsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B3182195F82F00E362A6 /* SubscriptionsClient.swift */; };
 		5A04B31C2195FB2E00E362A6 /* SubscriptionReadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B31B2195FB2E00E362A6 /* SubscriptionReadRequest.swift */; };
 		5A04B31E2195FC3400E362A6 /* SubscriptionManagerMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B31D2195FC3400E362A6 /* SubscriptionManagerMessages.swift */; };
+		5A04B3202199256000E362A6 /* InfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B31F2199256000E362A6 /* InfoClient.swift */; };
+		5A04B3222199D40900E362A6 /* AuthManagerSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B3212199D40900E362A6 /* AuthManagerSocket.swift */; };
+		5A04B3242199D5C300E362A6 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B3232199D5C300E362A6 /* PushManager.swift */; };
+		5A04B327219C672800E362A6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B326219C672800E362A6 /* BaseNavigationController.swift */; };
+		5A04B32A219C679200E362A6 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B329219C679200E362A6 /* BaseNavigationBar.swift */; };
+		5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B32B219C688600E362A6 /* BaseViewController.swift */; };
+		5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */; };
+		5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -266,6 +274,14 @@
 		5A04B3182195F82F00E362A6 /* SubscriptionsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsClient.swift; sourceTree = "<group>"; };
 		5A04B31B2195FB2E00E362A6 /* SubscriptionReadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionReadRequest.swift; sourceTree = "<group>"; };
 		5A04B31D2195FC3400E362A6 /* SubscriptionManagerMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManagerMessages.swift; sourceTree = "<group>"; };
+		5A04B31F2199256000E362A6 /* InfoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoClient.swift; sourceTree = "<group>"; };
+		5A04B3212199D40900E362A6 /* AuthManagerSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerSocket.swift; sourceTree = "<group>"; };
+		5A04B3232199D5C300E362A6 /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
+		5A04B326219C672800E362A6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		5A04B329219C679200E362A6 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
+		5A04B32B219C688600E362A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarTransparent.swift; sourceTree = "<group>"; };
+		5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerRedrawBar.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -338,6 +354,7 @@
 				5A0452782165AE4000F2B2B6 /* AuthManager.swift */,
 				5A04533D21937D0400F2B2B6 /* AuthManagerCurrentUser.swift */,
 				5A04534A21938C2500F2B2B6 /* AuthManagerRecover.swift */,
+				5A04B3212199D40900E362A6 /* AuthManagerSocket.swift */,
 			);
 			path = AuthManager;
 			sourceTree = "<group>";
@@ -451,6 +468,7 @@
 			children = (
 				5A0452FA217A252C00F2B2B6 /* AuthClient.swift */,
 				5A04B3182195F82F00E362A6 /* SubscriptionsClient.swift */,
+				5A04B31F2199256000E362A6 /* InfoClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -564,6 +582,32 @@
 			path = Subscriptions;
 			sourceTree = "<group>";
 		};
+		5A04B325219C671B00E362A6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B326219C672800E362A6 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A04B328219C678100E362A6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B329219C679200E362A6 /* BaseNavigationBar.swift */,
+				5A04B32B219C688600E362A6 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A04B32D219C68E000E362A6 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */,
+				5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
 		5A360C5E2153D16600943DDC = {
 			isa = PBXGroup;
 			children = (
@@ -636,6 +680,7 @@
 		5A360C8C2155167D00943DDC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B325219C671B00E362A6 /* Base */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -643,6 +688,7 @@
 		5A360C8D2155168300943DDC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B32D219C68E000E362A6 /* UINavigationBar */,
 				5A045345219383E000F2B2B6 /* API */,
 				5A0452DC2179740500F2B2B6 /* UISearchBar */,
 				5A360C982157FB1D00943DDC /* UIColorExtension.swift */,
@@ -696,6 +742,7 @@
 				5A045348219384E400F2B2B6 /* AppManager.swift */,
 				5A04534E21938D1600F2B2B6 /* WindowManager.swift */,
 				5A0453612193D13000F2B2B6 /* MessageManager.swift */,
+				5A04B3232199D5C300E362A6 /* PushManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -742,6 +789,7 @@
 		5A360C94215516AB00943DDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B328219C678100E362A6 /* Base */,
 				5A0452AD21796BA000F2B2B6 /* TextViewController */,
 				5A0452702165A9FD00F2B2B6 /* Notification */,
 			);
@@ -1013,6 +1061,7 @@
 				5A0453422193814300F2B2B6 /* AuthSettingsManager.swift in Sources */,
 				5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */,
 				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
+				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
 				5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */,
@@ -1064,10 +1113,13 @@
 				5A04536B2193D8B400F2B2B6 /* SubscriptionManager.swift in Sources */,
 				5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
+				5A04B32A219C679200E362A6 /* BaseNavigationBar.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452EA217A21E300F2B2B6 /* APIRequest.swift in Sources */,
+				5A04B327219C672800E362A6 /* BaseNavigationController.swift in Sources */,
 				5A0453602193CFFB00F2B2B6 /* TextField.swift in Sources */,
 				5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */,
+				5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */,
 				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
@@ -1081,6 +1133,7 @@
 				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
 				5A045307217B7CA300F2B2B6 /* SocketResponse.swift in Sources */,
+				5A04B3222199D40900E362A6 /* AuthManagerSocket.swift in Sources */,
 				5A04533521928A2700F2B2B6 /* MessageTextCacheManager.swift in Sources */,
 				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
 				5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */,
@@ -1090,6 +1143,7 @@
 				5A04534D21938C7D00F2B2B6 /* DeepLink.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
+				5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
 				5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */,
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
@@ -1106,8 +1160,10 @@
 				5A04528B216AE64F00F2B2B6 /* Message.swift in Sources */,
 				5A0452D521796EFC00F2B2B6 /* RuntimeAttributesThemeableView.swift in Sources */,
 				5A0452D721796F5700F2B2B6 /* StringExtensions.swift in Sources */,
+				5A04B3242199D5C300E362A6 /* PushManager.swift in Sources */,
 				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
 				5A045333219289A100F2B2B6 /* Localized.swift in Sources */,
+				5A04B3202199256000E362A6 /* InfoClient.swift in Sources */,
 				5A04533E21937D0400F2B2B6 /* AuthManagerCurrentUser.swift in Sources */,
 				5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */,
 				5A045340219380D600F2B2B6 /* UserUtils.swift in Sources */,
