@@ -93,7 +93,6 @@
 		5A04532D2184BD7800F2B2B6 /* LoginServiceModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04532C2184BD7800F2B2B6 /* LoginServiceModelMapping.swift */; };
 		5A04532F2192889E00F2B2B6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04532E2192889E00F2B2B6 /* DateExtension.swift */; };
 		5A0453312192891E00F2B2B6 /* SubscriptionLastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453302192891E00F2B2B6 /* SubscriptionLastMessage.swift */; };
-		5A045333219289A100F2B2B6 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A045332219289A100F2B2B6 /* Localized.swift */; };
 		5A04533521928A2700F2B2B6 /* MessageTextCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04533421928A2700F2B2B6 /* MessageTextCacheManager.swift */; };
 		5A0453372193733200F2B2B6 /* MessageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0453362193733200F2B2B6 /* MessageExtensions.swift */; };
 		5A04533A21937A0500F2B2B6 /* VOLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04533921937A0500F2B2B6 /* VOLocalized.swift */; };
@@ -131,6 +130,23 @@
 		5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B32B219C688600E362A6 /* BaseViewController.swift */; };
 		5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */; };
 		5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */; };
+		5A04B333219D0A3A00E362A6 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B332219D0A3A00E362A6 /* MainSplitViewController.swift */; };
+		5A04B335219D0EE000E362A6 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B334219D0EE000E362A6 /* BaseTableViewController.swift */; };
+		5A04B33721A0C0EB00E362A6 /* DraftMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */; };
+		5A04B33921A1EA7000E362A6 /* SubscriptionQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B33821A1EA7000E362A6 /* SubscriptionQueries.swift */; };
+		5A04B33B21A1EB0F00E362A6 /* AuthInternalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B33A21A1EB0F00E362A6 /* AuthInternalExtensions.swift */; };
+		5A04B33E21A1EBC800E362A6 /* PostMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B33D21A1EBC800E362A6 /* PostMessageRequest.swift */; };
+		5A04B34021A1ED5D00E362A6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B33F21A1ED5D00E362A6 /* Alert.swift */; };
+		5A04B34221A1EF1100E362A6 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34121A1EF1100E362A6 /* DictionaryExtensions.swift */; };
+		5A04B34421A1F22400E362A6 /* CommandsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34321A1F22400E362A6 /* CommandsClient.swift */; };
+		5A04B34721A1F2B700E362A6 /* CommandsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34621A1F2B700E362A6 /* CommandsRequest.swift */; };
+		5A04B34921A1F39700E362A6 /* RunCommandSucceeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34821A1F39700E362A6 /* RunCommandSucceeded.swift */; };
+		5A04B34B21A1F43E00E362A6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34A21A1F43E00E362A6 /* UserManager.swift */; };
+		5A04B34E21A2437C00E362A6 /* RoomInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34D21A2437C00E362A6 /* RoomInfoRequest.swift */; };
+		5A04B35021A2458500E362A6 /* RoomMembersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B34F21A2458500E362A6 /* RoomMembersRequest.swift */; };
+		5A04B35321A2481B00E362A6 /* PublicSettingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */; };
+		5A04B35521A2493400E362A6 /* PermissionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35421A2493400E362A6 /* PermissionsRequest.swift */; };
+		5A04B35721A24CE900E362A6 /* SubscriptionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35621A24CE900E362A6 /* SubscriptionsRequest.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -244,7 +260,6 @@
 		5A04532C2184BD7800F2B2B6 /* LoginServiceModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceModelMapping.swift; sourceTree = "<group>"; };
 		5A04532E2192889E00F2B2B6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		5A0453302192891E00F2B2B6 /* SubscriptionLastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionLastMessage.swift; sourceTree = "<group>"; };
-		5A045332219289A100F2B2B6 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		5A04533421928A2700F2B2B6 /* MessageTextCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextCacheManager.swift; sourceTree = "<group>"; };
 		5A0453362193733200F2B2B6 /* MessageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageExtensions.swift; sourceTree = "<group>"; };
 		5A04533921937A0500F2B2B6 /* VOLocalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOLocalized.swift; sourceTree = "<group>"; };
@@ -282,6 +297,23 @@
 		5A04B32B219C688600E362A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarTransparent.swift; sourceTree = "<group>"; };
 		5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerRedrawBar.swift; sourceTree = "<group>"; };
+		5A04B332219D0A3A00E362A6 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		5A04B334219D0EE000E362A6 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftMessageManager.swift; sourceTree = "<group>"; };
+		5A04B33821A1EA7000E362A6 /* SubscriptionQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionQueries.swift; sourceTree = "<group>"; };
+		5A04B33A21A1EB0F00E362A6 /* AuthInternalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInternalExtensions.swift; sourceTree = "<group>"; };
+		5A04B33D21A1EBC800E362A6 /* PostMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageRequest.swift; sourceTree = "<group>"; };
+		5A04B33F21A1ED5D00E362A6 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		5A04B34121A1EF1100E362A6 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		5A04B34321A1F22400E362A6 /* CommandsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsClient.swift; sourceTree = "<group>"; };
+		5A04B34621A1F2B700E362A6 /* CommandsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsRequest.swift; sourceTree = "<group>"; };
+		5A04B34821A1F39700E362A6 /* RunCommandSucceeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunCommandSucceeded.swift; sourceTree = "<group>"; };
+		5A04B34A21A1F43E00E362A6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		5A04B34D21A2437C00E362A6 /* RoomInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfoRequest.swift; sourceTree = "<group>"; };
+		5A04B34F21A2458500E362A6 /* RoomMembersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMembersRequest.swift; sourceTree = "<group>"; };
+		5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSettingsRequest.swift; sourceTree = "<group>"; };
+		5A04B35421A2493400E362A6 /* PermissionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsRequest.swift; sourceTree = "<group>"; };
+		5A04B35621A24CE900E362A6 /* SubscriptionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsRequest.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -344,6 +376,7 @@
 				5A0452772165AE3200F2B2B6 /* AuthManager */,
 				5A0453412193814300F2B2B6 /* AuthSettingsManager.swift */,
 				5A04535621939FD000F2B2B6 /* PermissionManager.swift */,
+				5A04B34A21A1F43E00E362A6 /* UserManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -381,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0452872165C06C00F2B2B6 /* Subscription.swift */,
+				5A04B33821A1EA7000E362A6 /* SubscriptionQueries.swift */,
 			);
 			path = Subscription;
 			sourceTree = "<group>";
@@ -476,6 +510,10 @@
 		5A0452FC217A259700F2B2B6 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B35121A2480D00E362A6 /* General */,
+				5A04B34C21A2436F00E362A6 /* Room */,
+				5A04B34521A1F2AC00E362A6 /* Command */,
+				5A04B33C21A1EBB300E362A6 /* Message */,
 				5A04B31A2195FB1F00E362A6 /* Subscriptions */,
 				5A0452FD217A25A400F2B2B6 /* Authentication */,
 			);
@@ -578,6 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				5A04B31B2195FB2E00E362A6 /* SubscriptionReadRequest.swift */,
+				5A04B35621A24CE900E362A6 /* SubscriptionsRequest.swift */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -604,8 +643,45 @@
 			children = (
 				5A04B32E219C68F200E362A6 /* UINavigationBarTransparent.swift */,
 				5A04B330219C69A300E362A6 /* UINavigationControllerRedrawBar.swift */,
+				5A04B332219D0A3A00E362A6 /* MainSplitViewController.swift */,
+				5A04B334219D0EE000E362A6 /* BaseTableViewController.swift */,
 			);
 			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		5A04B33C21A1EBB300E362A6 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B33D21A1EBC800E362A6 /* PostMessageRequest.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		5A04B34521A1F2AC00E362A6 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B34621A1F2B700E362A6 /* CommandsRequest.swift */,
+				5A04B34821A1F39700E362A6 /* RunCommandSucceeded.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		5A04B34C21A2436F00E362A6 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B34D21A2437C00E362A6 /* RoomInfoRequest.swift */,
+				5A04B34F21A2458500E362A6 /* RoomMembersRequest.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		5A04B35121A2480D00E362A6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */,
+				5A04B35421A2493400E362A6 /* PermissionsRequest.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		5A360C5E2153D16600943DDC = {
@@ -673,6 +749,7 @@
 				5A0452ED217A225D00F2B2B6 /* APIRequestOption.swift */,
 				5A0452F2217A23B200F2B2B6 /* APIResponse.swift */,
 				5A0452F7217A248700F2B2B6 /* APIClient.swift */,
+				5A04B34321A1F22400E362A6 /* CommandsClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -701,6 +778,8 @@
 				5A045300217A280800F2B2B6 /* RealmExecute.swift */,
 				5A04532E2192889E00F2B2B6 /* DateExtension.swift */,
 				5A04535021939B3E00F2B2B6 /* UIWindowExtensions.swift */,
+				5A04B33A21A1EB0F00E362A6 /* AuthInternalExtensions.swift */,
+				5A04B34121A1EF1100E362A6 /* DictionaryExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -720,8 +799,8 @@
 				5A04529F217825BB00F2B2B6 /* AppGroup.swift */,
 				5A0452A92178D18800F2B2B6 /* Weak.swift */,
 				5A0452D82179729E00F2B2B6 /* MessageTextFontAttributes.swift */,
-				5A045332219289A100F2B2B6 /* Localized.swift */,
 				5A04534C21938C7D00F2B2B6 /* DeepLink.swift */,
+				5A04B33F21A1ED5D00E362A6 /* Alert.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -743,6 +822,7 @@
 				5A04534E21938D1600F2B2B6 /* WindowManager.swift */,
 				5A0453612193D13000F2B2B6 /* MessageManager.swift */,
 				5A04B3232199D5C300E362A6 /* PushManager.swift */,
+				5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -1060,11 +1140,13 @@
 				5A04531A21835B3500F2B2B6 /* UserModelHandler.swift in Sources */,
 				5A0453422193814300F2B2B6 /* AuthSettingsManager.swift in Sources */,
 				5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */,
+				5A04B35521A2493400E362A6 /* PermissionsRequest.swift in Sources */,
 				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
 				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
 				5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */,
+				5A04B33921A1EA7000E362A6 /* SubscriptionQueries.swift in Sources */,
 				5A0452BF21796D3000F2B2B6 /* MessageTextView.swift in Sources */,
 				5A0452852165BE7200F2B2B6 /* RealmCurrent.swift in Sources */,
 				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
@@ -1073,8 +1155,10 @@
 				5A0452E8217A20FF00F2B2B6 /* Version.swift in Sources */,
 				5A0452E6217A203800F2B2B6 /* APIError.swift in Sources */,
 				5A04535C2193CEA600F2B2B6 /* CustomField.swift in Sources */,
+				5A04B35321A2481B00E362A6 /* PublicSettingsRequest.swift in Sources */,
 				5A0452FF217A25C100F2B2B6 /* LoginRequest.swift in Sources */,
 				5A0453162182111200F2B2B6 /* LoginService.swift in Sources */,
+				5A04B34B21A1F43E00E362A6 /* UserManager.swift in Sources */,
 				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
 				5A04535321939ED500F2B2B6 /* UserPermissions.swift in Sources */,
 				5A0452E02179746C00F2B2B6 /* ThemeableViewControllers.swift in Sources */,
@@ -1090,12 +1174,14 @@
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
 				5A04530D217BE29700F2B2B6 /* SocketHandlers.swift in Sources */,
 				5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */,
+				5A04B34221A1EF1100E362A6 /* DictionaryExtensions.swift in Sources */,
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A04535521939F6100F2B2B6 /* Permission .swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A04B31C2195FB2E00E362A6 /* SubscriptionReadRequest.swift in Sources */,
 				5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */,
+				5A04B34E21A2437C00E362A6 /* RoomInfoRequest.swift in Sources */,
 				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
 				5A04B3192195F82F00E362A6 /* SubscriptionsClient.swift in Sources */,
 				5A04534F21938D1600F2B2B6 /* WindowManager.swift in Sources */,
@@ -1107,36 +1193,46 @@
 				5A0453252184B44900F2B2B6 /* AuthSettingsModelMapping.swift in Sources */,
 				5A04531821835ACA00F2B2B6 /* SubscriptionModelHandler.swift in Sources */,
 				5A0452C821796D3000F2B2B6 /* MessageViewController+MessageViewDelegate.swift in Sources */,
+				5A04B34021A1ED5D00E362A6 /* Alert.swift in Sources */,
 				5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */,
 				5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */,
 				5A045349219384E400F2B2B6 /* AppManager.swift in Sources */,
+				5A04B34721A1F2B700E362A6 /* CommandsRequest.swift in Sources */,
 				5A04536B2193D8B400F2B2B6 /* SubscriptionManager.swift in Sources */,
 				5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
 				5A04B32A219C679200E362A6 /* BaseNavigationBar.swift in Sources */,
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452EA217A21E300F2B2B6 /* APIRequest.swift in Sources */,
+				5A04B33E21A1EBC800E362A6 /* PostMessageRequest.swift in Sources */,
 				5A04B327219C672800E362A6 /* BaseNavigationController.swift in Sources */,
+				5A04B35721A24CE900E362A6 /* SubscriptionsRequest.swift in Sources */,
 				5A0453602193CFFB00F2B2B6 /* TextField.swift in Sources */,
+				5A04B333219D0A3A00E362A6 /* MainSplitViewController.swift in Sources */,
 				5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */,
 				5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */,
 				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
+				5A04B34421A1F22400E362A6 /* CommandsClient.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A04533C21937A2500F2B2B6 /* VOTextField.swift in Sources */,
+				5A04B33B21A1EB0F00E362A6 /* AuthInternalExtensions.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
 				5A04534B21938C2500F2B2B6 /* AuthManagerRecover.swift in Sources */,
+				5A04B33721A0C0EB00E362A6 /* DraftMessageManager.swift in Sources */,
 				5A0452BE21796D3000F2B2B6 /* String+WordAtRange.swift in Sources */,
 				5A0452D92179729E00F2B2B6 /* MessageTextFontAttributes.swift in Sources */,
 				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
+				5A04B335219D0EE000E362A6 /* BaseTableViewController.swift in Sources */,
 				5A045307217B7CA300F2B2B6 /* SocketResponse.swift in Sources */,
 				5A04B3222199D40900E362A6 /* AuthManagerSocket.swift in Sources */,
 				5A04533521928A2700F2B2B6 /* MessageTextCacheManager.swift in Sources */,
 				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
 				5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */,
+				5A04B34921A1F39700E362A6 /* RunCommandSucceeded.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5A0453682193D5C700F2B2B6 /* MessageReaction.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
@@ -1149,6 +1245,7 @@
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
+				5A04B35021A2458500E362A6 /* RoomMembersRequest.swift in Sources */,
 				5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */,
 				5A0453592193A3F100F2B2B6 /* PermissionModelMapping.swift in Sources */,
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
@@ -1162,7 +1259,6 @@
 				5A0452D721796F5700F2B2B6 /* StringExtensions.swift in Sources */,
 				5A04B3242199D5C300E362A6 /* PushManager.swift in Sources */,
 				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
-				5A045333219289A100F2B2B6 /* Localized.swift in Sources */,
 				5A04B3202199256000E362A6 /* InfoClient.swift in Sources */,
 				5A04533E21937D0400F2B2B6 /* AuthManagerCurrentUser.swift in Sources */,
 				5A0452BC21796D3000F2B2B6 /* ExpandedHitTestButton.swift in Sources */,

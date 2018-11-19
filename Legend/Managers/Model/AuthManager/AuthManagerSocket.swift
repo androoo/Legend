@@ -238,7 +238,7 @@ extension AuthManager {
      */
     static func logout(completion: @escaping VoidCompletion) {
         SocketManager.disconnect { (_, _) in
-            AnalyticsCoordinator.anonymizeCrashReports()
+//            AnalyticsCoordinator.anonymizeCrashReports()
             
             DraftMessageManager.clearServerDraftMessages()
             

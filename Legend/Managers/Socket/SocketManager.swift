@@ -175,7 +175,7 @@ extension SocketManager {
                     SubscriptionManager.subscribeInAppNotifications()
                     PermissionManager.changes()
                     infoClient.fetchPermissions()
-                    CustomEmojiManager.sync()
+//                    CustomEmojiManager.sync()
                     
                     commandsClient.fetchCommands()
                     

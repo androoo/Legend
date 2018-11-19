@@ -44,7 +44,7 @@ class BaseViewControler: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let screenName = String(describing: type(of: self))
-        Analyticsmanager.log(event: .screenView(screenName: screenName))
+//        Analyticsmanager.log(event: .screenView(screenName: screenName))
     }
     
     override func applyTheme() {
