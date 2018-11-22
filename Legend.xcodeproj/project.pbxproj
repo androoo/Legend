@@ -147,6 +147,23 @@
 		5A04B35321A2481B00E362A6 /* PublicSettingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */; };
 		5A04B35521A2493400E362A6 /* PermissionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35421A2493400E362A6 /* PermissionsRequest.swift */; };
 		5A04B35721A24CE900E362A6 /* SubscriptionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35621A24CE900E362A6 /* SubscriptionsRequest.swift */; };
+		5A04B35921A2FDB200E362A6 /* OAuthCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35821A2FDB200E362A6 /* OAuthCredentials.swift */; };
+		5A04B35B21A37C7000E362A6 /* ChatNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35A21A37C7000E362A6 /* ChatNotification.swift */; };
+		5A04B35D21A37F1000E362A6 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35C21A37F1000E362A6 /* NotificationManager.swift */; };
+		5A04B35F21A3812800E362A6 /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B35E21A3812800E362A6 /* NSAttributedStringExtensions.swift */; };
+		5A04B36221A621B700E362A6 /* RoomsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36121A621B700E362A6 /* RoomsRequest.swift */; };
+		5A04B36421A6222C00E362A6 /* LoginServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36321A6222C00E362A6 /* LoginServiceRequest.swift */; };
+		5A04B36621A6334200E362A6 /* LoginServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36521A6334200E362A6 /* LoginServiceManager.swift */; };
+		5A04B36821A6343E00E362A6 /* InfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36721A6343E00E362A6 /* InfoRequest.swift */; };
+		5A04B36A21A6359F00E362A6 /* RoomRolesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36921A6359F00E362A6 /* RoomRolesRequest.swift */; };
+		5A04B36C21A6375100E362A6 /* RoomCreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36B21A6375100E362A6 /* RoomCreateRequest.swift */; };
+		5A04B36E21A6378B00E362A6 /* RoomMentionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36D21A6378B00E362A6 /* RoomMentionsRequest.swift */; };
+		5A04B37021A637AC00E362A6 /* RoomMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B36F21A637AC00E362A6 /* RoomMessagesRequest.swift */; };
+		5A04B37221A637E700E362A6 /* RoomKickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B37121A637E700E362A6 /* RoomKickRequest.swift */; };
+		5A04B37421A6380800E362A6 /* RoomInviteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B37321A6380800E362A6 /* RoomInviteRequest.swift */; };
+		5A04B37721A6384800E362A6 /* ResourceSharedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B37621A6384800E362A6 /* ResourceSharedProperties.swift */; };
+		5A04B37921A645FF00E362A6 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B37821A645FF00E362A6 /* Chat.storyboard */; };
+		5A04B37C21A6488E00E362A6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B37B21A6488E00E362A6 /* ChatViewController.swift */; };
 		5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C6A2153D16600943DDC /* AppDelegate.swift */; };
 		5A360C722153D16900943DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C712153D16900943DDC /* Assets.xcassets */; };
 		5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A360C732153D16900943DDC /* LaunchScreen.storyboard */; };
@@ -314,6 +331,23 @@
 		5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSettingsRequest.swift; sourceTree = "<group>"; };
 		5A04B35421A2493400E362A6 /* PermissionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsRequest.swift; sourceTree = "<group>"; };
 		5A04B35621A24CE900E362A6 /* SubscriptionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsRequest.swift; sourceTree = "<group>"; };
+		5A04B35821A2FDB200E362A6 /* OAuthCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredentials.swift; sourceTree = "<group>"; };
+		5A04B35A21A37C7000E362A6 /* ChatNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNotification.swift; sourceTree = "<group>"; };
+		5A04B35C21A37F1000E362A6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		5A04B35E21A3812800E362A6 /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
+		5A04B36121A621B700E362A6 /* RoomsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsRequest.swift; sourceTree = "<group>"; };
+		5A04B36321A6222C00E362A6 /* LoginServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceRequest.swift; sourceTree = "<group>"; };
+		5A04B36521A6334200E362A6 /* LoginServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceManager.swift; sourceTree = "<group>"; };
+		5A04B36721A6343E00E362A6 /* InfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRequest.swift; sourceTree = "<group>"; };
+		5A04B36921A6359F00E362A6 /* RoomRolesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRolesRequest.swift; sourceTree = "<group>"; };
+		5A04B36B21A6375100E362A6 /* RoomCreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCreateRequest.swift; sourceTree = "<group>"; };
+		5A04B36D21A6378B00E362A6 /* RoomMentionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMentionsRequest.swift; sourceTree = "<group>"; };
+		5A04B36F21A637AC00E362A6 /* RoomMessagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMessagesRequest.swift; sourceTree = "<group>"; };
+		5A04B37121A637E700E362A6 /* RoomKickRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomKickRequest.swift; sourceTree = "<group>"; };
+		5A04B37321A6380800E362A6 /* RoomInviteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInviteRequest.swift; sourceTree = "<group>"; };
+		5A04B37621A6384800E362A6 /* ResourceSharedProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceSharedProperties.swift; sourceTree = "<group>"; };
+		5A04B37821A645FF00E362A6 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		5A04B37B21A6488E00E362A6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5A360C672153D16600943DDC /* Legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A360C6A2153D16600943DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A360C712153D16900943DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -377,6 +411,7 @@
 				5A0453412193814300F2B2B6 /* AuthSettingsManager.swift */,
 				5A04535621939FD000F2B2B6 /* PermissionManager.swift */,
 				5A04B34A21A1F43E00E362A6 /* UserManager.swift */,
+				5A04B36521A6334200E362A6 /* LoginServiceManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -510,6 +545,7 @@
 		5A0452FC217A259700F2B2B6 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B37521A6382F00E362A6 /* Base */,
 				5A04B35121A2480D00E362A6 /* General */,
 				5A04B34C21A2436F00E362A6 /* Room */,
 				5A04B34521A1F2AC00E362A6 /* Command */,
@@ -671,6 +707,13 @@
 			children = (
 				5A04B34D21A2437C00E362A6 /* RoomInfoRequest.swift */,
 				5A04B34F21A2458500E362A6 /* RoomMembersRequest.swift */,
+				5A04B36121A621B700E362A6 /* RoomsRequest.swift */,
+				5A04B36921A6359F00E362A6 /* RoomRolesRequest.swift */,
+				5A04B36B21A6375100E362A6 /* RoomCreateRequest.swift */,
+				5A04B36D21A6378B00E362A6 /* RoomMentionsRequest.swift */,
+				5A04B36F21A637AC00E362A6 /* RoomMessagesRequest.swift */,
+				5A04B37121A637E700E362A6 /* RoomKickRequest.swift */,
+				5A04B37321A6380800E362A6 /* RoomInviteRequest.swift */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -680,8 +723,26 @@
 			children = (
 				5A04B35221A2481B00E362A6 /* PublicSettingsRequest.swift */,
 				5A04B35421A2493400E362A6 /* PermissionsRequest.swift */,
+				5A04B36321A6222C00E362A6 /* LoginServiceRequest.swift */,
+				5A04B36721A6343E00E362A6 /* InfoRequest.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		5A04B37521A6382F00E362A6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B37621A6384800E362A6 /* ResourceSharedProperties.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A04B37A21A6488000E362A6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5A04B37B21A6488E00E362A6 /* ChatViewController.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		5A360C5E2153D16600943DDC = {
@@ -757,6 +818,7 @@
 		5A360C8C2155167D00943DDC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A04B37A21A6488000E362A6 /* Chat */,
 				5A04B325219C671B00E362A6 /* Base */,
 			);
 			path = Controllers;
@@ -780,6 +842,7 @@
 				5A04535021939B3E00F2B2B6 /* UIWindowExtensions.swift */,
 				5A04B33A21A1EB0F00E362A6 /* AuthInternalExtensions.swift */,
 				5A04B34121A1EF1100E362A6 /* DictionaryExtensions.swift */,
+				5A04B35E21A3812800E362A6 /* NSAttributedStringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -823,6 +886,8 @@
 				5A0453612193D13000F2B2B6 /* MessageManager.swift */,
 				5A04B3232199D5C300E362A6 /* PushManager.swift */,
 				5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */,
+				5A04B35821A2FDB200E362A6 /* OAuthCredentials.swift */,
+				5A04B35C21A37F1000E362A6 /* NotificationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -846,6 +911,7 @@
 				5A0453302192891E00F2B2B6 /* SubscriptionLastMessage.swift */,
 				5A0453362193733200F2B2B6 /* MessageExtensions.swift */,
 				5A04535421939F6100F2B2B6 /* Permission .swift */,
+				5A04B35A21A37C7000E362A6 /* ChatNotification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -862,6 +928,7 @@
 			isa = PBXGroup;
 			children = (
 				5A360C732153D16900943DDC /* LaunchScreen.storyboard */,
+				5A04B37821A645FF00E362A6 /* Chat.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -1003,6 +1070,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A04B37921A645FF00E362A6 /* Chat.storyboard in Resources */,
 				5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */,
 				5A360C722153D16900943DDC /* Assets.xcassets in Resources */,
 			);
@@ -1128,6 +1196,7 @@
 			files = (
 				5A0452C421796D3000F2B2B6 /* UIScrollView+StopScrolling.swift in Sources */,
 				5A04535121939B3E00F2B2B6 /* UIWindowExtensions.swift in Sources */,
+				5A04B36C21A6375100E362A6 /* RoomCreateRequest.swift in Sources */,
 				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
@@ -1142,12 +1211,15 @@
 				5A0453142182107D00F2B2B6 /* LoginServiceModelHandler.swift in Sources */,
 				5A04B35521A2493400E362A6 /* PermissionsRequest.swift in Sources */,
 				5A0452C721796D3000F2B2B6 /* UIView+iOS11.swift in Sources */,
+				5A04B36821A6343E00E362A6 /* InfoRequest.swift in Sources */,
+				5A04B35921A2FDB200E362A6 /* OAuthCredentials.swift in Sources */,
 				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
 				5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */,
 				5A04B33921A1EA7000E362A6 /* SubscriptionQueries.swift in Sources */,
 				5A0452BF21796D3000F2B2B6 /* MessageTextView.swift in Sources */,
+				5A04B35F21A3812800E362A6 /* NSAttributedStringExtensions.swift in Sources */,
 				5A0452852165BE7200F2B2B6 /* RealmCurrent.swift in Sources */,
 				5A04529C21778E3800F2B2B6 /* Email.swift in Sources */,
 				5A04532F2192889E00F2B2B6 /* DateExtension.swift in Sources */,
@@ -1159,6 +1231,7 @@
 				5A0452FF217A25C100F2B2B6 /* LoginRequest.swift in Sources */,
 				5A0453162182111200F2B2B6 /* LoginService.swift in Sources */,
 				5A04B34B21A1F43E00E362A6 /* UserManager.swift in Sources */,
+				5A04B36621A6334200E362A6 /* LoginServiceManager.swift in Sources */,
 				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
 				5A04535321939ED500F2B2B6 /* UserPermissions.swift in Sources */,
 				5A0452E02179746C00F2B2B6 /* ThemeableViewControllers.swift in Sources */,
@@ -1176,10 +1249,13 @@
 				5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */,
 				5A04B34221A1EF1100E362A6 /* DictionaryExtensions.swift in Sources */,
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,
+				5A04B36E21A6378B00E362A6 /* RoomMentionsRequest.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
 				5A04535521939F6100F2B2B6 /* Permission .swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A04B31C2195FB2E00E362A6 /* SubscriptionReadRequest.swift in Sources */,
+				5A04B37221A637E700E362A6 /* RoomKickRequest.swift in Sources */,
+				5A04B37C21A6488E00E362A6 /* ChatViewController.swift in Sources */,
 				5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */,
 				5A04B34E21A2437C00E362A6 /* RoomInfoRequest.swift in Sources */,
 				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
@@ -1198,6 +1274,9 @@
 				5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */,
 				5A045349219384E400F2B2B6 /* AppManager.swift in Sources */,
 				5A04B34721A1F2B700E362A6 /* CommandsRequest.swift in Sources */,
+				5A04B37021A637AC00E362A6 /* RoomMessagesRequest.swift in Sources */,
+				5A04B36A21A6359F00E362A6 /* RoomRolesRequest.swift in Sources */,
+				5A04B37721A6384800E362A6 /* ResourceSharedProperties.swift in Sources */,
 				5A04536B2193D8B400F2B2B6 /* SubscriptionManager.swift in Sources */,
 				5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
@@ -1205,6 +1284,7 @@
 				5A04529821778CEA00F2B2B6 /* User.swift in Sources */,
 				5A0452EA217A21E300F2B2B6 /* APIRequest.swift in Sources */,
 				5A04B33E21A1EBC800E362A6 /* PostMessageRequest.swift in Sources */,
+				5A04B35D21A37F1000E362A6 /* NotificationManager.swift in Sources */,
 				5A04B327219C672800E362A6 /* BaseNavigationController.swift in Sources */,
 				5A04B35721A24CE900E362A6 /* SubscriptionsRequest.swift in Sources */,
 				5A0453602193CFFB00F2B2B6 /* TextField.swift in Sources */,
@@ -1213,11 +1293,13 @@
 				5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */,
 				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
 				5A04B34421A1F22400E362A6 /* CommandsClient.swift in Sources */,
+				5A04B36421A6222C00E362A6 /* LoginServiceRequest.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A04533C21937A2500F2B2B6 /* VOTextField.swift in Sources */,
 				5A04B33B21A1EB0F00E362A6 /* AuthInternalExtensions.swift in Sources */,
+				5A04B37421A6380800E362A6 /* RoomInviteRequest.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
 				5A04534B21938C2500F2B2B6 /* AuthManagerRecover.swift in Sources */,
@@ -1237,6 +1319,7 @@
 				5A0453682193D5C700F2B2B6 /* MessageReaction.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5A04534D21938C7D00F2B2B6 /* DeepLink.swift in Sources */,
+				5A04B36221A621B700E362A6 /* RoomsRequest.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */,
@@ -1244,6 +1327,7 @@
 				5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */,
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
+				5A04B35B21A37C7000E362A6 /* ChatNotification.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
 				5A04B35021A2458500E362A6 /* RoomMembersRequest.swift in Sources */,
 				5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */,
