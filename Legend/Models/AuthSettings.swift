@@ -30,7 +30,7 @@ final class AuthSettings: Object {
     
     // Layour: User Interface
     @objc dynamic var useUserRealName = false 
-    @objc dynamic var allowspecialCharsOnRoomNames = false
+    @objc dynamic var allowSpecialCharsOnRoomNames = false
     
     // Legends
     @objc dynamic var isLDAPAuthenticationEnabled = false

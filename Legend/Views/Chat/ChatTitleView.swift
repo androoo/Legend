@@ -1,0 +1,89 @@
+//
+//  ChatTitleView.swift
+//  Something
+//
+//  Created by Andrew Ervin Gierke on 7/19/18.
+//  Copyright © 2018 And. All rights reserved.
+//
+
+import UIKit
+
+protocol ChatTitleViewProtocol: class {
+    func titleViewButtonChannelDidPressed()
+    func titleViewButtonMoreDidPressed()
+}
+
+final class ChatTitleView: UIView {
+    
+    weak var delegate: ChatTitleViewProtocol?
+    
+    @IBOutlet weak var buttonMore: UIButton!
+    @IBOutlet weak var buttonTitle: UIButton! {
+        didSet {
+            buttonTitle.titleLabel?.textColor = UIColor.LGBlue()
+        }
+    }
+    
+    var state: SocketConnectionState = SocketManager.sharedInstance.state {
+        didSet {
+            updateConnectionState()
+        }
+    }
+    
+    @IBOutlet weak var viewLoading: UIView!
+    @IBOutlet weak var labelLoading: UILabel!
+    
+    override var intrinsicContentSize: CGSize {
+        return UILayoutFittingExpandedSize
+    }
+    
+    let viewModel = ChatTitleViewModel()
+    
+    var subscription: Subscription? {
+        didSet {
+            guard let subscription = subscription, !subscription.isInvalidated else { return }
+            viewModel.subscription = subscription
+            buttonTitle.setTitle(viewModel.title, for: .normal)
+            
+            let image = UIImage(named: viewModel.imageName)?.imageWithTint(viewModel.iconColor)
+            buttonTitle.setImage(image, for: .normal)
+            
+            updateConnectionState()
+        }
+    }
+    
+    internal func updateConnectionState() {
+        if state == .connecting || state == .waitingForNetwork {
+            viewLoading?.isHidden = false
+            buttonTitle?.isHidden = true
+            
+            if state == .connecting {
+                labelLoading?.text = localized("connection.connecting.banner.message")
+            }
+            
+            if state == .waitingForNetwork {
+                labelLoading?.text = localized("connection.waiting_for_network.banner.message")
+            }
+        } else {
+            buttonTitle?.isHidden = false
+            viewLoading?.isHidden = true
+        }
+    }
+    
+    @IBAction func buttonChannelDidPressed(_ sender: Any) {
+        delegate?.titleViewButtonChannelDidPressed()
+    }
+    
+    @IBAction func buttonMoreDidPressed(_ sender: Any) {
+        delegate?.titleViewButtonMoreDidPressed()
+    }
+}
+
+extension ChatTitleView {
+    override func applyTheme() {
+        super.applyTheme()
+        guard let theme = theme else { return }
+        buttonMore.tintColor = theme.titleText
+        buttonTitle.setTitleColor(theme.titleText, for: .normal)
+    }
+}
