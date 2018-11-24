@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import UIKit
 
 private typealias NibCellIndentifier = (nibName: String, cellIdentifier: String)
 private let kEmptyCellIdentifier = "kEmptyCellIdentifier"
@@ -33,6 +34,7 @@ final class ChatViewController: MessageViewController {
     }
     
     @IBOutlet weak var buttonScrollToBottom: UIButton!
+    
     var buttonScrollToBottomMarginConstraint: NSLayoutConstraint?
     
     var scrollToBottomButtonIsVisible: Bool = false {
@@ -133,27 +135,81 @@ final class ChatViewController: MessageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SocketManager.addConnectionHandler(token: socketHandlerToken, handler: nil)
         
+        if #available(iOS 11.0, *) {
+            collectionView.contentInsetAdjustmentBehavior = .never
+        }
+        
+        collectionView.isPrefetchingEnabled = true
+        collectionView.keyboardDismissMode = .interactive
+        collectionView.showsHorizontalScrollIndicator = false
+        enableInteractiveKeyboardDismissal()
+        
+//        self.collectionView.isInverted = false
+//        self.collectionView.bounces = true
+//        self.collectionView.shakeToClearEnabled = true
+//        isKeyboardPanningEnabled = true
+//        shouldScrollToBottomAfterKeyboardShows = false
+        
+        messageView.leftButton.setImage(UIImage(named: "Upload"), for: .normal)
+            
+        setupTitleView()
+        setupTextViewSettings()
+        setupScrollToBottomButton()
+        setupMessageInputView()
+        
+        // Remove title from back button
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil
+        )
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        view.bringSubview(toFront: activityIndicatorContainer)
+        view.bringSubview(toFront: buttonScrollToBottom)
+        view.bringSubview(toFront: messageView.textView)
+        
+        if buttonScrollToBottomMarginConstraint == nil {
+            buttonScrollToBottomMarginConstraint = buttonScrollToBottom.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50)
+            buttonScrollToBottomMarginConstraint?.isActive = true
+            
+            setupReplyView()
+            ThemeManager.addObserver(self)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        ThemeManager.addObserver(navigationController?.navigationBar)
+        messageView.inputView?.applyTheme()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let screenname = String(describing: ChatViewController.self)
+        //Log analytics
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        updateChatPreviewModeViewConstraints()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
+        
+        coordinator.animate(alongsideTransition: nil, completion:  { _ in
+            self.collectionView.collectionViewLayout.invalidateLayout()
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+    
+    private func setupTextViewSettings() {
+//        messageView.textView.register
     }
     
     private func setupTitleView() {
@@ -198,12 +254,186 @@ final class ChatViewController: MessageViewController {
     
     //MARK: - Handling Keyboard
     
+    // keyboardHeightConstraint is the same as keyboardHC
+    weak var keyboardHeightConstraint: NSLayoutConstraint?
+    weak var textInputBackgroundHeightConstaint: NSLayoutConstraint?
+    
+    var keyboardFrame: KeyboardFrameView?
+    let textInputbarBackground = UIToolbar()
+    var oldTextInputbarBgIsTransparent = false
+    
+    private func enableInteractiveKeyboardDismissal() {
+        keyboardFrame = KeyboardFrameView(withDelegate: self)
+    }
+    
+    private func updateKeyboardConstraints(frame: CGRect) {
+        if keyboardHeightConstraint == nil {
+            keyboardHeightConstraint = self.view.constraints.first {
+                ($0.firstItem as? UIView) == self.view &&
+                    ($0.secondItem as? MessageTextView) == self.messageView
+            }
+        }
+        
+        // Adding textInputBar background so that the app can support devices with safe area insets.
+        // The tool bar (textInputBar) background sometimes dissapears on keyboard slide outs,
+        // with no real fix for it provided by Apple in UIKit.
+        updateTextInputbarBackground()
+        
+        var keyboardHeight = frame.height
+        
+        if #available(iOS 11.0, *) {
+            keyboardHeight = keyboardHeight > view.safeAreaInsets.bottom ? keyboardHeight : view.safeAreaInsets.bottom
+        }
+        
+        keyboardHeightConstraint?.constant = keyboardHeight
+    }
+    
+    private func updateTextInputbarBackground() {
+        if #available(iOS 11.0, *) {
+            if !messageView.subviews.contains(textInputbarBackground) {
+                insertTextInputbarBackground()
+            }
+        }
+    }
+    
+    private func insertTextInputbarBackground() {
+        messageView.insertSubview(textInputbarBackground, at: 0)
+        textInputbarBackground.translatesAutoresizingMaskIntoConstraints = false
+        
+        textInputbarBackground.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        textInputbarBackground.widthAnchor.constraint(equalTo: messageView.widthAnchor).isActive = true
+        textInputbarBackground.topAnchor.constraint(equalTo: messageView.topAnchor).isActive = true
+        textInputbarBackground.centerXAnchor.constraint(equalTo: messageView.centerXAnchor).isActive = true
+    }
+    
+    private func setupMessageInputView() {
+        borderColor = .lightGray
+        messageView.textViewInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 16)
+        messageView.setButton(title: "Add", for: .normal, position: .left)
+        messageView.addButton(target: self, action: #selector(onLeftButton), position: .left)
+        messageView.leftButtonTint = .blue
+        messageView.showLeftButton = true
+        
+        messageView.setButton(inset: 10, position: .left)
+        
+        messageView.textView.placeholderText = "New message..."
+        messageView.textView.placeholderTextColor = .lightGray
+    }
+    
+    @objc func onLeftButton() {
+        print("Did press left button")
+    }
+    
     internal func emptySubscriptionState() {
         clearListData()
         updateJoinedView()
         
         activityIndicator.startAnimating()
         textView.resignFirstRespoder()
+    }
+    
+    //MARK: - Input TextViewController
+    
+    //MARK: - Message
+    func sendCommand(command: String, params: String) {
+        guard let subscription = subscription else { return }
+        let client = API.current()?.client(CommandsClient.self)
+        client?.runCommand(command: command, params: params, roomId: subscription.rid, errored: alertAPIError)
+    }
+    
+    private func sendTextMessage(text: String) {
+        guard let subscription = subscription, text.count > 0 else {
+                return
+        }
+        
+        guard let client = API.current()?.client(MessagesClient.self) else { return Alert.defaultError.present() }
+        
+        client.sendMessage(text: text, subscription: subscription)
+    }
+    
+    private func editTextMessage(message: Message, text: String) {
+        guard let client = API.current()?.client(MessagesClient.self) else { return Alert.defaultError.present() }
+        client.updateMessage(message, text: text)
+    }
+    
+    private func updateCellForMessage(identifier: String) {
+        guard let indexPath = self.dataController.indexPathOfMessage(identifier: identifier) else { return }
+        
+        UIView.performWithoutAnimation {
+            collectionView?.reloadItems(at: [indexPath])
+        }
+    }
+
+    private func chatLogIsAtBottom() -> Bool {
+        guard let collectionView = collectionView else { return false }
+
+        let height = collectionView.bounds.height
+        let bottomInset = collectionView.contentInset.bottom
+        let scrollContentSizeHeight = collectionView.contentSize.height
+        let verticalOffsetForBottom = scrollContentSizeHeight + bottomInset - height
+
+        return collectionView.contentOffset.y >= (verticalOffsetForBottom - 1)
+    }
+    
+    //MARK: - Subscription
+    
+    private func markAsRead() {
+        guard let subscription = subscription else { return }
+        API.current()?.client(SubscriptionsClient.self).markAsRead(subscription: subscription)
+    }
+    
+    internal func subscribe(for subscription: Subscription) {
+        MessageManager.changes(subscription)
+        MessageManager.subscribeDeleteMessage(subscription) { [weak self] msgId in
+            self?.deleteMessage(msgId: msgId)
+        }
+        registerTypingEvent(subscription)
+    }
+    
+    internal func unsubscribe(for subscription: Subscription) {
+        SocketManager.unsubscribe(eventName: subscription.rid)
+        SocketManager.unsubscribe(eventName: "\(subscription.rid)/typing")
+        SocketManager.unsubscribe(eventName: "\(subscription.rid)/deleteMessage")
+    }
+    
+    internal func emptySubscriptionState() {
+        clearListData()
+        updateJoinedView()
+        
+        activityIndicator?.startAnimating()
+        textView.resignFirstResponder()
+    }
+    
+    internal func updateJoinedView() {
+        guard let subscription = subscription else { return }
+        
+        if subscription.isJoined() {
+            setTextInputbarHidden(false, animated: false)
+            chatPreviewModeView?.removeFromSuperview()
+        } else {
+            setTextInputbarHidden(true, animated: false)
+            showChatPreviewModeView()
+        }
+    }
+    
+    internal func clearListData() {
+        collectionView?.performBatchUpdates({
+            let indexPaths = self.dataController.clear()
+            self.collectionView?.deleteItems(at: indexPaths)
+        }, completion: { _ in
+            CATransaction.commit()
+        })
+    }
+    
+    internal func deleteMessage(msgId: String) {
+        guard let collectionView = collectionView else { return }
+        dataController.delete(msgId: msgId)
+        collectionView.performBatchUpdates({
+            collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
+        })
+        Realm.execute({ _ in
+            Message.delete(withIdentifier: msgId)
+        })
     }
     
     internal func updateSubscriptionInfo() {
@@ -226,29 +456,309 @@ final class ChatViewController: MessageViewController {
         updateMessageSendingPermission()
     }
     
-    //MARK: - Input TextViewController
-    
-    //MARK: - Message
-
-    private func chatLogIsAtBottom() -> Bool {
-        guard let collectionView = collectionView else { return false }
-
-        let height = collectionView.bounds.height
-        let bottomInset = collectionView.contentInset.bottom
-        let scrollContentSizeHeight = collectionView.contentSize.height
-        let verticalOffsetForBottom = scrollContentSizeHeight + bottomInset - height
-
-        return collectionView.contentOffset.y >= (verticalOffsetForBottom - 1)
+    internal func updateSubscriptionMessages() {
+        guard let subscription = subscription else { return }
+        
+        messagesQuery = subscription.fetchMessagesQueryResults()
+        
+        dataController.loadedAllMessages = false
+        isRequestingHistory = false
+        
+        updateMessagesQueryNotificationBlock()
+        loadMoreMessagesFrom(date: nil)
+        subscribe(for: subscription)
     }
     
-    //MARK: - Subscription
+    func registerTypingEvent(_ subscription: Subscription) {
+        typingIndicatorView?.interval = 0
+        guard let user = AuthManager.currentUser() else { return Log.debug("Could not register TypingEvent") }
+        
+        SubscriptionManager.subscribeTypingEvent(subscription) { [weak self] username, flag in
+            guard let username = username, username != user.username else { return }
+            
+            let isAtBottom = self?.chatLogIsAtBottom()
+            
+            if flag {
+                self?.typingIndicatorView?.insertUsername(username)
+            } else {
+                self?.typingIndicatorView?.removeUsername(username)
+            }
+            
+            if let isAtBottom = isAtBottom,
+                isAtBottom == true {
+                self?.scrollToBottom(true)
+            }
+        }
+    }
     
-    private func markAsRead() {
+    private func updateMessagesQueryNotificationBlock() {
+        messagesToken?.invalidate()
+        messagesToken = messagesQuery.observe { [unowned self] changes in
+            guard case .update(_, _, let insertions, let modifications) = changes else {
+                return
+            }
+            
+            if insertions.count > 0 {
+                var newMessages: [Message] = []
+                for insertion in insertions {
+                    guard insertion < self.messagesQuery.count else { continue }
+                    let newMessage = Message(value: self.messagesQuery[insertion])
+                    newMessages.append(newMessage)
+                }
+                
+                self.messages.append(contentsOf: newMessages)
+                
+                self.appendMessages(messages: newMessages, completion: {
+                    self.markAsRead()
+                })
+            }
+            
+            if modifications.count > 0 {
+                let isAtBottom = self.chatLogIsAtBottom()
+                
+                var indexPathModifications: [Int] = []
+                
+                for modified in modifications {
+                    guard modified < self.messagesQuery.count else { continue }
+                    
+                    let message = Message(value: self.messagesQuery[modified])
+                    let index = self.dataController.update(message)
+                    
+                    if index >= 0 && !indexPathModifications.contains(index) {
+                        indexPathModifications.append(index)
+                    }
+                }
+                
+                if indexPathModifications.count > 0 {
+                    UIView.performWithoutAnimation {
+                        self.collectionView?.performBatchUpdates({
+                            self.collectionView?.reloadItems(at: indexPathModifications.map { IndexPath(row: $0, section: 0) })
+                        }, completion: { _ in
+                            if isAtBottom {
+                                self.scrollToBottom()
+                            }
+                        })
+                    }
+                }
+            }
+        }
+    }
+    
+    func syncCollectionView() {
+        collectionView?.performBatchUpdates({
+            let (indexPaths, removedIndexPaths) = dataController.insert([])
+            collectionView?.insertItems(at: indexPaths)
+            collectionView?.deleteItems(at: removedIndexPaths)
+        }, completion: nil)
+    }
+    
+    func loadHistoryFromRemote(date: Date?, loadNextPage: Bool = true) {
         guard let subscription = subscription else { return }
-        API.current()?.client(SubscriptionsClient.self).markAsRead(subscription: subscription)
+        
+        let tempSubscription = Subscription(value: subscription)
+        
+        MessageManager.getHistory(tempSubscription, lastMessageDate: date) { [weak self] nextPageDate in
+            DispatchQueue.main.async {
+                self?.activityIndicator.stopAnimating()
+                
+                if loadNextPage {
+                    self?.isRequestingHistory = false
+                    self?.loadMoreMessagesFrom(date: date, loadRemoteHistory: false)
+                }
+                
+                if nextPageDate == nil {
+                    self?.dataController.loadedAllMessages = true
+                    self?.syncCollectionView()
+                } else {
+                    self?.dataController.loadedAllMessages = false
+                }
+                
+                if let nextPageDate = nextPageDate, loadNextPage {
+                    self?.loadHistoryFromRemote(date: nextPageDate, loadNextPage: false)
+                }
+            }
+        }
+    }
+    
+    private func loadMoreMessagesFrom(date: Date?, loadRemoteHistory: Bool = true) {
+        guard let subscription = subscription else { return }
+        
+        isRequestingHistory = true
+        
+        let newMessages = subscription.fetchMessages(lastMessageDate: date).map({ Message(value: $0) })
+        if newMessages.count > 0 {
+            messages.append(contentsOf: newMessages)
+            appendMessages(messages: newMessages, completion: { [weak self] in
+                self?.activityIndicator.stopAnimating()
+                
+                if date == nil {
+                    self?.collectionView?.reloadData()
+                }
+                
+                if SocketManager.isConnected() {
+                    if !loadRemoteHistory {
+                        self?.isRequestingHistory = false
+                    } else {
+                        self?.loadHistoryFromRemote(date: date)
+                    }
+                } else {
+                    self?.isRequestingHistory = false
+                }
+            })
+        } else {
+            if date == nil {
+                collectionView?.reloadData()
+            }
+            
+            if SocketManager.isConnected() {
+                if loadRemoteHistory {
+                    loadHistoryFromRemote(date: date)
+                } else {
+                    isRequestingHistory = false
+                }
+            } else {
+                isRequestingHistory = false
+            }
+        }
+    }
+    
+    private func appendMessages(messages: [Message], completion: VoidCompletion?) {
+        guard let subscription = subscription, let collectionView = collectionView, !subscription.isInvalidated else {
+            return
+        }
+        
+        guard !isAppendingMessages else {
+            Log.debug("[APPEND MESSAGES] Blocked trying to append \(messages.count) messages")
+            // This message can be called many times during the app execution and we need
+            // to call them one per time, to avoid adding the same message multiple times
+            // to the list. Also, we keep the subscription identifier in order to make sure
+            // we're updating the same subscription, because this view controller is reused
+            // for all the chats.
+            let oldSubscriptionIdentifier = subscription.identifier
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: { [weak self] in
+                guard oldSubscriptionIdentifier == self?.subscription?.identifier else { return }
+                self?.appendMessages(messages: messages, completion: completion)
+            })
+            
+            return
+        }
+        
+        isAppendingMessages = true
+        
+        var tempMessages: [Message] = []
+        for message in messages {
+            tempMessages.append(Message(value: message))
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            var objs: [ChatData] = []
+            var newMessages: [Message] = []
+            
+            // Do not add duplicated messages
+            for message in tempMessages {
+                var insert = true
+                
+                for obj in self.dataController.data where message.identifier == obj.message?.identifier {
+                    insert = false
+                }
+                
+                if insert {
+                    newMessages.append(message)
+                }
+            }
+            
+            // Normalize data into ChatData object
+            for message in newMessages {
+                guard let createdAt = message.createdAt else { continue }
+                var obj = ChatData(type: .message, timestamp: createdAt)
+                obj.message = message
+                objs.append(obj)
+            }
+            
+            // No new data? Don't update it then
+            if objs.count == 0 {
+                if self.dataController.dismissUnreadSeparator {
+                    DispatchQueue.main.async {
+                        self.syncCollectionView()
+                    }
+                }
+                
+                DispatchQueue.main.async {
+                    self.isAppendingMessages = false
+                    completion?()
+                }
+                
+                return
+            }
+            
+            DispatchQueue.main.async {
+                collectionView.performBatchUpdates({
+                    let (indexPaths, removedIndexPaths) = self.dataController.insert(objs)
+                    collectionView.insertItems(at: indexPaths)
+                    collectionView.deleteItems(at: removedIndexPaths)
+                }, completion: { _ in
+                    self.isAppendingMessages = false
+                    completion?()
+                })
+            }
+        }
+    }
+    
+    private func showChatPreviewModeView() {
+        chatPreviewModeView?.removeFromSuperview()
+        
+        if let previewView = ChatPreviewModeView.instantiateFromNib() {
+            previewView.delegate = self
+            previewView.subscription = subscription
+            previewView.translatesAutoresizingMaskIntoConstraints = false
+            
+            view.addSubview(previewView)
+            
+            NSLayoutConstraint.activate([
+                previewView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                previewView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                previewView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+            
+            collectionView?.bottomAnchor.constraint(equalTo: previewView.topAnchor).isActive = true
+            
+            chatPreviewModeView = previewView
+            updateChatPreviewModeViewConstraints()
+            
+            previewView.applyTheme()
+        }
+    }
+    
+    private func updateChatPreviewModeViewConstraints() {
+        if #available(iOS 11.0, *) {
+            chatPreviewModeView?.bottomInset = view.safeAreaInsets.bottom
+        }
+    }
+    
+    private func isContentBiggerThanContainerHeight() -> Bool {
+        if let contentHeight = self.collectionView?.contentSize.height {
+            if let collectionViewHeight = self.collectionView?.frame.height {
+                if contentHeight < collectionViewHeight {
+                    return false
+                }
+            }
+        }
+        
+        return true
     }
     
     //MARK: - IBAction
+    
+    @IBAction func showSearchMessages() {
+        guard let storyboard = storyboard,
+            let messageList = storyboard.instantiateViewController(withIdentifier: "MessagesListViewController") as? MessagesListViewController else {
+                return
+        }
+        messageList.data.subscription = subscription
+        messageList.data.isSearchMessages = true
+        let searchMessagesNav = BaseNavigationController(rootViewController: messageList)
+        present(searchMessagesNav, animated: true, completion: nil)
+    }
     
 }
 
