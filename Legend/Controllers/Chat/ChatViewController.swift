@@ -233,7 +233,36 @@ final class ChatViewController: MessageViewController {
     }
     
     private func registerCells() {
+        let collectionViewCells: [NibCellIndentifier] = [
+            (nibName: "ChatLoaderCell", cellIdentifier: ChatLoaderCell.identifier),
+            (nibName: "ChatMessageCell", cellIdentifier: ChatMessageCell.identifier),
+            (nibName: "ChatMessageDaySeparator", cellIdentifier: ChatMessageDaySeparator.identifier),
+            (nibName: "ChatMessageUnreadSeparator", cellIdentifier: ChatMessageUnreadSeparator.identifier),
+            (nibName: "ChatChannelHeaderCell", cellIdentifier: ChatChannelHeaderCell.identifier),
+            (nibName: "ChatDirectMessageHeaderCell", cellIdentifier: ChatDirectMessageHeaderCell.identifier)
+        ]
         
+        // This cell is used in case no other cell is available or useful.
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kEmptyCellIdentifier)
+        
+        collectionViewCells.forEach {
+            collectionView?.register(UINib(
+                nibName: $0.nibName,
+                bundle: Bundle.main
+            ), forCellWithReuseIdentifier: $0.cellIdentifier)
+        }
+        
+        let autoCompletionViewCells: [NibCellIndentifier] = [
+            (nibName: "AutocompleteCell", cellIdentifier: AutocompleteCell.identifier),
+            (nibName: "EmojiAutocompleteCell", cellIdentifier: EmojiAutocompleteCell.identifier)
+        ]
+        
+        autoCompletionViewCells.forEach {
+            autoCompletionView.register(UINib(
+                nibName: $0.nibName,
+                bundle: Bundle.main
+            ), forCellReuseIdentifier: $0.cellIdentifier)
+        }
     }
     
     internal func scrollToBottom(_ animated: Bool = false) {
@@ -766,26 +795,235 @@ final class ChatViewController: MessageViewController {
 
 extension ChatViewController {
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row < 4 {
+            if let message = dataController.oldestMessage() {
+                loadMoreMessagesFrom(date: message.createdAt)
+            }
+        }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataController.data.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard
+            dataController.data.count > indexPath.row,
+            let subscription = subscription,
+            let obj = dataController.itemAt(indexPath),
+            !(obj.message?.isInvalidated ?? false)
+            else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        if obj.type == .message {
+            return cellForMessage(obj, at: indexPath)
+        }
+        
+        if obj.type == .daySeparator {
+            return cellForDaySeparator(obj, at: indexPath)
+        }
+        
+        if obj.type == .unreadSeparator {
+            return cellForUnreadSeparator(obj, at: indexPath)
+        }
+        
+        if obj.type == .loader {
+            return cellForLoader(obj, at: indexPath)
+        }
+        
+        if obj.type == .header {
+            if subscription.type == .directMessage {
+                return cellForDMHeader(obj, at: indexPath)
+            } else {
+                return cellForChannelHeader(obj, at: indexPath)
+            }
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    //MARK: - Cells
+    
+    func cellForEmpty(at indexPath: indexPath) -> UICollectionViewCell {
+        if let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: kEmptyCellIdentifier, for: indexPath) {
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func cellForMessage(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatMessageCell.identifier,
+            for: indexPath
+            ) as? ChatMessageCell else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        cell.delegate = self
+        
+        if let message = obj.message {
+            cell.message = message
+        }
+        
+        cell.sequential = dataController.hasSequentialMessageAt(indexPath)
+        
+        return cell
+    }
+    
+    func cellForDaySeparator(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatMessageDaySeparator.identifier,
+            for: indexPath
+            ) as? ChatMessageDaySeparator else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        cell.labelTitle.text = RCDateFormatter.date(obj.timestamp)
+        return cell
+    }
+    
+    func cellForUnreadSeparator(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatMessageUnreadSeparator.identifier,
+            for: indexPath
+            ) as? ChatMessageUnreadSeparator else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        cell.labelTitle.text = localized("chat.unread_separator")
+        return cell
+    }
+    
+    func cellForChannelHeader(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatChannelHeaderCell.identifier,
+            for: indexPath
+            ) as? ChatChannelHeaderCell else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        cell.subscription = subscription
+        return cell
+    }
+    
+    func cellForDMHeader(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatDirectMessageHeaderCell.identifier,
+            for: indexPath
+            ) as? ChatDirectMessageHeaderCell else {
+                return cellForEmpty(at: indexPath)
+        }
+        cell.subscription = subscription
+        return cell
+    }
+    
+    func cellForLoader(_ obj: ChatData, at indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView?.dequeueReusableCell(
+            withReuseIdentifier: ChatLoaderCell.identifier,
+            for: indexPath
+            ) as? ChatLoaderCell else {
+                return cellForEmpty(at: indexPath)
+        }
+        
+        return cell
+    }
 }
 
 //MARK: - UICollectionViewDelegateFlowLayout
 
 extension ChatViewController: UICollectionViewDelegateFlowLayout {
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        guard let subscription = subscription, !subscription.isInvalidated else {
+            return .zero
+        }
+        
+        var fullWidth = collectionView.bounds.size.width
+        
+        if #available(iOS 11, *) {
+            fullWidth -= collectionView.safeAreaInsets.right + collectionView.safeAreaInsets.left
+        }
+        
+        if let obj = dataController.itemAt(indexPath) {
+            if obj.type == .header {
+                let isDirectMessage = subscription.type == .directMessage
+                let directMessageHeaderSize = CGSize(width: fullWidth, height: ChatDirectMessageHeaderCell.minimumHeight)
+                let channelHeaderSize = CGSize(width: fullWidth, height: ChatChannelHeaderCell.minimumHeight)
+                return isDirectMessage ? directMessageHeaderSize : channelHeaderSize
+            }
+            
+            if obj.type == .loader {
+                return CGSize(width: fullWidth, height: ChatLoaderCell.minimumHeight)
+            }
+            
+            if obj.type == .daySeparator {
+                return CGSize(width: fullWidth, height: ChatMessageDaySeparator.minimumHeight)
+            }
+            
+            if obj.type == .unreadSeparator {
+                if dataController.dismissUnreadSeparator {
+                    return CGSize(width: fullWidth, height: 0)
+                }
+                
+                return CGSize(width: fullWidth, height: ChatMessageUnreadSeparator.minimumHeight)
+            }
+            
+            if let message = obj.message {
+                guard !message.markedForDeletion else { return .zero }
+                
+                let sequential = dataController.hasSequentialMessageAt(indexPath)
+                let height = ChatMessageCell.cellMediaHeightFor(message: message, width: fullWidth, sequential: sequential)
+                return CGSize(width: fullWidth, height: height)
+            }
+        }
+        
+        return CGSize(width: fullWidth, height: 40)
+    }
 }
 
 //MARK: - UIScrollViewDelegate
 
 extension ChatViewController {
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    
+        super.scrollViewDidScroll(scrollView)
+        
+        if scrollView.contentOffset.y < -10 {
+            if let message = dataController.oldestMessage() {
+                loadMoreMessagesFrom(date: message.createdAt)
+            }
+        }
+        
+        resetScrollToBottomButtonPosition()
     }
 }
 
 //MARK: - ChatPreviewModeViewProtocol
 
 extension ChatViewController: ChatPreviewModeViewProtocol {
-    
+    func userDidJoinedSubscription() {
+        guard let auth = AuthManager.isAuthenticated() else { return }
+        guard let subscription = self.subscription else { return }
+        
+        Realm.executeOnMainThread({ realm in
+            subscription.auth = auth
+            realm.add(subscription, update: true)
+        })
+        
+        self.subscription = subscription
+        
+        updateJoinedView()
+    }
 }
 
 //MARK: - Block Message Sending
@@ -844,13 +1082,27 @@ extension ChatViewController {
     }
 }
 
-//MARK: - KeyboardFrameViewDelegate
+// MARK: KeyboardFrameViewDelegate
 
 extension ChatViewController: KeyboardFrameViewDelegate {
+    func keyboardDidChangeFrame(frame: CGRect?) {
+        if let frame = frame {
+            updateKeyboardConstraints(frame: frame)
+        }
+        resetScrollToBottomButtonPosition()
+    }
     
+    var keyboardProxyView: UIView? {
+        return textInputbar.inputAccessoryView.superview
+    }
 }
 
 extension ChatViewController: SocketConnectionHandler {
+    
+    func socketDidChangeState(state: SocketConnectionState) {
+        Log.debug("[ChatViewController] socketDidChangeState: \(state)")
+        chatTitleView?.state = state
+    }
     
 }
 
