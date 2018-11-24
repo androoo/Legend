@@ -167,8 +167,6 @@
 		5A04B37F21A6EF8800E362A6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B37E21A6EF8800E362A6 /* LoaderView.swift */; };
 		5A04B38221A6FCA300E362A6 /* ChatTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B38121A6FCA300E362A6 /* ChatTitleView.xib */; };
 		5A04B38721A6FCB900E362A6 /* ChatTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B38321A6FCB800E362A6 /* ChatTitleView.swift */; };
-		5A04B38821A6FCB900E362A6 /* ChatChannelHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B38421A6FCB800E362A6 /* ChatChannelHeaderCell.xib */; };
-		5A04B38921A6FCB900E362A6 /* ChatChannelHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B38521A6FCB900E362A6 /* ChatChannelHeaderCell.swift */; };
 		5A04B38A21A6FCB900E362A6 /* KeyboardFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B38621A6FCB900E362A6 /* KeyboardFrameView.swift */; };
 		5A04B39321A70D9700E362A6 /* ChatPreviewModeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B39221A70D9700E362A6 /* ChatPreviewModeView.xib */; };
 		5A04B39521A70D9E00E362A6 /* ChatPreviewModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04B39421A70D9E00E362A6 /* ChatPreviewModeView.swift */; };
@@ -400,8 +398,6 @@
 		5A04B37E21A6EF8800E362A6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		5A04B38121A6FCA300E362A6 /* ChatTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTitleView.xib; sourceTree = "<group>"; };
 		5A04B38321A6FCB800E362A6 /* ChatTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTitleView.swift; sourceTree = "<group>"; };
-		5A04B38421A6FCB800E362A6 /* ChatChannelHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatChannelHeaderCell.xib; sourceTree = "<group>"; };
-		5A04B38521A6FCB900E362A6 /* ChatChannelHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatChannelHeaderCell.swift; sourceTree = "<group>"; };
 		5A04B38621A6FCB900E362A6 /* KeyboardFrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardFrameView.swift; sourceTree = "<group>"; };
 		5A04B39221A70D9700E362A6 /* ChatPreviewModeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatPreviewModeView.xib; sourceTree = "<group>"; };
 		5A04B39421A70D9E00E362A6 /* ChatPreviewModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPreviewModeView.swift; sourceTree = "<group>"; };
@@ -860,8 +856,6 @@
 			children = (
 				5A04B39121A70D8800E362A6 /* Subscription */,
 				5A04B38121A6FCA300E362A6 /* ChatTitleView.xib */,
-				5A04B38521A6FCB900E362A6 /* ChatChannelHeaderCell.swift */,
-				5A04B38421A6FCB800E362A6 /* ChatChannelHeaderCell.xib */,
 				5A04B38321A6FCB800E362A6 /* ChatTitleView.swift */,
 				5A04B38621A6FCB900E362A6 /* KeyboardFrameView.swift */,
 				5A04B39721A710A300E362A6 /* ReplyView.swift */,
@@ -1275,7 +1269,6 @@
 				5A04B3D921A9DF0500E362A6 /* ChatMessageCell.xib in Resources */,
 				5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */,
 				5A04B39321A70D9700E362A6 /* ChatPreviewModeView.xib in Resources */,
-				5A04B38821A6FCB900E362A6 /* ChatChannelHeaderCell.xib in Resources */,
 				5A04B3E521A9DF0500E362A6 /* ChatMessageTextView.xib in Resources */,
 				5A04B3D521A9DF0500E362A6 /* ChatLoaderCell.xib in Resources */,
 				5A04B3CE21A9DF0500E362A6 /* ChatMessageActionButtonsView.xib in Resources */,
@@ -1373,7 +1366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelseecho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelseecho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		9684A1C6451A62A99DD870BD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1382,6 +1375,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Legend/Pods-Legend-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -1391,6 +1385,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -1476,7 +1471,6 @@
 				5A04B36E21A6378B00E362A6 /* RoomMentionsRequest.swift in Sources */,
 				5A04B3D221A9DF0500E362A6 /* ChatMessageURLView.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
-				5A04B38921A6FCB900E362A6 /* ChatChannelHeaderCell.swift in Sources */,
 				5A04535521939F6100F2B2B6 /* Permission .swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A04B31C2195FB2E00E362A6 /* SubscriptionReadRequest.swift in Sources */,
