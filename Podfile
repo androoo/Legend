@@ -12,6 +12,7 @@ target 'Legend' do
 	pod 'SwiftyJSON', '~> 4.0'
 	pod 'Nuke', '~> 7.0'
 	pod 'Starscream', '~> 3.0.2'
+	pod 'MBProgressHUD', '~> 1.1'
 
   target 'LegendTests' do
     inherit! :search_paths
@@ -20,6 +21,7 @@ target 'Legend' do
 	pod 'SwiftyJSON', '~> 4.0'
 	pod 'Nuke', '~> 7.0'
 	pod 'Starscream', '~> 3.0.2'
+	pod 'MBProgressHUD', '~> 1.1'
   end
 
 end
