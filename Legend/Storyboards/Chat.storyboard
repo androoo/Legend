@@ -37,6 +37,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="HxK-UF-vtL" id="MnH-rw-uqT"/>
+                                    <outlet property="delegate" destination="HxK-UF-vtL" id="e0H-Lk-QxN"/>
+                                </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhV-Hg-Xno">
                                 <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>

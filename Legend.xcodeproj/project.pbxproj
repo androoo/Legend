@@ -218,6 +218,16 @@
 		5A360C97215522A900943DDC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C96215522A900943DDC /* Theme.swift */; };
 		5A360C992157FB1D00943DDC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C982157FB1D00943DDC /* UIColorExtension.swift */; };
 		5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A360C9A2164613D00943DDC /* UIColorCSSColorsExtension.swift */; };
+		5ABE9CAE21A9FC5800E3B0E5 /* MessagesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CAD21A9FC5800E3B0E5 /* MessagesClient.swift */; };
+		5ABE9CB021A9FDB500E3B0E5 /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CAF21A9FDB500E3B0E5 /* SendMessageRequest.swift */; };
+		5ABE9CB221A9FED100E3B0E5 /* DeleteMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CB121A9FED100E3B0E5 /* DeleteMessageRequest.swift */; };
+		5ABE9CB421A9FF0400E3B0E5 /* StarMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CB321A9FF0400E3B0E5 /* StarMessageRequest.swift */; };
+		5ABE9CB621AA004000E3B0E5 /* PinMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CB521AA004000E3B0E5 /* PinMessageRequest.swift */; };
+		5ABE9CB821AA007600E3B0E5 /* UpdtateMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CB721AA007600E3B0E5 /* UpdtateMessageRequest.swift */; };
+		5ABE9CBA21AA00BE00E3B0E5 /* ReactMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CB921AA00BE00E3B0E5 /* ReactMessageRequest.swift */; };
+		5ABE9CBC21AA06F100E3B0E5 /* ChatControllerRolesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */; };
+		5ABE9CBE21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CBD21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift */; };
+		5ABE9CC021AA136100E3B0E5 /* LGDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CBF21AA136100E3B0E5 /* LGDateFormatter.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -454,6 +464,16 @@
 		5A360C982157FB1D00943DDC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5A360C9A2164613D00943DDC /* UIColorCSSColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCSSColorsExtension.swift; sourceTree = "<group>"; };
 		5A360C9C2165139500943DDC /* Legend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Legend.entitlements; sourceTree = "<group>"; };
+		5ABE9CAD21A9FC5800E3B0E5 /* MessagesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesClient.swift; sourceTree = "<group>"; };
+		5ABE9CAF21A9FDB500E3B0E5 /* SendMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CB121A9FED100E3B0E5 /* DeleteMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CB321A9FF0400E3B0E5 /* StarMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CB521AA004000E3B0E5 /* PinMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CB721AA007600E3B0E5 /* UpdtateMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdtateMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CB921AA00BE00E3B0E5 /* ReactMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactMessageRequest.swift; sourceTree = "<group>"; };
+		5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerRolesController.swift; sourceTree = "<group>"; };
+		5ABE9CBD21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManagerTyping.swift; sourceTree = "<group>"; };
+		5ABE9CBF21AA136100E3B0E5 /* LGDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGDateFormatter.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -634,6 +654,7 @@
 				5A0452FA217A252C00F2B2B6 /* AuthClient.swift */,
 				5A04B3182195F82F00E362A6 /* SubscriptionsClient.swift */,
 				5A04B31F2199256000E362A6 /* InfoClient.swift */,
+				5ABE9CAD21A9FC5800E3B0E5 /* MessagesClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -741,6 +762,7 @@
 				5A04536A2193D8B400F2B2B6 /* SubscriptionManager.swift */,
 				5A04B31D2195FC3400E362A6 /* SubscriptionManagerMessages.swift */,
 				5A04B3A421A8731C00E362A6 /* SubscriptionManagerRooms.swift */,
+				5ABE9CBD21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift */,
 			);
 			path = SubscriptionManager;
 			sourceTree = "<group>";
@@ -786,6 +808,12 @@
 			isa = PBXGroup;
 			children = (
 				5A04B33D21A1EBC800E362A6 /* PostMessageRequest.swift */,
+				5ABE9CAF21A9FDB500E3B0E5 /* SendMessageRequest.swift */,
+				5ABE9CB121A9FED100E3B0E5 /* DeleteMessageRequest.swift */,
+				5ABE9CB321A9FF0400E3B0E5 /* StarMessageRequest.swift */,
+				5ABE9CB521AA004000E3B0E5 /* PinMessageRequest.swift */,
+				5ABE9CB721AA007600E3B0E5 /* UpdtateMessageRequest.swift */,
+				5ABE9CB921AA00BE00E3B0E5 /* ReactMessageRequest.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -839,6 +867,7 @@
 			children = (
 				5A04B37B21A6488E00E362A6 /* ChatViewController.swift */,
 				5A04B39A21A7111100E362A6 /* ChatDataController.swift */,
+				5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1049,6 +1078,7 @@
 				5A04534C21938C7D00F2B2B6 /* DeepLink.swift */,
 				5A04B33F21A1ED5D00E362A6 /* Alert.swift */,
 				5A04B3AD21A87AF100E362A6 /* ChatCollectionViewFlowLayout.swift */,
+				5ABE9CBF21AA136100E3B0E5 /* LGDateFormatter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1408,6 +1438,7 @@
 				5A0452C421796D3000F2B2B6 /* UIScrollView+StopScrolling.swift in Sources */,
 				5A04535121939B3E00F2B2B6 /* UIWindowExtensions.swift in Sources */,
 				5A04B36C21A6375100E362A6 /* RoomCreateRequest.swift in Sources */,
+				5ABE9CB221A9FED100E3B0E5 /* DeleteMessageRequest.swift in Sources */,
 				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
 				5A04528F217781B300F2B2B6 /* Channel.swift in Sources */,
@@ -1448,6 +1479,7 @@
 				5A0452FF217A25C100F2B2B6 /* LoginRequest.swift in Sources */,
 				5A0453162182111200F2B2B6 /* LoginService.swift in Sources */,
 				5A04B34B21A1F43E00E362A6 /* UserManager.swift in Sources */,
+				5ABE9CB021A9FDB500E3B0E5 /* SendMessageRequest.swift in Sources */,
 				5A04B36621A6334200E362A6 /* LoginServiceManager.swift in Sources */,
 				5A0452CF21796D7900F2B2B6 /* RCBaseParser.swift in Sources */,
 				5A04535321939ED500F2B2B6 /* UserPermissions.swift in Sources */,
@@ -1482,6 +1514,7 @@
 				5A04B3E021A9DF0500E362A6 /* ChatMessageTextViewModel.swift in Sources */,
 				5A04B3192195F82F00E362A6 /* SubscriptionsClient.swift in Sources */,
 				5A04B3DE21A9DF0500E362A6 /* ChatMessageActionButtonsView.swift in Sources */,
+				5ABE9CB821AA007600E3B0E5 /* UpdtateMessageRequest.swift in Sources */,
 				5A04534F21938D1600F2B2B6 /* WindowManager.swift in Sources */,
 				5A04B3DC21A9DF0500E362A6 /* ChatMessageVideoView.swift in Sources */,
 				5A04535721939FD000F2B2B6 /* PermissionManager.swift in Sources */,
@@ -1498,6 +1531,7 @@
 				5A0452C121796D3000F2B2B6 /* UITextView+Prefixes.swift in Sources */,
 				5A0452DB217973B300F2B2B6 /* DownloadManager.swift in Sources */,
 				5A045349219384E400F2B2B6 /* AppManager.swift in Sources */,
+				5ABE9CB421A9FF0400E3B0E5 /* StarMessageRequest.swift in Sources */,
 				5A04B34721A1F2B700E362A6 /* CommandsRequest.swift in Sources */,
 				5A04B3A521A8731C00E362A6 /* SubscriptionManagerRooms.swift in Sources */,
 				5A04B37021A637AC00E362A6 /* RoomMessagesRequest.swift in Sources */,
@@ -1520,6 +1554,7 @@
 				5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */,
 				5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */,
 				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
+				5ABE9CBE21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift in Sources */,
 				5A04B34421A1F22400E362A6 /* CommandsClient.swift in Sources */,
 				5A04B36421A6222C00E362A6 /* LoginServiceRequest.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
@@ -1539,6 +1574,7 @@
 				5A04B3D321A9DF0500E362A6 /* ChatMessageUnreadSeparator.swift in Sources */,
 				5A0452932177834200F2B2B6 /* Attachment.swift in Sources */,
 				5A04B335219D0EE000E362A6 /* BaseTableViewController.swift in Sources */,
+				5ABE9CAE21A9FC5800E3B0E5 /* MessagesClient.swift in Sources */,
 				5A045307217B7CA300F2B2B6 /* SocketResponse.swift in Sources */,
 				5A04B3222199D40900E362A6 /* AuthManagerSocket.swift in Sources */,
 				5A04533521928A2700F2B2B6 /* MessageTextCacheManager.swift in Sources */,
@@ -1551,15 +1587,18 @@
 				5A0453682193D5C700F2B2B6 /* MessageReaction.swift in Sources */,
 				5A04B38A21A6FCB900E362A6 /* KeyboardFrameView.swift in Sources */,
 				5A04B3A121A8700100E362A6 /* ChatTitleViewModel.swift in Sources */,
+				5ABE9CBA21AA00BE00E3B0E5 /* ReactMessageRequest.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5A04534D21938C7D00F2B2B6 /* DeepLink.swift in Sources */,
 				5A04B3E721A9DF0500E362A6 /* ChatMessageDaySeparator.swift in Sources */,
 				5A04B36221A621B700E362A6 /* RoomsRequest.swift in Sources */,
+				5ABE9CC021AA136100E3B0E5 /* LGDateFormatter.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
 				5A04B3DF21A9DF0500E362A6 /* ChatMessageAttachmentView.swift in Sources */,
+				5ABE9CB621AA004000E3B0E5 /* PinMessageRequest.swift in Sources */,
 				5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */,
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
@@ -1569,6 +1608,7 @@
 				5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */,
 				5A0453592193A3F100F2B2B6 /* PermissionModelMapping.swift in Sources */,
 				5A04B3E121A9DF0500E362A6 /* ChatMessageCell.swift in Sources */,
+				5ABE9CBC21AA06F100E3B0E5 /* ChatControllerRolesController.swift in Sources */,
 				5A360C9B2164613D00943DDC /* UIColorCSSColorsExtension.swift in Sources */,
 				5A04B39521A70D9E00E362A6 /* ChatPreviewModeView.swift in Sources */,
 				5A04527C2165AEC700F2B2B6 /* Auth.swift in Sources */,

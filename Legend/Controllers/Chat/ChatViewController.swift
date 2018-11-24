@@ -111,8 +111,9 @@ final class ChatViewController: MessageViewController {
             emptySubscriptionState()
             updateSubscriptionInfo()
             markAsRead()
-            typingIndicatorView?.dismissIndicator()
-            textView.text = DraftMessageManager.draftMessage(for: subscription)
+//            typingIndicatorView?.dismissIndicator()
+//            textView.text = DraftMessageManager.draftMessage(for: subscription)
+            messageView.textView.text = DraftMessageManager.draftMessage(for: subscription)
         }
     }
     
@@ -135,7 +136,7 @@ final class ChatViewController: MessageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SocketManager.addConnectionHandler(token: socketHandlerToken, handler: nil)
+        SocketManager.addConnectionHandler(token: socketHandlerToken, handler: self)
         
         if #available(iOS 11.0, *) {
             collectionView.contentInsetAdjustmentBehavior = .never
@@ -173,7 +174,7 @@ final class ChatViewController: MessageViewController {
             buttonScrollToBottomMarginConstraint = buttonScrollToBottom.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50)
             buttonScrollToBottomMarginConstraint?.isActive = true
             
-            setupReplyView()
+//            setupReplyView()
             ThemeManager.addObserver(self)
         }
     }
@@ -224,11 +225,11 @@ final class ChatViewController: MessageViewController {
     private func setupScrollToBottomButton() {
         buttonScrollToBottom.layer.cornerRadius = 25
         buttonScrollToBottom.layer.borderWidth = 1
-        buttonScrollToBottom.layer.borderColor = view.theme?.bodyText ?? Theme.light.bodyText).cgColor
+        buttonScrollToBottom.layer.borderColor = (view.theme?.bodyText ?? Theme.light.bodyText).cgColor
         buttonScrollToBottom.tintColor = view.theme?.bodyText ?? Theme.light.bodyText
     }
     
-    override class func collectionViewLayout(for decoder: NSCoder) -> UICollectionViewLayout {
+    class func collectionViewLayout(for decoder: NSCoder) -> UICollectionViewLayout {
         return ChatCollectionViewFlowLayout()
     }
     
@@ -254,15 +255,15 @@ final class ChatViewController: MessageViewController {
         
         let autoCompletionViewCells: [NibCellIndentifier] = [
             (nibName: "AutocompleteCell", cellIdentifier: AutocompleteCell.identifier),
-            (nibName: "EmojiAutocompleteCell", cellIdentifier: EmojiAutocompleteCell.identifier)
+//            (nibName: "EmojiAutocompleteCell", cellIdentifier: EmojiAutocompleteCell.identifier)
         ]
         
-        autoCompletionViewCells.forEach {
-            autoCompletionView.register(UINib(
-                nibName: $0.nibName,
-                bundle: Bundle.main
-            ), forCellReuseIdentifier: $0.cellIdentifier)
-        }
+//        autoCompletionViewCells.forEach {
+//            autoCompletionView.register(UINib(
+//                nibName: $0.nibName,
+//                bundle: Bundle.main
+//            ), forCellReuseIdentifier: $0.cellIdentifier)
+//        }
     }
     
     internal func scrollToBottom(_ animated: Bool = false) {
@@ -273,7 +274,7 @@ final class ChatViewController: MessageViewController {
     }
     
     internal func resetScrollToBottomButtonPosition() {
-        scrollToBottomButtonIsVisible = !chatIsLogAtBottom()
+        scrollToBottomButtonIsVisible = !chatLogIsAtBottom()
     }
     
     func resetUnreadSeparator() {
@@ -358,12 +359,25 @@ final class ChatViewController: MessageViewController {
         updateJoinedView()
         
         activityIndicator.startAnimating()
-        textView.resignFirstRespoder()
+        messageView.textView.resignFirstResponder()
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        // Scroll to the bottom when the collectionView has scrolled more
+        // than scrollToBottomHeightMultiplier times the view's height.
+        let scrollToBottomHeightMultiplier: CGFloat = 1.2
+        
+        let contentHeight = collectionView?.contentSize.height ?? 0
+        let contentOffset = collectionView?.contentOffset.y ?? 0
+        if contentHeight - contentOffset < self.view.frame.height * scrollToBottomHeightMultiplier {
+            scrollToBottom()
+        }
     }
     
     //MARK: - Input TextViewController
     
     //MARK: - Message
+    
     func sendCommand(command: String, params: String) {
         guard let subscription = subscription else { return }
         let client = API.current()?.client(CommandsClient.self)
@@ -425,22 +439,14 @@ final class ChatViewController: MessageViewController {
         SocketManager.unsubscribe(eventName: "\(subscription.rid)/deleteMessage")
     }
     
-    internal func emptySubscriptionState() {
-        clearListData()
-        updateJoinedView()
-        
-        activityIndicator?.startAnimating()
-        textView.resignFirstResponder()
-    }
-    
     internal func updateJoinedView() {
         guard let subscription = subscription else { return }
         
         if subscription.isJoined() {
-            setTextInputbarHidden(false, animated: false)
+//            setTextInputbarHidden(false, animated: false)
             chatPreviewModeView?.removeFromSuperview()
         } else {
-            setTextInputbarHidden(true, animated: false)
+//            setTextInputbarHidden(true, animated: false)
             showChatPreviewModeView()
         }
     }
@@ -499,7 +505,7 @@ final class ChatViewController: MessageViewController {
     }
     
     func registerTypingEvent(_ subscription: Subscription) {
-        typingIndicatorView?.interval = 0
+//        typingIndicatorView?.interval = 0
         guard let user = AuthManager.currentUser() else { return Log.debug("Could not register TypingEvent") }
         
         SubscriptionManager.subscribeTypingEvent(subscription) { [weak self] username, flag in
@@ -508,9 +514,9 @@ final class ChatViewController: MessageViewController {
             let isAtBottom = self?.chatLogIsAtBottom()
             
             if flag {
-                self?.typingIndicatorView?.insertUsername(username)
+//                self?.typingIndicatorView?.insertUsername(username)
             } else {
-                self?.typingIndicatorView?.removeUsername(username)
+//                self?.typingIndicatorView?.removeUsername(username)
             }
             
             if let isAtBottom = isAtBottom,
@@ -793,7 +799,7 @@ final class ChatViewController: MessageViewController {
 
 //MARK: - UICollectionViewDataSource
 
-extension ChatViewController {
+extension ChatViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row < 4 {
@@ -803,11 +809,11 @@ extension ChatViewController {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataController.data.count
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard
             dataController.data.count > indexPath.row,
             let subscription = subscription,
@@ -846,7 +852,7 @@ extension ChatViewController {
     
     //MARK: - Cells
     
-    func cellForEmpty(at indexPath: indexPath) -> UICollectionViewCell {
+    func cellForEmpty(at indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: kEmptyCellIdentifier, for: indexPath) {
             return cell
         }
@@ -881,7 +887,7 @@ extension ChatViewController {
                 return cellForEmpty(at: indexPath)
         }
         
-        cell.labelTitle.text = RCDateFormatter.date(obj.timestamp)
+        cell.labelTitle.text = LGDateFormatter.date(obj.timestamp)
         return cell
     }
     
@@ -995,8 +1001,9 @@ extension ChatViewController: UICollectionViewDelegateFlowLayout {
 //MARK: - UIScrollViewDelegate
 
 extension ChatViewController {
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        super.scrollViewDidScroll(scrollView)
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        super.scrollViewDidScroll(scrollView)
         
         if scrollView.contentOffset.y < -10 {
             if let message = dataController.oldestMessage() {
@@ -1049,19 +1056,20 @@ extension ChatViewController {
     }
     
     private func blockMessageSending(reason: String) {
-        textInputbar.textView.placeholder = reason
-        textInputbar.backgroundColor = view.theme?.backgroundColor ?? .white
-        textInputbar.isUserInteractionEnabled = false
-        leftButton.isEnabled = false
-        rightButton.isEnabled = false
+        messageView.textView.placeholderText = reason
+        messageView.textView.backgroundColor = view.theme?.backgroundColor ?? .white
+        messageView.textView.isUserInteractionEnabled = false
+        messageView.leftButton.isEnabled = false
+        messageView.rightButton.isEnabled = false
     }
     
     private func allowMessageSending() {
-        textInputbar.textView.placeholder = ""
-        textInputbar.backgroundColor = view.theme?.focusedBackground ?? .backgroundWhite
-        textInputbar.isUserInteractionEnabled = true
-        leftButton.isEnabled = true
-        rightButton.isEnabled = true
+        
+        messageView.textView.placeholderText = ""
+        messageView.textView.backgroundColor = view.theme?.focusedBackground ?? .LGBackgroundColor()
+        messageView.textView.isUserInteractionEnabled = true
+        messageView.leftButton.isEnabled = true
+        messageView.rightButton.isEnabled = true 
     }
 }
 
@@ -1093,7 +1101,7 @@ extension ChatViewController: KeyboardFrameViewDelegate {
     }
     
     var keyboardProxyView: UIView? {
-        return textInputbar.inputAccessoryView.superview
+        return messageView.textView.superview
     }
 }
 
