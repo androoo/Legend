@@ -223,24 +223,24 @@ extension SocketManager: WebSocketDelegate {
     
     func websocketDidConnect(socket: WebSocket) {
         Log.debug("[WebSocket] \(socket.currentURL)\n -  did connect")
-        
+
         let object = [
             "msg": "connect",
             "version": "1",
             "support": ["1", "pre2", "pre1"]
             ] as [String: Any]
-        
+
         SocketManager.send(object)
     }
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
         Log.debug("[WebSocket] \(socket.currentURL)\n - did disconnect with error (\(String(describing: error)))")
-        
+
         if let handler = internalConnectionHandler {
             internalConnectionHandler = nil
             handler(socket, socket.isConnected)
         }
-        
+
         isUserAuthenticated = false
         events = [:]
         queue = [:]
@@ -256,17 +256,17 @@ extension SocketManager: WebSocketDelegate {
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
         SocketManager.jsonParseQueue.async {
             let json = JSON(parseJSON: text)
-            
+
             // JSON is invalid
             guard json.exists() else {
                 Log.debug("[WebSocket] \(socket.currentURL)\n - did receive invalid JSON object:\n\(text)")
                 return
             }
-            
+
             if let raw = json.rawString() {
                 Log.debug("[WebSocket] \(socket.currentURL)\n - did receive JSON message:\n\(raw)")
             }
-            
+
             DispatchQueue.main.async {
                 self.handleMessage(json, socket: socket)
             }

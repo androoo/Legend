@@ -19,7 +19,7 @@ final class MainSplitViewController: UISplitViewController {
     static var chatViewController: ChatViewController? {
         guard
             let appDelegate = UIApplication.shared.delegate as? AppDelegate,
-            let mainViewController = AppDelegate.window?.rootViewController as? MainSplitViewController
+            let mainViewController = appDelegate.window?.rootViewController as? MainSplitViewController
         else {
             return nil
         }

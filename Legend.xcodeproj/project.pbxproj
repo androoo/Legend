@@ -292,6 +292,22 @@
 		5ABE9D5321AAE52D00E3B0E5 /* ChannelInfoUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */; };
 		5ABE9D5421AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */; };
 		5ABE9D5621AAE7C300E3B0E5 /* CustomEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */; };
+		5ABE9D5821AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5721AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift */; };
+		5ABE9D6921AAEB0600E3B0E5 /* AuthTableViewControllerLoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5921AAEB0400E3B0E5 /* AuthTableViewControllerLoginServices.swift */; };
+		5ABE9D6A21AAEB0600E3B0E5 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5A21AAEB0400E3B0E5 /* LoginTableViewController.swift */; };
+		5ABE9D6B21AAEB0600E3B0E5 /* SAMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5B21AAEB0400E3B0E5 /* SAMLViewController.swift */; };
+		5ABE9D6C21AAEB0600E3B0E5 /* LoginTableViewControllerAuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5C21AAEB0400E3B0E5 /* LoginTableViewControllerAuthenticationHandler.swift */; };
+		5ABE9D6D21AAEB0600E3B0E5 /* SignupCustomFieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5D21AAEB0400E3B0E5 /* SignupCustomFieldsTableViewController.swift */; };
+		5ABE9D6E21AAEB0600E3B0E5 /* CASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5E21AAEB0500E3B0E5 /* CASViewController.swift */; };
+		5ABE9D6F21AAEB0600E3B0E5 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5F21AAEB0500E3B0E5 /* AuthNavigationController.swift */; };
+		5ABE9D7021AAEB0600E3B0E5 /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6021AAEB0500E3B0E5 /* SignupTableViewController.swift */; };
+		5ABE9D7121AAEB0600E3B0E5 /* AuthTableViewControllerConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6121AAEB0500E3B0E5 /* AuthTableViewControllerConnectionHandler.swift */; };
+		5ABE9D7221AAEB0600E3B0E5 /* AuthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6221AAEB0500E3B0E5 /* AuthTableViewController.swift */; };
+		5ABE9D7421AAEB0600E3B0E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6421AAEB0500E3B0E5 /* WelcomeViewController.swift */; };
+		5ABE9D7521AAEB0600E3B0E5 /* TwoFactorAuthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6521AAEB0500E3B0E5 /* TwoFactorAuthTableViewController.swift */; };
+		5ABE9D7621AAEB0600E3B0E5 /* LegalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6621AAEB0500E3B0E5 /* LegalTableViewController.swift */; };
+		5ABE9D7721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift */; };
+		5ABE9D7821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -603,6 +619,22 @@
 		5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoUserCell.swift; sourceTree = "<group>"; };
 		5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoDescriptionCell.swift; sourceTree = "<group>"; };
 		5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEmoji.swift; sourceTree = "<group>"; };
+		5ABE9D5721AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISplitViewControllerExtensions.swift; sourceTree = "<group>"; };
+		5ABE9D5921AAEB0400E3B0E5 /* AuthTableViewControllerLoginServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewControllerLoginServices.swift; sourceTree = "<group>"; };
+		5ABE9D5A21AAEB0400E3B0E5 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D5B21AAEB0400E3B0E5 /* SAMLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMLViewController.swift; sourceTree = "<group>"; };
+		5ABE9D5C21AAEB0400E3B0E5 /* LoginTableViewControllerAuthenticationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewControllerAuthenticationHandler.swift; sourceTree = "<group>"; };
+		5ABE9D5D21AAEB0400E3B0E5 /* SignupCustomFieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupCustomFieldsTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D5E21AAEB0500E3B0E5 /* CASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CASViewController.swift; sourceTree = "<group>"; };
+		5ABE9D5F21AAEB0500E3B0E5 /* AuthNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
+		5ABE9D6021AAEB0500E3B0E5 /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6121AAEB0500E3B0E5 /* AuthTableViewControllerConnectionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewControllerConnectionHandler.swift; sourceTree = "<group>"; };
+		5ABE9D6221AAEB0500E3B0E5 /* AuthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6421AAEB0500E3B0E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6521AAEB0500E3B0E5 /* TwoFactorAuthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFactorAuthTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6621AAEB0500E3B0E5 /* LegalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUsernameTableViewController.swift; sourceTree = "<group>"; };
+		5ABE9D6821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewControllerAuthenticationHandler.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1198,6 +1230,7 @@
 				5A04B3AB21A8763A00E362A6 /* UIImageExtension.swift */,
 				5ABE9CE421AA2CA200E3B0E5 /* DataExtension.swift */,
 				5ABE9CE821AA31B500E3B0E5 /* UIStoryboardExtensions.swift */,
+				5ABE9D5721AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1328,6 +1361,21 @@
 		5ABE9CC121AA15EE00E3B0E5 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9D6421AAEB0500E3B0E5 /* WelcomeViewController.swift */,
+				5ABE9D5A21AAEB0400E3B0E5 /* LoginTableViewController.swift */,
+				5ABE9D5C21AAEB0400E3B0E5 /* LoginTableViewControllerAuthenticationHandler.swift */,
+				5ABE9D6221AAEB0500E3B0E5 /* AuthTableViewController.swift */,
+				5ABE9D6821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift */,
+				5ABE9D6121AAEB0500E3B0E5 /* AuthTableViewControllerConnectionHandler.swift */,
+				5ABE9D5F21AAEB0500E3B0E5 /* AuthNavigationController.swift */,
+				5ABE9D5921AAEB0400E3B0E5 /* AuthTableViewControllerLoginServices.swift */,
+				5ABE9D5E21AAEB0500E3B0E5 /* CASViewController.swift */,
+				5ABE9D6721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift */,
+				5ABE9D5B21AAEB0400E3B0E5 /* SAMLViewController.swift */,
+				5ABE9D6021AAEB0500E3B0E5 /* SignupTableViewController.swift */,
+				5ABE9D6521AAEB0500E3B0E5 /* TwoFactorAuthTableViewController.swift */,
+				5ABE9D6621AAEB0500E3B0E5 /* LegalTableViewController.swift */,
+				5ABE9D5D21AAEB0400E3B0E5 /* SignupCustomFieldsTableViewController.swift */,
 				5ABE9CC221AA160200E3B0E5 /* ConnectServerViewController.swift */,
 			);
 			path = Auth;
@@ -1761,6 +1809,7 @@
 				5A0452C421796D3000F2B2B6 /* UIScrollView+StopScrolling.swift in Sources */,
 				5A04535121939B3E00F2B2B6 /* UIWindowExtensions.swift in Sources */,
 				5A04B36C21A6375100E362A6 /* RoomCreateRequest.swift in Sources */,
+				5ABE9D6F21AAEB0600E3B0E5 /* AuthNavigationController.swift in Sources */,
 				5ABE9CB221A9FED100E3B0E5 /* DeleteMessageRequest.swift in Sources */,
 				5A0452A62178288400F2B2B6 /* LogManager.swift in Sources */,
 				5A360C6B2153D16600943DDC /* AppDelegate.swift in Sources */,
@@ -1773,6 +1822,7 @@
 				5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */,
 				5ABE9CDC21AA1BA800E3B0E5 /* NotificationViewController.swift in Sources */,
 				5A0453642193D4B200F2B2B6 /* MessageURLModelMapping .swift in Sources */,
+				5ABE9D5821AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift in Sources */,
 				5A04531D21835EF200F2B2B6 /* UserModelMapping.swift in Sources */,
 				5A04528D2177817500F2B2B6 /* Mention.swift in Sources */,
 				5A04531A21835B3500F2B2B6 /* UserModelHandler.swift in Sources */,
@@ -1787,6 +1837,7 @@
 				5ABE9CC321AA160200E3B0E5 /* ConnectServerViewController.swift in Sources */,
 				5A04B35921A2FDB200E362A6 /* OAuthCredentials.swift in Sources */,
 				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
+				5ABE9D7021AAEB0600E3B0E5 /* SignupTableViewController.swift in Sources */,
 				5A04B38721A6FCB900E362A6 /* ChatTitleView.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
@@ -1823,6 +1874,7 @@
 				5ABE9D0121AAE33000E3B0E5 /* ReactionListView.swift in Sources */,
 				5A0453272184BC4500F2B2B6 /* ChannelModelMapping.swift in Sources */,
 				5A04B31E2195FC3400E362A6 /* SubscriptionManagerMessages.swift in Sources */,
+				5ABE9D7821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A04B39B21A7111100E362A6 /* ChatDataController.swift in Sources */,
 				5ABE9CE521AA2CA200E3B0E5 /* DataExtension.swift in Sources */,
@@ -1849,6 +1901,7 @@
 				5ABE9D3021AAE3A600E3B0E5 /* Emojione+Transform.swift in Sources */,
 				5A04B34E21A2437C00E362A6 /* RoomInfoRequest.swift in Sources */,
 				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
+				5ABE9D7721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift in Sources */,
 				5A04B3E021A9DF0500E362A6 /* ChatMessageTextViewModel.swift in Sources */,
 				5ABE9CCD21AA192C00E3B0E5 /* StyledButton.swift in Sources */,
 				5ABE9D5121AAE52D00E3B0E5 /* MemberCell.swift in Sources */,
@@ -1894,18 +1947,22 @@
 				5A0453602193CFFB00F2B2B6 /* TextField.swift in Sources */,
 				5ABE9D3521AAE3A600E3B0E5 /* Emoji.swift in Sources */,
 				5A04B333219D0A3A00E362A6 /* MainSplitViewController.swift in Sources */,
+				5ABE9D6921AAEB0600E3B0E5 /* AuthTableViewControllerLoginServices.swift in Sources */,
 				5A04B3DA21A9DF0500E362A6 /* ChatDirectMessageHeaderCell.swift in Sources */,
 				5A0452F8217A248700F2B2B6 /* APIClient.swift in Sources */,
 				5A04B32F219C68F200E362A6 /* UINavigationBarTransparent.swift in Sources */,
 				5A045304217B79AD00F2B2B6 /* SocketManager.swift in Sources */,
+				5ABE9D7521AAEB0600E3B0E5 /* TwoFactorAuthTableViewController.swift in Sources */,
 				5ABE9CBE21AA07AA00E3B0E5 /* SubscriptionManagerTyping.swift in Sources */,
 				5A04B34421A1F22400E362A6 /* CommandsClient.swift in Sources */,
+				5ABE9D6C21AAEB0600E3B0E5 /* LoginTableViewControllerAuthenticationHandler.swift in Sources */,
 				5A04B36421A6222C00E362A6 /* LoginServiceRequest.swift in Sources */,
 				5A0452EE217A225D00F2B2B6 /* APIRequestOption.swift in Sources */,
 				5A0452AA2178D18800F2B2B6 /* Weak.swift in Sources */,
 				5A04529A21778E0700F2B2B6 /* Localiezd.swift in Sources */,
 				5A04533C21937A2500F2B2B6 /* VOTextField.swift in Sources */,
 				5A04B33B21A1EB0F00E362A6 /* AuthInternalExtensions.swift in Sources */,
+				5ABE9D7421AAEB0600E3B0E5 /* WelcomeViewController.swift in Sources */,
 				5A04B39D21A86DDF00E362A6 /* UIViewExtensions.swift in Sources */,
 				5ABE9D5421AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift in Sources */,
 				5A04B37421A6380800E362A6 /* RoomInviteRequest.swift in Sources */,
@@ -1914,6 +1971,7 @@
 				5A0452882165C06C00F2B2B6 /* Subscription.swift in Sources */,
 				5A04534B21938C2500F2B2B6 /* AuthManagerRecover.swift in Sources */,
 				5A04B33721A0C0EB00E362A6 /* DraftMessageManager.swift in Sources */,
+				5ABE9D7221AAEB0600E3B0E5 /* AuthTableViewController.swift in Sources */,
 				5A0452BE21796D3000F2B2B6 /* String+WordAtRange.swift in Sources */,
 				5A0452D92179729E00F2B2B6 /* MessageTextFontAttributes.swift in Sources */,
 				5A0452CE21796D7900F2B2B6 /* RCMarkdownParser.swift in Sources */,
@@ -1925,9 +1983,11 @@
 				5A04B3222199D40900E362A6 /* AuthManagerSocket.swift in Sources */,
 				5A04533521928A2700F2B2B6 /* MessageTextCacheManager.swift in Sources */,
 				5ABE9CE921AA31B500E3B0E5 /* UIStoryboardExtensions.swift in Sources */,
+				5ABE9D6A21AAEB0600E3B0E5 /* LoginTableViewController.swift in Sources */,
 				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
 				5A04B3D721A9DF0500E362A6 /* ChatMessageAudioView.swift in Sources */,
 				5A04B3D021A9DF0500E362A6 /* AutocompleteCell.swift in Sources */,
+				5ABE9D7121AAEB0600E3B0E5 /* AuthTableViewControllerConnectionHandler.swift in Sources */,
 				5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */,
 				5A04B34921A1F39700E362A6 /* RunCommandSucceeded.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
@@ -1942,6 +2002,7 @@
 				5ABE9D1121AAE36100E3B0E5 /* EmojiView.swift in Sources */,
 				5A04534D21938C7D00F2B2B6 /* DeepLink.swift in Sources */,
 				5A04B3E721A9DF0500E362A6 /* ChatMessageDaySeparator.swift in Sources */,
+				5ABE9D6D21AAEB0600E3B0E5 /* SignupCustomFieldsTableViewController.swift in Sources */,
 				5A04B36221A621B700E362A6 /* RoomsRequest.swift in Sources */,
 				5ABE9CC021AA136100E3B0E5 /* LGDateFormatter.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
@@ -1961,6 +2022,8 @@
 				5ABE9D1321AAE36100E3B0E5 /* EmojiAutocompleteCell.swift in Sources */,
 				5A0452722165AA1800F2B2B6 /* TransparentToTouchesWindow.swift in Sources */,
 				5A04B35021A2458500E362A6 /* RoomMembersRequest.swift in Sources */,
+				5ABE9D7621AAEB0600E3B0E5 /* LegalTableViewController.swift in Sources */,
+				5ABE9D6E21AAEB0600E3B0E5 /* CASViewController.swift in Sources */,
 				5A045323218362D900F2B2B6 /* AttachmentModelMapping.swift in Sources */,
 				5A0453592193A3F100F2B2B6 /* PermissionModelMapping.swift in Sources */,
 				5A04B3E121A9DF0500E362A6 /* ChatMessageCell.swift in Sources */,
@@ -1997,6 +2060,7 @@
 				5ABE9D4D21AAE52D00E3B0E5 /* ChannelInfoCellProtocol.swift in Sources */,
 				5ABE9D3221AAE3A600E3B0E5 /* RCEmojiKitLocalizable.swift in Sources */,
 				5A0453372193733200F2B2B6 /* MessageExtensions.swift in Sources */,
+				5ABE9D6B21AAEB0600E3B0E5 /* SAMLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
