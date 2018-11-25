@@ -12,7 +12,7 @@ import RealmSwift
 extension ChatViewController {
     func updateSubscriptionRoles() {
         guard let client = API.current()?.client(SubscriptionsClient.self),
-            subscription = subscription,
+            let subscription = subscription,
             subscription.type != .directMessage else {
                 return
         }
