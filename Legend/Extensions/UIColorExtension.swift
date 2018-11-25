@@ -155,4 +155,53 @@ extension UIColor {
     static var codeBackground: UIColor {
         return UIColor(rgb: 0xF8F8F8, alphaValue: 1.0)
     }
+    
+    // MARK: Mention Color
+    
+    static func background(for mention: Mention) -> UIColor {
+        if mention.username == AuthManager.currentUser()?.username {
+            return .primaryAction
+        }
+        
+        if mention.username == "all" || mention.username == "here" {
+            return .attention
+        }
+        
+        return .white
+    }
+    
+    static func font(for mention: Mention) -> UIColor {
+        if mention.username == AuthManager.currentUser()?.username {
+            return .white
+        }
+        
+        if mention.username == "all" || mention.username == "here" {
+            return .white
+        }
+        
+        return .link
+    }
+}
+
+// MARK: UIKit default colors
+
+extension UIColor {
+    static var placeholderGray: UIColor {
+        return UIColor(red: 199/255, green: 199/255, blue: 205/255, alpha: 1)
+    }
+    
+    static var backgroundWhite: UIColor {
+        return UIColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
+    }
+}
+
+// MARK: Utils
+
+extension UIColor {
+    func isBrightColor() -> Bool {
+        guard let components = cgColor.components else { return false }
+        let brightness = ((components[0] * 299) + (components[1] * 587) + (components[2] * 114)) / 1000
+        
+        return brightness < 0.5 ? false : true
+    }
 }

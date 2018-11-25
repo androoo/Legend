@@ -64,7 +64,7 @@ final class ChatMessageCell: UICollectionViewCell {
 
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var labelUsername: UILabel!
-    @IBOutlet weak var labelText: RCTextView!
+    @IBOutlet weak var labelText: LGTextView!
 
     @IBOutlet weak var statusView: UIImageView!
 

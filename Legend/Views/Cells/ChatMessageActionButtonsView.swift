@@ -21,7 +21,7 @@ final class ChatMessageActionButtonsView: UIView {
 
     @IBOutlet weak var buttonReply: UIButton! {
         didSet {
-            let buttonColor = UIColor.RCBlue()
+            let buttonColor = UIColor.LGBlue()
             buttonReply.tintColor = buttonColor
             buttonReply.layer.borderColor = buttonColor.cgColor
             buttonReply.layer.borderWidth = 1

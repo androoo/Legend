@@ -39,11 +39,11 @@ enum Storyboard {
             let navigationController = (controller as? UINavigationController)
             let controller = navigationController?.topViewController as? ConnectServerViewController
             _ = controller?.view
-            controller.textFieldServerURL.text = serverUrl
+            controller?.textFieldServerURL.text = serverUrl
             
             if serverUrl.count > 0 {
-                controller.connect()
-                controller.deepLinkCredentials = credentials
+                controller?.connect()
+                controller?.deepLinkCredentials = credentials
             }
         default:
             break
