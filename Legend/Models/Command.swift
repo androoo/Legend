@@ -14,7 +14,7 @@ class Command: Object {
     @objc dynamic var params: String = ""
     @objc dynamic var desc: String = ""
     
-    override static func primaryKeys() -> String {
+    static func primaryKeys() -> String {
         return "command"
     }
 }

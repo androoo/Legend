@@ -242,6 +242,7 @@
 		5ABE9CDE21AA1BA800E3B0E5 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9CDB21AA1BA800E3B0E5 /* NotificationViewController.xib */; };
 		5ABE9CE021AA1DFD00E3B0E5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CDF21AA1DFD00E3B0E5 /* NotificationView.swift */; };
 		5ABE9CE221AA1E3C00E3B0E5 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CE121AA1E3C00E3B0E5 /* ImageManager.swift */; };
+		5ABE9CE521AA2CA200E3B0E5 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9CE421AA2CA200E3B0E5 /* DataExtension.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -503,6 +504,7 @@
 		5ABE9CDF21AA1DFD00E3B0E5 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		5ABE9CE121AA1E3C00E3B0E5 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		5ABE9CE321AA203100E3B0E5 /* Legend-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legend-Bridge.h"; sourceTree = "<group>"; };
+		5ABE9CE421AA2CA200E3B0E5 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1094,6 +1096,7 @@
 				5A04B39C21A86DDF00E362A6 /* UIViewExtensions.swift */,
 				5A04B39E21A86E5400E362A6 /* UINibExtensions.swift */,
 				5A04B3AB21A8763A00E362A6 /* UIImageExtension.swift */,
+				5ABE9CE421AA2CA200E3B0E5 /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1590,6 +1593,7 @@
 				5A04B31E2195FC3400E362A6 /* SubscriptionManagerMessages.swift in Sources */,
 				5A0452832165BD7200F2B2B6 /* BaseModel.swift in Sources */,
 				5A04B39B21A7111100E362A6 /* ChatDataController.swift in Sources */,
+				5ABE9CE521AA2CA200E3B0E5 /* DataExtension.swift in Sources */,
 				5A04535E2193CF4E00F2B2B6 /* SelectField.swift in Sources */,
 				5A04531F2183607100F2B2B6 /* SubscriptionModelMapping.swift in Sources */,
 				5A0453292184BC7600F2B2B6 /* CommandModelMapping.swift in Sources */,

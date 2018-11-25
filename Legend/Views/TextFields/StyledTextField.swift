@@ -60,12 +60,12 @@ final class StyledTextField: VOTextField {
 
         clearButtonMode = .whileEditing
 
-        textColor = UIColor.RCTextFieldGray()
+        textColor = UIColor.LGTextFieldGray()
         let placeholderText = placeholder ?? ""
         let placeholderAttributes = NSAttributedString(
             string: placeholderText,
             attributes: [
-                NSAttributedStringKey.foregroundColor: UIColor.RCTextFieldGray(),
+                NSAttributedStringKey.foregroundColor: UIColor.LGTextFieldGray(),
                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17, weight: .regular)
             ]
         )
@@ -74,7 +74,7 @@ final class StyledTextField: VOTextField {
 
         layer.cornerRadius = 2
         layer.borderWidth = 1.5
-        layer.borderColor = UIColor.RCTextFieldBorderGray().cgColor
+        layer.borderColor = UIColor.LGTextFieldBorderGray().cgColor
     }
 
 }
