@@ -278,6 +278,19 @@
 		5ABE9D3621AAE3A600E3B0E5 /* emojiNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D2D21AAE3A500E3B0E5 /* emojiNames.json */; };
 		5ABE9D3721AAE3A600E3B0E5 /* RCEmojiKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D2E21AAE3A500E3B0E5 /* RCEmojiKit.strings */; };
 		5ABE9D3821AAE3A600E3B0E5 /* RCEmojiKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D2F21AAE3A600E3B0E5 /* RCEmojiKit.xcassets */; };
+		5ABE9D3A21AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D3921AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift */; };
+		5ABE9D3D21AAE4D200E3B0E5 /* UserActionSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D3C21AAE4D200E3B0E5 /* UserActionSheetPresenter.swift */; };
+		5ABE9D4A21AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D3F21AAE52B00E3B0E5 /* ChannelInfoDescriptionCell.xib */; };
+		5ABE9D4B21AAE52D00E3B0E5 /* ChannelInfoBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4021AAE52C00E3B0E5 /* ChannelInfoBasicCell.swift */; };
+		5ABE9D4C21AAE52D00E3B0E5 /* ChannelInfoUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4121AAE52C00E3B0E5 /* ChannelInfoUserCell.xib */; };
+		5ABE9D4D21AAE52D00E3B0E5 /* ChannelInfoCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4221AAE52C00E3B0E5 /* ChannelInfoCellProtocol.swift */; };
+		5ABE9D4E21AAE52D00E3B0E5 /* ChannelInfoActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4321AAE52C00E3B0E5 /* ChannelInfoActionCell.swift */; };
+		5ABE9D4F21AAE52D00E3B0E5 /* ChannelInfoBasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4421AAE52C00E3B0E5 /* ChannelInfoBasicCell.xib */; };
+		5ABE9D5021AAE52D00E3B0E5 /* ChannelInfoActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4521AAE52C00E3B0E5 /* ChannelInfoActionCell.xib */; };
+		5ABE9D5121AAE52D00E3B0E5 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4621AAE52C00E3B0E5 /* MemberCell.swift */; };
+		5ABE9D5221AAE52D00E3B0E5 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */; };
+		5ABE9D5321AAE52D00E3B0E5 /* ChannelInfoUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */; };
+		5ABE9D5421AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -575,6 +588,19 @@
 		5ABE9D2D21AAE3A500E3B0E5 /* emojiNames.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emojiNames.json; sourceTree = "<group>"; };
 		5ABE9D2E21AAE3A500E3B0E5 /* RCEmojiKit.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = RCEmojiKit.strings; sourceTree = "<group>"; };
 		5ABE9D2F21AAE3A600E3B0E5 /* RCEmojiKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RCEmojiKit.xcassets; sourceTree = "<group>"; };
+		5ABE9D3921AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerMessageCellProtocol.swift; sourceTree = "<group>"; };
+		5ABE9D3C21AAE4D200E3B0E5 /* UserActionSheetPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActionSheetPresenter.swift; sourceTree = "<group>"; };
+		5ABE9D3F21AAE52B00E3B0E5 /* ChannelInfoDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelInfoDescriptionCell.xib; sourceTree = "<group>"; };
+		5ABE9D4021AAE52C00E3B0E5 /* ChannelInfoBasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoBasicCell.swift; sourceTree = "<group>"; };
+		5ABE9D4121AAE52C00E3B0E5 /* ChannelInfoUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelInfoUserCell.xib; sourceTree = "<group>"; };
+		5ABE9D4221AAE52C00E3B0E5 /* ChannelInfoCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoCellProtocol.swift; sourceTree = "<group>"; };
+		5ABE9D4321AAE52C00E3B0E5 /* ChannelInfoActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoActionCell.swift; sourceTree = "<group>"; };
+		5ABE9D4421AAE52C00E3B0E5 /* ChannelInfoBasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelInfoBasicCell.xib; sourceTree = "<group>"; };
+		5ABE9D4521AAE52C00E3B0E5 /* ChannelInfoActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelInfoActionCell.xib; sourceTree = "<group>"; };
+		5ABE9D4621AAE52C00E3B0E5 /* MemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoUserCell.swift; sourceTree = "<group>"; };
+		5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoDescriptionCell.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -972,6 +998,7 @@
 				5A04B37B21A6488E00E362A6 /* ChatViewController.swift */,
 				5A04B39A21A7111100E362A6 /* ChatDataController.swift */,
 				5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */,
+				5ABE9D3921AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1011,6 +1038,7 @@
 		5A04B39021A6FCF900E362A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9D3E21AAE51D00E3B0E5 /* Info */,
 				5A04B3B321A9DF0100E362A6 /* AutocompleteCell.swift */,
 				5A04B3BE21A9DF0200E362A6 /* AutocompleteCell.xib */,
 				5A04B3BB21A9DF0200E362A6 /* ChatChannelHeaderCell.swift */,
@@ -1267,6 +1295,7 @@
 		5A360C94215516AB00943DDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9D3B21AAE4C000E3B0E5 /* ActionSheets */,
 				5ABE9CCE21AA193400E3B0E5 /* TextFields */,
 				5ABE9CCB21AA192200E3B0E5 /* Buttons */,
 				5A04B39021A6FCF900E362A6 /* Cells */,
@@ -1415,6 +1444,32 @@
 			path = Reaction;
 			sourceTree = "<group>";
 		};
+		5ABE9D3B21AAE4C000E3B0E5 /* ActionSheets */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D3C21AAE4D200E3B0E5 /* UserActionSheetPresenter.swift */,
+			);
+			path = ActionSheets;
+			sourceTree = "<group>";
+		};
+		5ABE9D3E21AAE51D00E3B0E5 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D4321AAE52C00E3B0E5 /* ChannelInfoActionCell.swift */,
+				5ABE9D4521AAE52C00E3B0E5 /* ChannelInfoActionCell.xib */,
+				5ABE9D4021AAE52C00E3B0E5 /* ChannelInfoBasicCell.swift */,
+				5ABE9D4421AAE52C00E3B0E5 /* ChannelInfoBasicCell.xib */,
+				5ABE9D4221AAE52C00E3B0E5 /* ChannelInfoCellProtocol.swift */,
+				5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */,
+				5ABE9D3F21AAE52B00E3B0E5 /* ChannelInfoDescriptionCell.xib */,
+				5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */,
+				5ABE9D4121AAE52C00E3B0E5 /* ChannelInfoUserCell.xib */,
+				5ABE9D4621AAE52C00E3B0E5 /* MemberCell.swift */,
+				5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		80DBEE9D91C4CF113F8A67CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1549,24 +1604,29 @@
 				5ABE9D2021AAE38A00E3B0E5 /* symbols.json in Resources */,
 				5ABE9CF321AAE32500E3B0E5 /* EmojiPicker.xib in Resources */,
 				5ABE9D1221AAE36100E3B0E5 /* EmojiView.xib in Resources */,
+				5ABE9D4C21AAE52D00E3B0E5 /* ChannelInfoUserCell.xib in Resources */,
 				5ABE9D1E21AAE38A00E3B0E5 /* activity.json in Resources */,
 				5A04B39321A70D9700E362A6 /* ChatPreviewModeView.xib in Resources */,
 				5A04B3E521A9DF0500E362A6 /* ChatMessageTextView.xib in Resources */,
 				5ABE9D2621AAE38A00E3B0E5 /* food.json in Resources */,
+				5ABE9D4A21AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.xib in Resources */,
 				5A04B3D521A9DF0500E362A6 /* ChatLoaderCell.xib in Resources */,
 				5A04B3CE21A9DF0500E362A6 /* ChatMessageActionButtonsView.xib in Resources */,
 				5ABE9CCA21AA18E600E3B0E5 /* AvatarView.xib in Resources */,
 				5ABE9D0321AAE33000E3B0E5 /* ReactionListView.xib in Resources */,
+				5ABE9D5021AAE52D00E3B0E5 /* ChannelInfoActionCell.xib in Resources */,
 				5A04B39821A710A300E362A6 /* ReplyView.xib in Resources */,
 				5ABE9D2521AAE38A00E3B0E5 /* regional.json in Resources */,
 				5A04B3D421A9DF0500E362A6 /* ChatChannelHeaderCell.xib in Resources */,
 				5A04B3D121A9DF0500E362A6 /* ChatMessageVideoView.xib in Resources */,
+				5ABE9D5221AAE52D00E3B0E5 /* MemberCell.xib in Resources */,
 				5ABE9D2421AAE38A00E3B0E5 /* nature.json in Resources */,
 				5ABE9D1421AAE36100E3B0E5 /* EmojiAutocompleteCell.xib in Resources */,
 				5ABE9D3821AAE3A600E3B0E5 /* RCEmojiKit.xcassets in Resources */,
 				5ABE9D2321AAE38A00E3B0E5 /* flags.json in Resources */,
 				5A360C722153D16900943DDC /* Assets.xcassets in Resources */,
 				5A04B38221A6FCA300E362A6 /* ChatTitleView.xib in Resources */,
+				5ABE9D4F21AAE52D00E3B0E5 /* ChannelInfoBasicCell.xib in Resources */,
 				5A04B3E421A9DF0500E362A6 /* ChatMessageAudioView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1756,6 +1816,7 @@
 				5A0452C521796D3000F2B2B6 /* MessageViewDelegate.swift in Sources */,
 				5A045301217A280800F2B2B6 /* RealmExecute.swift in Sources */,
 				5A04B3E221A9DF0500E362A6 /* ChatLoaderCell.swift in Sources */,
+				5ABE9D5321AAE52D00E3B0E5 /* ChannelInfoUserCell.swift in Sources */,
 				5ABE9D0121AAE33000E3B0E5 /* ReactionListView.swift in Sources */,
 				5A0453272184BC4500F2B2B6 /* ChannelModelMapping.swift in Sources */,
 				5A04B31E2195FC3400E362A6 /* SubscriptionManagerMessages.swift in Sources */,
@@ -1774,6 +1835,7 @@
 				5A04B36E21A6378B00E362A6 /* RoomMentionsRequest.swift in Sources */,
 				5A04B3D221A9DF0500E362A6 /* ChatMessageURLView.swift in Sources */,
 				5A04529E2178258100F2B2B6 /* UserDefaults+Group.swift in Sources */,
+				5ABE9D4E21AAE52D00E3B0E5 /* ChannelInfoActionCell.swift in Sources */,
 				5A04535521939F6100F2B2B6 /* Permission .swift in Sources */,
 				5A360C97215522A900943DDC /* Theme.swift in Sources */,
 				5A04B31C2195FB2E00E362A6 /* SubscriptionReadRequest.swift in Sources */,
@@ -1785,6 +1847,7 @@
 				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
 				5A04B3E021A9DF0500E362A6 /* ChatMessageTextViewModel.swift in Sources */,
 				5ABE9CCD21AA192C00E3B0E5 /* StyledButton.swift in Sources */,
+				5ABE9D5121AAE52D00E3B0E5 /* MemberCell.swift in Sources */,
 				5A04B3192195F82F00E362A6 /* SubscriptionsClient.swift in Sources */,
 				5A04B3DE21A9DF0500E362A6 /* ChatMessageActionButtonsView.swift in Sources */,
 				5ABE9CB821AA007600E3B0E5 /* UpdtateMessageRequest.swift in Sources */,
@@ -1840,6 +1903,7 @@
 				5A04533C21937A2500F2B2B6 /* VOTextField.swift in Sources */,
 				5A04B33B21A1EB0F00E362A6 /* AuthInternalExtensions.swift in Sources */,
 				5A04B39D21A86DDF00E362A6 /* UIViewExtensions.swift in Sources */,
+				5ABE9D5421AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift in Sources */,
 				5A04B37421A6380800E362A6 /* RoomInviteRequest.swift in Sources */,
 				5A0452752165AB6700F2B2B6 /* LauncherProtocol.swift in Sources */,
 				5ABE9CFE21AAE33000E3B0E5 /* ReactionView.swift in Sources */,
@@ -1880,11 +1944,13 @@
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
+				5ABE9D3A21AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift in Sources */,
 				5A04B3DF21A9DF0500E362A6 /* ChatMessageAttachmentView.swift in Sources */,
 				5ABE9CB621AA004000E3B0E5 /* PinMessageRequest.swift in Sources */,
 				5ABE9D3121AAE3A600E3B0E5 /* NSAttributedString+CustomEmojis.swift in Sources */,
 				5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */,
 				5ABE9D3321AAE3A600E3B0E5 /* EmojiSearcher.swift in Sources */,
+				5ABE9D4B21AAE52D00E3B0E5 /* ChannelInfoBasicCell.swift in Sources */,
 				5A0452E4217A1D0A00F2B2B6 /* API.swift in Sources */,
 				5A04529521778BEC00F2B2B6 /* AuthExtensions.swift in Sources */,
 				5A04B35B21A37C7000E362A6 /* ChatNotification.swift in Sources */,
@@ -1909,6 +1975,7 @@
 				5ABE9CD021AA193F00E3B0E5 /* StyledTextField.swift in Sources */,
 				5A0452C021796D3000F2B2B6 /* MessageAutocompleteController.swift in Sources */,
 				5A04B3AE21A87AF100E362A6 /* ChatCollectionViewFlowLayout.swift in Sources */,
+				5ABE9D3D21AAE4D200E3B0E5 /* UserActionSheetPresenter.swift in Sources */,
 				5A04B3202199256000E362A6 /* InfoClient.swift in Sources */,
 				5A04B3AA21A8745B00E362A6 /* SubscriptionUser.swift in Sources */,
 				5ABE9CC621AA169C00E3B0E5 /* InfoRequestHandler.swift in Sources */,
@@ -1923,6 +1990,7 @@
 				5A04B37F21A6EF8800E362A6 /* LoaderView.swift in Sources */,
 				5ABE9D0221AAE33000E3B0E5 /* ReactorListViewController.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
+				5ABE9D4D21AAE52D00E3B0E5 /* ChannelInfoCellProtocol.swift in Sources */,
 				5ABE9D3221AAE3A600E3B0E5 /* RCEmojiKitLocalizable.swift in Sources */,
 				5A0453372193733200F2B2B6 /* MessageExtensions.swift in Sources */,
 			);
