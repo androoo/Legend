@@ -27,21 +27,21 @@ extension AuthTableViewController {
         }
     }
 
-    func presentOAuthViewController(for loginService: LoginService) {
-        OAuthManager.authorize(loginService: loginService, at: serverURL, viewController: self, success: { [weak self] credentials in
-            guard let strongSelf = self else { return }
-            strongSelf.startLoading()
-
-            AuthManager.auth(credentials: credentials, completion: strongSelf.handleAuthenticationResponse)
-        }, failure: { [weak self] in
-            self?.alert(
-                title: localized("alert.login_service_error.title"),
-                message: localized("alert.login_service_error.message")
-            )
-
-            self?.stopLoading()
-        })
-    }
+//    func presentOAuthViewController(for loginService: LoginService) {
+//        OAuthManager.authorize(loginService: loginService, at: serverURL, viewController: self, success: { [weak self] credentials in
+//            guard let strongSelf = self else { return }
+//            strongSelf.startLoading()
+//
+//            AuthManager.auth(credentials: credentials, completion: strongSelf.handleAuthenticationResponse)
+//        }, failure: { [weak self] in
+//            self?.alert(
+//                title: localized("alert.login_service_error.title"),
+//                message: localized("alert.login_service_error.message")
+//            )
+//
+//            self?.stopLoading()
+//        })
+//    }
 
     func presentCASViewController(for loginService: LoginService) {
         guard
