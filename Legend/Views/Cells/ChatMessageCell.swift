@@ -283,7 +283,7 @@ final class ChatMessageCell: UICollectionViewCell {
 
     fileprivate func updateMessageHeader() {
         if let createdAt = message.createdAt {
-            labelDate.text = RCDateFormatter.time(createdAt)
+            labelDate.text = LGDateFormatter.time(createdAt)
         }
 
         avatarView.emoji = message.emoji

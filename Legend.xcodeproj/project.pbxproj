@@ -291,6 +291,7 @@
 		5ABE9D5221AAE52D00E3B0E5 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */; };
 		5ABE9D5321AAE52D00E3B0E5 /* ChannelInfoUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */; };
 		5ABE9D5421AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */; };
+		5ABE9D5621AAE7C300E3B0E5 /* CustomEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -601,6 +602,7 @@
 		5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
 		5ABE9D4821AAE52C00E3B0E5 /* ChannelInfoUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoUserCell.swift; sourceTree = "<group>"; };
 		5ABE9D4921AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInfoDescriptionCell.swift; sourceTree = "<group>"; };
+		5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEmoji.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1243,6 +1245,7 @@
 				5A04534E21938D1600F2B2B6 /* WindowManager.swift */,
 				5A0453612193D13000F2B2B6 /* MessageManager.swift */,
 				5A04B3232199D5C300E362A6 /* PushManager.swift */,
+				5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */,
 				5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */,
 				5A04B35821A2FDB200E362A6 /* OAuthCredentials.swift */,
 				5A04B35C21A37F1000E362A6 /* NotificationManager.swift */,
@@ -1829,6 +1832,7 @@
 				5A0452F6217A240B00F2B2B6 /* VersionMiddleware.swift in Sources */,
 				5A0452A22178262600F2B2B6 /* DatabaseManager.swift in Sources */,
 				5A04530D217BE29700F2B2B6 /* SocketHandlers.swift in Sources */,
+				5ABE9D5621AAE7C300E3B0E5 /* CustomEmoji.swift in Sources */,
 				5A0452C221796D3000F2B2B6 /* MessageViewController.swift in Sources */,
 				5A04B34221A1EF1100E362A6 /* DictionaryExtensions.swift in Sources */,
 				5A0452A0217825BB00F2B2B6 /* AppGroup.swift in Sources */,

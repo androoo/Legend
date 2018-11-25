@@ -46,8 +46,8 @@ final class ChatMessageAudioView: ChatMessageAttachmentView {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timeSlider: UISlider! {
         didSet {
-            timeSlider.setThumbImage(#imageLiteral(resourceName: "Player Progress").resizeWith(width: 15)?.imageWithTint(.RCGray()), for: .normal)
-            timeSlider.setThumbImage(#imageLiteral(resourceName: "Player Progress").resizeWith(width: 15)?.imageWithTint(.RCDarkGray()), for: .highlighted)
+            timeSlider.setThumbImage(#imageLiteral(resourceName: "Player Progress").resizeWith(width: 15)?.imageWithTint(.LGGray()), for: .normal)
+            timeSlider.setThumbImage(#imageLiteral(resourceName: "Player Progress").resizeWith(width: 15)?.imageWithTint(.LGDarkGray()), for: .highlighted)
         }
     }
 

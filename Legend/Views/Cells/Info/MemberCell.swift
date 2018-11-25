@@ -19,13 +19,13 @@ struct MemberCellData {
     var statusColor: UIColor {
         switch member.status {
         case .online:
-            return .RCOnline()
+            return .LGBlue()
         case .away:
-            return .RCAway()
+            return .LGGray()
         case .busy:
-            return .RCBusy()
+            return .LGGray()
         case .offline:
-            return .RCInvisible()
+            return .LGGray()
         }
     }
 }

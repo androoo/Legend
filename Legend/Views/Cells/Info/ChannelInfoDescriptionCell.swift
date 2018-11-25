@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RCMarkdownParser
+//import RCMarkdownParser
 
 struct ChannelInfoDescriptionCellData: ChannelInfoCellDataProtocol {
     let cellType = ChannelInfoDescriptionCell.self

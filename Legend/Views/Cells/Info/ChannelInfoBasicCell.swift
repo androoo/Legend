@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RCMarkdownParser
+//import RCMarkdownParser
 
 struct ChannelInfoBasicCellData: ChannelInfoCellDataProtocol {
     let cellType = ChannelInfoBasicCell.self
@@ -23,7 +23,7 @@ final class ChannelInfoBasicCell: UITableViewCell, ChannelInfoCellProtocol {
     var data: DataType? {
         didSet {
             labelTitle.text = data?.title
-            labelTitle.textColor = .RCDarkGray()
+            labelTitle.textColor = .LGDarkGray()
             labelTitle.font = UIFont.boldSystemFont(ofSize: labelTitle.font.pointSize)
         }
     }
