@@ -29,8 +29,8 @@ class AuthNavigationController: UINavigationController {
 
         let navBar = self.navigationBar
         navBar.isTranslucent = false
-        navBar.tintColor = .RCBlue()
-        navBar.barTintColor = .RCNavigationBarColor()
+        navBar.tintColor = .LGBlue()
+        navBar.barTintColor = .LGNavigationBarColor()
     }
 
     override func popToRootViewController(animated: Bool) -> [UIViewController]? {
@@ -67,7 +67,7 @@ class AuthNavigationController: UINavigationController {
         navBar.shadowImage = UIImage()
         navBar.backgroundColor = UIColor.clear
         navBar.isTranslucent = true
-        navBar.tintColor = .RCBlue()
+        navBar.tintColor = .LGBlue()
         if forceRedraw { forceNavigationToRedraw() }
         setNeedsStatusBarAppearanceUpdate()
     }
@@ -76,8 +76,8 @@ class AuthNavigationController: UINavigationController {
         let navBar = self.navigationBar
         navBar.barStyle = .black
         navBar.shadowImage = UIImage()
-        navBar.backgroundColor = .RCNavBarGray()
-        navBar.barTintColor = .RCNavBarGray()
+        navBar.backgroundColor = .LGNavBarGray()
+        navBar.barTintColor = .LGNavBarGray()
         navBar.isTranslucent = false
         navBar.tintColor = .white
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
