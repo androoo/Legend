@@ -309,6 +309,9 @@
 		5ABE9D7721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift */; };
 		5ABE9D7821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D6821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift */; };
 		5ABE9D7A21B1978D00E3B0E5 /* Closeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7921B1978D00E3B0E5 /* Closeable.swift */; };
+		5ABE9D7C21B596C000E3B0E5 /* UploadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7B21B596C000E3B0E5 /* UploadHelper.swift */; };
+		5ABE9D7F21B5970400E3B0E5 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */; };
+		5ABE9D8121B59C4000E3B0E5 /* ChatControllerReplyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -637,6 +640,9 @@
 		5ABE9D6721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUsernameTableViewController.swift; sourceTree = "<group>"; };
 		5ABE9D6821AAEB0600E3B0E5 /* AuthTableViewControllerAuthenticationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewControllerAuthenticationHandler.swift; sourceTree = "<group>"; };
 		5ABE9D7921B1978D00E3B0E5 /* Closeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closeable.swift; sourceTree = "<group>"; };
+		5ABE9D7B21B596C000E3B0E5 /* UploadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadHelper.swift; sourceTree = "<group>"; };
+		5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
+		5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerReplyHandler.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1035,6 +1041,7 @@
 				5A04B39A21A7111100E362A6 /* ChatDataController.swift */,
 				5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */,
 				5ABE9D3921AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift */,
+				5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1259,6 +1266,7 @@
 				5ABE9CBF21AA136100E3B0E5 /* LGDateFormatter.swift */,
 				5ABE9CE621AA304300E3B0E5 /* Ask.swift */,
 				5ABE9D7921B1978D00E3B0E5 /* Closeable.swift */,
+				5ABE9D7B21B596C000E3B0E5 /* UploadHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1266,6 +1274,7 @@
 		5A360C902155169300943DDC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9D7D21B596F400E3B0E5 /* Uploader */,
 				5ABE9CC421AA169000E3B0E5 /* Requests */,
 				5A045302217B79A200F2B2B6 /* Socket */,
 				5A0452C921796D5F00F2B2B6 /* MarkdownParser */,
@@ -1522,6 +1531,14 @@
 				5ABE9D4721AAE52C00E3B0E5 /* MemberCell.xib */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		5ABE9D7D21B596F400E3B0E5 /* Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */,
+			);
+			path = Uploader;
 			sourceTree = "<group>";
 		};
 		80DBEE9D91C4CF113F8A67CA /* Pods */ = {
@@ -1935,6 +1952,8 @@
 				5A04B37021A637AC00E362A6 /* RoomMessagesRequest.swift in Sources */,
 				5A04B36A21A6359F00E362A6 /* RoomRolesRequest.swift in Sources */,
 				5A04B37721A6384800E362A6 /* ResourceSharedProperties.swift in Sources */,
+				5ABE9D7C21B596C000E3B0E5 /* UploadHelper.swift in Sources */,
+				5ABE9D8121B59C4000E3B0E5 /* ChatControllerReplyHandler.swift in Sources */,
 				5A04536B2193D8B400F2B2B6 /* SubscriptionManager.swift in Sources */,
 				5A0453212183613100F2B2B6 /* MessageModelMapping.swift in Sources */,
 				5A0452BD21796D3000F2B2B6 /* UIButton+BottomHeightOffset.swift in Sources */,
@@ -2062,6 +2081,7 @@
 				5ABE9D0221AAE33000E3B0E5 /* ReactorListViewController.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
 				5ABE9D4D21AAE52D00E3B0E5 /* ChannelInfoCellProtocol.swift in Sources */,
+				5ABE9D7F21B5970400E3B0E5 /* UploadManager.swift in Sources */,
 				5ABE9D3221AAE3A600E3B0E5 /* RCEmojiKitLocalizable.swift in Sources */,
 				5A0453372193733200F2B2B6 /* MessageExtensions.swift in Sources */,
 				5ABE9D6B21AAEB0600E3B0E5 /* SAMLViewController.swift in Sources */,
