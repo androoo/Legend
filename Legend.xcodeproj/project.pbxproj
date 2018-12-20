@@ -312,6 +312,7 @@
 		5ABE9D7C21B596C000E3B0E5 /* UploadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7B21B596C000E3B0E5 /* UploadHelper.swift */; };
 		5ABE9D7F21B5970400E3B0E5 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */; };
 		5ABE9D8121B59C4000E3B0E5 /* ChatControllerReplyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */; };
+		5ABE9D8321CB412A00E3B0E5 /* MeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8221CB412A00E3B0E5 /* MeRequest.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -643,6 +644,7 @@
 		5ABE9D7B21B596C000E3B0E5 /* UploadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadHelper.swift; sourceTree = "<group>"; };
 		5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
 		5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerReplyHandler.swift; sourceTree = "<group>"; };
+		5ABE9D8221CB412A00E3B0E5 /* MeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeRequest.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -849,6 +851,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0452FE217A25C100F2B2B6 /* LoginRequest.swift */,
+				5ABE9D8221CB412A00E3B0E5 /* MeRequest.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -1855,6 +1858,7 @@
 				5ABE9CF421AAE32500E3B0E5 /* EmojiPicker.swift in Sources */,
 				5A04B36821A6343E00E362A6 /* InfoRequest.swift in Sources */,
 				5ABE9CC321AA160200E3B0E5 /* ConnectServerViewController.swift in Sources */,
+				5ABE9D8321CB412A00E3B0E5 /* MeRequest.swift in Sources */,
 				5A04B35921A2FDB200E362A6 /* OAuthCredentials.swift in Sources */,
 				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
 				5ABE9D7021AAEB0600E3B0E5 /* SignupTableViewController.swift in Sources */,
