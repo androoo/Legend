@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import SimpleImageViewer
+import SimpleImageViewer
 import FLAnimatedImage
 
 // MARK: UIDocumentInteractionControllerDelegate

@@ -7,6 +7,7 @@ PODS:
   - Realm/Headers (3.11.2)
   - RealmSwift (3.11.2):
     - Realm (= 3.11.2)
+  - SimpleImageViewer (1.1.1)
   - Starscream (3.0.6)
   - SwiftyJSON (4.2.0)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.1)
   - Nuke (~> 7.0)
   - RealmSwift (~> 3.10)
+  - SimpleImageViewer (~> 1.1)
   - Starscream (~> 3.0.2)
   - SwiftyJSON (~> 4.0)
 
@@ -25,6 +27,7 @@ SPEC REPOS:
     - Nuke
     - Realm
     - RealmSwift
+    - SimpleImageViewer
     - Starscream
     - SwiftyJSON
 
@@ -34,9 +37,10 @@ SPEC CHECKSUMS:
   Nuke: 3814db501e55f17951451839c726ffd91641e9a5
   Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
   RealmSwift: 12b8262fc08020b47de4fd88eb3d5c9425b34ec7
+  SimpleImageViewer: 34c3a2cde2d9ac022146772cefc27fca14b0c8b1
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 2df33e636abeee917066f1236b8f928eb1dac230
+PODFILE CHECKSUM: 0061bc6c0aa254b639fe7008e4f3aba7bb1e6727
 
 COCOAPODS: 1.5.3

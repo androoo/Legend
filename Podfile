@@ -14,6 +14,7 @@ target 'Legend' do
 	pod 'Starscream', '~> 3.0.2'
 	pod 'MBProgressHUD', '~> 1.1'
 	pod 'FLAnimatedImage', '~> 1.0'
+	pod 'SimpleImageViewer', '~> 1.1'
 
   target 'LegendTests' do
     inherit! :search_paths
