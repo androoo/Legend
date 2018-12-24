@@ -191,12 +191,12 @@ class AuthTableViewController: BaseTableViewController {
         }
 
         let loginService = loginServices[button.tag]
-        if loginService.service == "gitlab", let url = serverPublicSettings?.gitlabUrl {
-            loginServices[button.tag].serverUrl = url
-            try? realm.write {
-                loginService.serverUrl = url
-            }
-        }
+//        if loginService.service == "gitlab", let url = serverPublicSettings?.gitlabUrl {
+//            loginServices[button.tag].serverUrl = url
+//            try? realm.write {
+//                loginService.serverUrl = url
+//            }
+//        }
 
         switch loginService.type {
         case .cas:

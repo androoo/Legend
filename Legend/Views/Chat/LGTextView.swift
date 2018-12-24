@@ -71,8 +71,8 @@ class HighlightLayoutManager: NSLayoutManager {
     }
     
     func updateCustomEmojiViews() {
-        customEmojiViews.forEach { $0.removeFromSuperview() }
-        customEmojiViews.removeAll()
+//        customEmojiViews.forEach { $0.removeFromSuperview() }
+//        customEmojiViews.removeAll()
         addCustomEmojiIfNeeded()
     }
     
@@ -95,7 +95,7 @@ class HighlightLayoutManager: NSLayoutManager {
                         let imageUrlString = String(data: imageUrlData, encoding: .utf8),
                         let imageUrl = URL(string: imageUrlString) {
                         ImageManager.loadImage(with: imageUrl, into: emojiView.emojiImageView)
-                        self.customEmojiViews.append(emojiView)
+//                        self.customEmojiViews.append(emojiView)
                         self.addSubview(emojiView)
                     }
                 }

@@ -25,12 +25,12 @@ class BaseNavigationController: UINavigationController {
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         super.pushViewController(viewController, animated: animated)
-        (viewController as? BaseViewControler)?.willBePushed(animated: animated)
+        (viewController as? BaseViewController)?.willBePushed(animated: animated)
     }
     
     override func popViewController(animated: Bool) -> UIViewController? {
         let viewController = super.popViewController(animated: animated)
-        (viewController as? BaseViewControler)?.willBePopped(animated: animated)
+        (viewController as? BaseViewController)?.willBePopped(animated: animated)
         return viewController
     }
     

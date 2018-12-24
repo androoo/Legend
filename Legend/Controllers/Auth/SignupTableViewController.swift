@@ -240,7 +240,7 @@ final class SignupTableViewController: BaseTableViewController {
                     self?.setUsername(startLoading: startLoading, stopLoading: stopLoading)
                 }
 
-                AnalyticsManager.log(event: .signup)
+//                AnalyticsManager.log(event: .signup)
             case .error:
                 Alert(
                     title: localized("error.socket.default_error.title"),

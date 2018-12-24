@@ -313,6 +313,28 @@
 		5ABE9D7F21B5970400E3B0E5 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */; };
 		5ABE9D8121B59C4000E3B0E5 /* ChatControllerReplyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */; };
 		5ABE9D8321CB412A00E3B0E5 /* MeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8221CB412A00E3B0E5 /* MeRequest.swift */; };
+		5ABE9D8521CEC02600E3B0E5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8421CEC02600E3B0E5 /* File.swift */; };
+		5ABE9D8821CEC0A100E3B0E5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8721CEC0A100E3B0E5 /* UIViewControllerExtension.swift */; };
+		5ABE9D8A21CEC4F700E3B0E5 /* MessagesListControllerSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8921CEC4F700E3B0E5 /* MessagesListControllerSearch.swift */; };
+		5ABE9D8C21CEC54C00E3B0E5 /* MessagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8B21CEC54B00E3B0E5 /* MessagesListViewController.swift */; };
+		5ABE9D8E21CEC5DF00E3B0E5 /* SearchMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8D21CEC5DF00E3B0E5 /* SearchMessagesRequest.swift */; };
+		5ABE9D9021CEC85C00E3B0E5 /* ChatControllerDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D8F21CEC85C00E3B0E5 /* ChatControllerDocuments.swift */; };
+		5ABE9D9D21CEF44C00E3B0E5 /* CustomFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9321CEF44A00E3B0E5 /* CustomFieldTableViewCell.swift */; };
+		5ABE9D9E21CEF44C00E3B0E5 /* EmailAuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9421CEF44A00E3B0E5 /* EmailAuthTableViewCell.swift */; };
+		5ABE9D9F21CEF44C00E3B0E5 /* AuthSeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9521CEF44A00E3B0E5 /* AuthSeparatorTableViewCell.swift */; };
+		5ABE9DA021CEF44C00E3B0E5 /* LoginServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9621CEF44B00E3B0E5 /* LoginServiceTableViewCell.xib */; };
+		5ABE9DA121CEF44C00E3B0E5 /* LoginServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9721CEF44B00E3B0E5 /* LoginServiceTableViewCell.swift */; };
+		5ABE9DA221CEF44C00E3B0E5 /* ShowMoreSeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9821CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.swift */; };
+		5ABE9DA321CEF44C00E3B0E5 /* CustomFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9921CEF44B00E3B0E5 /* CustomFieldTableViewCell.xib */; };
+		5ABE9DA421CEF44C00E3B0E5 /* AuthSeparatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9A21CEF44B00E3B0E5 /* AuthSeparatorTableViewCell.xib */; };
+		5ABE9DA521CEF44C00E3B0E5 /* ShowMoreSeparatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9B21CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.xib */; };
+		5ABE9DA621CEF44C00E3B0E5 /* EmailAuthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE9D9C21CEF44B00E3B0E5 /* EmailAuthTableViewCell.xib */; };
+		5ABE9DAA21CEF4E700E3B0E5 /* CompoundPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DA821CEF4E700E3B0E5 /* CompoundPickerViewDelegate.swift */; };
+		5ABE9DAB21CEF4E700E3B0E5 /* PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DA921CEF4E700E3B0E5 /* PickerViewDelegate.swift */; };
+		5ABE9DAD21CEF55500E3B0E5 /* ChatControllerMessageActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DAC21CEF55400E3B0E5 /* ChatControllerMessageActions.swift */; };
+		5ABE9DAF21CEF59100E3B0E5 /* WebBrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DAE21CEF59100E3B0E5 /* WebBrowserManager.swift */; };
+		5ABE9DB121CEF5E000E3B0E5 /* UsersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DB021CEF5E000E3B0E5 /* UsersClient.swift */; };
+		5ABE9DB321CEF65300E3B0E5 /* UserReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE9DB221CEF65300E3B0E5 /* UserReviewManager.swift */; };
 		68FCB2A9784416083504ADDF /* Pods_Legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C81B89926990165841694E9 /* Pods_Legend.framework */; };
 		BFFEE089E575F4052E2560C5 /* Pods_Legend_LegendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3471CFBD7E7C563301AB5744 /* Pods_Legend_LegendTests.framework */; };
 /* End PBXBuildFile section */
@@ -645,6 +667,28 @@
 		5ABE9D7E21B5970400E3B0E5 /* UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
 		5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatControllerReplyHandler.swift; sourceTree = "<group>"; };
 		5ABE9D8221CB412A00E3B0E5 /* MeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeRequest.swift; sourceTree = "<group>"; };
+		5ABE9D8421CEC02600E3B0E5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5ABE9D8721CEC0A100E3B0E5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5ABE9D8921CEC4F700E3B0E5 /* MessagesListControllerSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesListControllerSearch.swift; sourceTree = "<group>"; };
+		5ABE9D8B21CEC54B00E3B0E5 /* MessagesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesListViewController.swift; sourceTree = "<group>"; };
+		5ABE9D8D21CEC5DF00E3B0E5 /* SearchMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMessagesRequest.swift; sourceTree = "<group>"; };
+		5ABE9D8F21CEC85C00E3B0E5 /* ChatControllerDocuments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatControllerDocuments.swift; sourceTree = "<group>"; };
+		5ABE9D9321CEF44A00E3B0E5 /* CustomFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFieldTableViewCell.swift; sourceTree = "<group>"; };
+		5ABE9D9421CEF44A00E3B0E5 /* EmailAuthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAuthTableViewCell.swift; sourceTree = "<group>"; };
+		5ABE9D9521CEF44A00E3B0E5 /* AuthSeparatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSeparatorTableViewCell.swift; sourceTree = "<group>"; };
+		5ABE9D9621CEF44B00E3B0E5 /* LoginServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginServiceTableViewCell.xib; sourceTree = "<group>"; };
+		5ABE9D9721CEF44B00E3B0E5 /* LoginServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceTableViewCell.swift; sourceTree = "<group>"; };
+		5ABE9D9821CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMoreSeparatorTableViewCell.swift; sourceTree = "<group>"; };
+		5ABE9D9921CEF44B00E3B0E5 /* CustomFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFieldTableViewCell.xib; sourceTree = "<group>"; };
+		5ABE9D9A21CEF44B00E3B0E5 /* AuthSeparatorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthSeparatorTableViewCell.xib; sourceTree = "<group>"; };
+		5ABE9D9B21CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowMoreSeparatorTableViewCell.xib; sourceTree = "<group>"; };
+		5ABE9D9C21CEF44B00E3B0E5 /* EmailAuthTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailAuthTableViewCell.xib; sourceTree = "<group>"; };
+		5ABE9DA821CEF4E700E3B0E5 /* CompoundPickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundPickerViewDelegate.swift; sourceTree = "<group>"; };
+		5ABE9DA921CEF4E700E3B0E5 /* PickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewDelegate.swift; sourceTree = "<group>"; };
+		5ABE9DAC21CEF55400E3B0E5 /* ChatControllerMessageActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatControllerMessageActions.swift; sourceTree = "<group>"; };
+		5ABE9DAE21CEF59100E3B0E5 /* WebBrowserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowserManager.swift; sourceTree = "<group>"; };
+		5ABE9DB021CEF5E000E3B0E5 /* UsersClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersClient.swift; sourceTree = "<group>"; };
+		5ABE9DB221CEF65300E3B0E5 /* UserReviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReviewManager.swift; sourceTree = "<group>"; };
 		9B5B27D982312F828E28C7F7 /* Pods-LegendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegendTests/Pods-LegendTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FCD9CAAD576A1A17149DFB5 /* Pods_LegendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D0F251292347DB9186104D /* Pods-Legend-LegendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legend-LegendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legend-LegendTests/Pods-Legend-LegendTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -828,6 +872,7 @@
 				5A04B3182195F82F00E362A6 /* SubscriptionsClient.swift */,
 				5A04B31F2199256000E362A6 /* InfoClient.swift */,
 				5ABE9CAD21A9FC5800E3B0E5 /* MessagesClient.swift */,
+				5ABE9DB021CEF5E000E3B0E5 /* UsersClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -989,6 +1034,7 @@
 				5ABE9CB521AA004000E3B0E5 /* PinMessageRequest.swift */,
 				5ABE9CB721AA007600E3B0E5 /* UpdtateMessageRequest.swift */,
 				5ABE9CB921AA00BE00E3B0E5 /* ReactMessageRequest.swift */,
+				5ABE9D8D21CEC5DF00E3B0E5 /* SearchMessagesRequest.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -1042,9 +1088,13 @@
 			children = (
 				5A04B37B21A6488E00E362A6 /* ChatViewController.swift */,
 				5A04B39A21A7111100E362A6 /* ChatDataController.swift */,
+				5ABE9DAC21CEF55400E3B0E5 /* ChatControllerMessageActions.swift */,
+				5ABE9D8F21CEC85C00E3B0E5 /* ChatControllerDocuments.swift */,
 				5ABE9CBB21AA06F100E3B0E5 /* ChatControllerRolesController.swift */,
 				5ABE9D3921AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift */,
 				5ABE9D8021B59C4000E3B0E5 /* ChatControllerReplyHandler.swift */,
+				5ABE9D8921CEC4F700E3B0E5 /* MessagesListControllerSearch.swift */,
+				5ABE9D8B21CEC54B00E3B0E5 /* MessagesListViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1084,36 +1134,8 @@
 		5A04B39021A6FCF900E362A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				5ABE9D3E21AAE51D00E3B0E5 /* Info */,
-				5A04B3B321A9DF0100E362A6 /* AutocompleteCell.swift */,
-				5A04B3BE21A9DF0200E362A6 /* AutocompleteCell.xib */,
-				5A04B3BB21A9DF0200E362A6 /* ChatChannelHeaderCell.swift */,
-				5A04B3B721A9DF0100E362A6 /* ChatChannelHeaderCell.xib */,
-				5A04B3BD21A9DF0200E362A6 /* ChatDirectMessageHeaderCell.swift */,
-				5A04B3B021A9DF0000E362A6 /* ChatDirectMessageHeaderCell.xib */,
-				5A04B3C521A9DF0300E362A6 /* ChatLoaderCell.swift */,
-				5A04B3B821A9DF0100E362A6 /* ChatLoaderCell.xib */,
-				5A04B3C221A9DF0300E362A6 /* ChatMessageAttachmentView.swift */,
-				5A04B3BA21A9DF0200E362A6 /* ChatMessageAudioView.swift */,
-				5A04B3C721A9DF0400E362A6 /* ChatMessageAudioView.xib */,
-				5A04B3C421A9DF0300E362A6 /* ChatMessageCell.swift */,
-				5A04B3BC21A9DF0200E362A6 /* ChatMessageCell.xib */,
-				5A04B3CB21A9DF0500E362A6 /* ChatMessageCellAccessibility.swift */,
-				5A04B3CA21A9DF0400E362A6 /* ChatMessageDaySeparator.swift */,
-				5A04B3C621A9DF0400E362A6 /* ChatMessageDaySeparator.xib */,
-				5A04B3AF21A9DF0000E362A6 /* ChatMessageImageView.swift */,
-				5A04B3C921A9DF0400E362A6 /* ChatMessageImageView.xib */,
-				5A04B3B921A9DF0100E362A6 /* ChatMessageTextView.swift */,
-				5A04B3C821A9DF0400E362A6 /* ChatMessageTextView.xib */,
-				5A04B3C321A9DF0300E362A6 /* ChatMessageTextViewModel.swift */,
-				5A04B3B521A9DF0100E362A6 /* ChatMessageURLView.swift */,
-				5A04B3B221A9DF0000E362A6 /* ChatMessageURLView.xib */,
-				5A04B3B621A9DF0100E362A6 /* ChatMessageUnreadSeparator.swift */,
-				5A04B3C021A9DF0300E362A6 /* ChatMessageUnreadSeparator.xib */,
-				5A04B3BF21A9DF0200E362A6 /* ChatMessageVideoView.swift */,
-				5A04B3B421A9DF0100E362A6 /* ChatMessageVideoView.xib */,
-				5A04B3C121A9DF0300E362A6 /* ChatMessageActionButtonsView.swift */,
-				5A04B3B121A9DF0000E362A6 /* ChatMessageActionButtonsView.xib */,
+				5ABE9D9221CEF43900E3B0E5 /* Auth */,
+				5ABE9D9121CEF40D00E3B0E5 /* Chat */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1220,6 +1242,7 @@
 		5A360C8D2155168300943DDC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9D8621CEC08C00E3B0E5 /* UIViewController */,
 				5A04B3A621A8736300E362A6 /* Models */,
 				5A04B32D219C68E000E362A6 /* UINavigationBar */,
 				5A045345219383E000F2B2B6 /* API */,
@@ -1295,8 +1318,10 @@
 				5A04B3232199D5C300E362A6 /* PushManager.swift */,
 				5ABE9D5521AAE7C300E3B0E5 /* CustomEmoji.swift */,
 				5A04B33621A0C0EB00E362A6 /* DraftMessageManager.swift */,
+				5ABE9DB221CEF65300E3B0E5 /* UserReviewManager.swift */,
 				5A04B35821A2FDB200E362A6 /* OAuthCredentials.swift */,
 				5A04B35C21A37F1000E362A6 /* NotificationManager.swift */,
+				5ABE9DAE21CEF59100E3B0E5 /* WebBrowserManager.swift */,
 				5ABE9CE121AA1E3C00E3B0E5 /* ImageManager.swift */,
 			);
 			path = Managers;
@@ -1322,6 +1347,7 @@
 				5A0453362193733200F2B2B6 /* MessageExtensions.swift */,
 				5A04535421939F6100F2B2B6 /* Permission .swift */,
 				5A04B35A21A37C7000E362A6 /* ChatNotification.swift */,
+				5ABE9D8421CEC02600E3B0E5 /* File.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1346,6 +1372,7 @@
 		5A360C94215516AB00943DDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE9DA721CEF4D500E3B0E5 /* UIPickerView */,
 				5ABE9D3B21AAE4C000E3B0E5 /* ActionSheets */,
 				5ABE9CCE21AA193400E3B0E5 /* TextFields */,
 				5ABE9CCB21AA192200E3B0E5 /* Buttons */,
@@ -1544,6 +1571,77 @@
 			path = Uploader;
 			sourceTree = "<group>";
 		};
+		5ABE9D8621CEC08C00E3B0E5 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D8721CEC0A100E3B0E5 /* UIViewControllerExtension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		5ABE9D9121CEF40D00E3B0E5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D3E21AAE51D00E3B0E5 /* Info */,
+				5A04B3B321A9DF0100E362A6 /* AutocompleteCell.swift */,
+				5A04B3BE21A9DF0200E362A6 /* AutocompleteCell.xib */,
+				5A04B3BB21A9DF0200E362A6 /* ChatChannelHeaderCell.swift */,
+				5A04B3B721A9DF0100E362A6 /* ChatChannelHeaderCell.xib */,
+				5A04B3BD21A9DF0200E362A6 /* ChatDirectMessageHeaderCell.swift */,
+				5A04B3B021A9DF0000E362A6 /* ChatDirectMessageHeaderCell.xib */,
+				5A04B3C521A9DF0300E362A6 /* ChatLoaderCell.swift */,
+				5A04B3B821A9DF0100E362A6 /* ChatLoaderCell.xib */,
+				5A04B3C221A9DF0300E362A6 /* ChatMessageAttachmentView.swift */,
+				5A04B3BA21A9DF0200E362A6 /* ChatMessageAudioView.swift */,
+				5A04B3C721A9DF0400E362A6 /* ChatMessageAudioView.xib */,
+				5A04B3C421A9DF0300E362A6 /* ChatMessageCell.swift */,
+				5A04B3BC21A9DF0200E362A6 /* ChatMessageCell.xib */,
+				5A04B3CB21A9DF0500E362A6 /* ChatMessageCellAccessibility.swift */,
+				5A04B3CA21A9DF0400E362A6 /* ChatMessageDaySeparator.swift */,
+				5A04B3C621A9DF0400E362A6 /* ChatMessageDaySeparator.xib */,
+				5A04B3AF21A9DF0000E362A6 /* ChatMessageImageView.swift */,
+				5A04B3C921A9DF0400E362A6 /* ChatMessageImageView.xib */,
+				5A04B3B921A9DF0100E362A6 /* ChatMessageTextView.swift */,
+				5A04B3C821A9DF0400E362A6 /* ChatMessageTextView.xib */,
+				5A04B3C321A9DF0300E362A6 /* ChatMessageTextViewModel.swift */,
+				5A04B3B521A9DF0100E362A6 /* ChatMessageURLView.swift */,
+				5A04B3B221A9DF0000E362A6 /* ChatMessageURLView.xib */,
+				5A04B3B621A9DF0100E362A6 /* ChatMessageUnreadSeparator.swift */,
+				5A04B3C021A9DF0300E362A6 /* ChatMessageUnreadSeparator.xib */,
+				5A04B3BF21A9DF0200E362A6 /* ChatMessageVideoView.swift */,
+				5A04B3B421A9DF0100E362A6 /* ChatMessageVideoView.xib */,
+				5A04B3C121A9DF0300E362A6 /* ChatMessageActionButtonsView.swift */,
+				5A04B3B121A9DF0000E362A6 /* ChatMessageActionButtonsView.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5ABE9D9221CEF43900E3B0E5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9D9521CEF44A00E3B0E5 /* AuthSeparatorTableViewCell.swift */,
+				5ABE9D9A21CEF44B00E3B0E5 /* AuthSeparatorTableViewCell.xib */,
+				5ABE9D9321CEF44A00E3B0E5 /* CustomFieldTableViewCell.swift */,
+				5ABE9D9921CEF44B00E3B0E5 /* CustomFieldTableViewCell.xib */,
+				5ABE9D9421CEF44A00E3B0E5 /* EmailAuthTableViewCell.swift */,
+				5ABE9D9C21CEF44B00E3B0E5 /* EmailAuthTableViewCell.xib */,
+				5ABE9D9721CEF44B00E3B0E5 /* LoginServiceTableViewCell.swift */,
+				5ABE9D9621CEF44B00E3B0E5 /* LoginServiceTableViewCell.xib */,
+				5ABE9D9821CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.swift */,
+				5ABE9D9B21CEF44B00E3B0E5 /* ShowMoreSeparatorTableViewCell.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5ABE9DA721CEF4D500E3B0E5 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE9DA821CEF4E700E3B0E5 /* CompoundPickerViewDelegate.swift */,
+				5ABE9DA921CEF4E700E3B0E5 /* PickerViewDelegate.swift */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
 		80DBEE9D91C4CF113F8A67CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1665,6 +1763,7 @@
 				5A04B37921A645FF00E362A6 /* Chat.storyboard in Resources */,
 				5A04B3CD21A9DF0500E362A6 /* ChatDirectMessageHeaderCell.xib in Resources */,
 				5A04B3E621A9DF0500E362A6 /* ChatMessageImageView.xib in Resources */,
+				5ABE9DA021CEF44C00E3B0E5 /* LoginServiceTableViewCell.xib in Resources */,
 				5ABE9D1F21AAE38A00E3B0E5 /* objects.json in Resources */,
 				5A04B3E321A9DF0500E362A6 /* ChatMessageDaySeparator.xib in Resources */,
 				5ABE9D3621AAE3A600E3B0E5 /* emojiNames.json in Resources */,
@@ -1674,6 +1773,7 @@
 				5A04B3D921A9DF0500E362A6 /* ChatMessageCell.xib in Resources */,
 				5A360C752153D16900943DDC /* LaunchScreen.storyboard in Resources */,
 				5ABE9D3721AAE3A600E3B0E5 /* RCEmojiKit.strings in Resources */,
+				5ABE9DA321CEF44C00E3B0E5 /* CustomFieldTableViewCell.xib in Resources */,
 				5ABE9D2121AAE38A00E3B0E5 /* people.json in Resources */,
 				5ABE9D2021AAE38A00E3B0E5 /* symbols.json in Resources */,
 				5ABE9CF321AAE32500E3B0E5 /* EmojiPicker.xib in Resources */,
@@ -1681,6 +1781,7 @@
 				5ABE9D4C21AAE52D00E3B0E5 /* ChannelInfoUserCell.xib in Resources */,
 				5ABE9D1E21AAE38A00E3B0E5 /* activity.json in Resources */,
 				5A04B39321A70D9700E362A6 /* ChatPreviewModeView.xib in Resources */,
+				5ABE9DA621CEF44C00E3B0E5 /* EmailAuthTableViewCell.xib in Resources */,
 				5A04B3E521A9DF0500E362A6 /* ChatMessageTextView.xib in Resources */,
 				5ABE9D2621AAE38A00E3B0E5 /* food.json in Resources */,
 				5ABE9D4A21AAE52D00E3B0E5 /* ChannelInfoDescriptionCell.xib in Resources */,
@@ -1695,11 +1796,13 @@
 				5A04B3D121A9DF0500E362A6 /* ChatMessageVideoView.xib in Resources */,
 				5ABE9D5221AAE52D00E3B0E5 /* MemberCell.xib in Resources */,
 				5ABE9D2421AAE38A00E3B0E5 /* nature.json in Resources */,
+				5ABE9DA521CEF44C00E3B0E5 /* ShowMoreSeparatorTableViewCell.xib in Resources */,
 				5ABE9D1421AAE36100E3B0E5 /* EmojiAutocompleteCell.xib in Resources */,
 				5ABE9D3821AAE3A600E3B0E5 /* RCEmojiKit.xcassets in Resources */,
 				5ABE9D2321AAE38A00E3B0E5 /* flags.json in Resources */,
 				5A360C722153D16900943DDC /* Assets.xcassets in Resources */,
 				5A04B38221A6FCA300E362A6 /* ChatTitleView.xib in Resources */,
+				5ABE9DA421CEF44C00E3B0E5 /* AuthSeparatorTableViewCell.xib in Resources */,
 				5ABE9D4F21AAE52D00E3B0E5 /* ChannelInfoBasicCell.xib in Resources */,
 				5A04B3E421A9DF0500E362A6 /* ChatMessageAudioView.xib in Resources */,
 			);
@@ -1844,6 +1947,7 @@
 				5A04B3D621A9DF0500E362A6 /* ChatMessageTextView.swift in Sources */,
 				5A0452C621796D3000F2B2B6 /* MessageView.swift in Sources */,
 				5ABE9CDC21AA1BA800E3B0E5 /* NotificationViewController.swift in Sources */,
+				5ABE9DB321CEF65300E3B0E5 /* UserReviewManager.swift in Sources */,
 				5A0453642193D4B200F2B2B6 /* MessageURLModelMapping .swift in Sources */,
 				5ABE9D5821AAE86100E3B0E5 /* UISplitViewControllerExtensions.swift in Sources */,
 				5A04531D21835EF200F2B2B6 /* UserModelMapping.swift in Sources */,
@@ -1860,9 +1964,11 @@
 				5ABE9CC321AA160200E3B0E5 /* ConnectServerViewController.swift in Sources */,
 				5ABE9D8321CB412A00E3B0E5 /* MeRequest.swift in Sources */,
 				5A04B35921A2FDB200E362A6 /* OAuthCredentials.swift in Sources */,
+				5ABE9DA121CEF44C00E3B0E5 /* LoginServiceTableViewCell.swift in Sources */,
 				5A04B331219C69A300E362A6 /* UINavigationControllerRedrawBar.swift in Sources */,
 				5ABE9D7021AAEB0600E3B0E5 /* SignupTableViewController.swift in Sources */,
 				5A04B38721A6FCB900E362A6 /* ChatTitleView.swift in Sources */,
+				5ABE9D8521CEC02600E3B0E5 /* File.swift in Sources */,
 				5A0452C321796D3000F2B2B6 /* NSAttributedString+ReplaceRange.swift in Sources */,
 				5A0452F1217A237F00F2B2B6 /* HTTPMethod.swift in Sources */,
 				5A0452CD21796D7900F2B2B6 /* NSAttributedString+Markdown.swift in Sources */,
@@ -1903,6 +2009,7 @@
 				5A04B39B21A7111100E362A6 /* ChatDataController.swift in Sources */,
 				5ABE9CE521AA2CA200E3B0E5 /* DataExtension.swift in Sources */,
 				5A04535E2193CF4E00F2B2B6 /* SelectField.swift in Sources */,
+				5ABE9D9D21CEF44C00E3B0E5 /* CustomFieldTableViewCell.swift in Sources */,
 				5A04531F2183607100F2B2B6 /* SubscriptionModelMapping.swift in Sources */,
 				5A0453292184BC7600F2B2B6 /* CommandModelMapping.swift in Sources */,
 				5A0452F6217A240B00F2B2B6 /* VersionMiddleware.swift in Sources */,
@@ -1923,6 +2030,7 @@
 				5A04B37C21A6488E00E362A6 /* ChatViewController.swift in Sources */,
 				5A0452D321796E0300F2B2B6 /* ThemeableViews.swift in Sources */,
 				5ABE9D3021AAE3A600E3B0E5 /* Emojione+Transform.swift in Sources */,
+				5ABE9D9E21CEF44C00E3B0E5 /* EmailAuthTableViewCell.swift in Sources */,
 				5A04B34E21A2437C00E362A6 /* RoomInfoRequest.swift in Sources */,
 				5A04531121820BC500F2B2B6 /* ModelMappeable.swift in Sources */,
 				5ABE9D7721AAEB0600E3B0E5 /* RegisterUsernameTableViewController.swift in Sources */,
@@ -1952,7 +2060,9 @@
 				5A045349219384E400F2B2B6 /* AppManager.swift in Sources */,
 				5ABE9CB421A9FF0400E3B0E5 /* StarMessageRequest.swift in Sources */,
 				5A04B34721A1F2B700E362A6 /* CommandsRequest.swift in Sources */,
+				5ABE9D9F21CEF44C00E3B0E5 /* AuthSeparatorTableViewCell.swift in Sources */,
 				5A04B3A521A8731C00E362A6 /* SubscriptionManagerRooms.swift in Sources */,
+				5ABE9D8A21CEC4F700E3B0E5 /* MessagesListControllerSearch.swift in Sources */,
 				5A04B37021A637AC00E362A6 /* RoomMessagesRequest.swift in Sources */,
 				5A04B36A21A6359F00E362A6 /* RoomRolesRequest.swift in Sources */,
 				5A04B37721A6384800E362A6 /* ResourceSharedProperties.swift in Sources */,
@@ -2012,32 +2122,41 @@
 				5ABE9D6A21AAEB0600E3B0E5 /* LoginTableViewController.swift in Sources */,
 				5A0452E22179753F00F2B2B6 /* NotThemeableViews.swift in Sources */,
 				5A04B3D721A9DF0500E362A6 /* ChatMessageAudioView.swift in Sources */,
+				5ABE9DAD21CEF55500E3B0E5 /* ChatControllerMessageActions.swift in Sources */,
 				5A04B3D021A9DF0500E362A6 /* AutocompleteCell.swift in Sources */,
 				5ABE9D7121AAEB0600E3B0E5 /* AuthTableViewControllerConnectionHandler.swift in Sources */,
 				5A0452FB217A252C00F2B2B6 /* AuthClient.swift in Sources */,
+				5ABE9D8C21CEC54C00E3B0E5 /* MessagesListViewController.swift in Sources */,
+				5ABE9DAF21CEF59100E3B0E5 /* WebBrowserManager.swift in Sources */,
+				5ABE9D8E21CEC5DF00E3B0E5 /* SearchMessagesRequest.swift in Sources */,
 				5A04B34921A1F39700E362A6 /* RunCommandSucceeded.swift in Sources */,
 				5A045291217781F200F2B2B6 /* MessageURL.swift in Sources */,
 				5ABE9CE721AA304300E3B0E5 /* Ask.swift in Sources */,
 				5ABE9CF621AAE32500E3B0E5 /* EmojiCollectionViewCell.swift in Sources */,
 				5A0453682193D5C700F2B2B6 /* MessageReaction.swift in Sources */,
 				5ABE9CDD21AA1BA800E3B0E5 /* TopTransparentViewController.swift in Sources */,
+				5ABE9DAA21CEF4E700E3B0E5 /* CompoundPickerViewDelegate.swift in Sources */,
 				5A04B38A21A6FCB900E362A6 /* KeyboardFrameView.swift in Sources */,
 				5A04B3A121A8700100E362A6 /* ChatTitleViewModel.swift in Sources */,
 				5ABE9CBA21AA00BE00E3B0E5 /* ReactMessageRequest.swift in Sources */,
+				5ABE9D8821CEC0A100E3B0E5 /* UIViewControllerExtension.swift in Sources */,
 				5A0452D121796D8400F2B2B6 /* MarkdownManager.swift in Sources */,
 				5ABE9D1121AAE36100E3B0E5 /* EmojiView.swift in Sources */,
 				5A04534D21938C7D00F2B2B6 /* DeepLink.swift in Sources */,
 				5A04B3E721A9DF0500E362A6 /* ChatMessageDaySeparator.swift in Sources */,
 				5ABE9D6D21AAEB0600E3B0E5 /* SignupCustomFieldsTableViewController.swift in Sources */,
 				5A04B36221A621B700E362A6 /* RoomsRequest.swift in Sources */,
+				5ABE9DB121CEF5E000E3B0E5 /* UsersClient.swift in Sources */,
 				5ABE9CC021AA136100E3B0E5 /* LGDateFormatter.swift in Sources */,
 				5A04527E2165B07600F2B2B6 /* URLExtension.swift in Sources */,
 				5A0452A4217827EB00F2B2B6 /* String+Random.swift in Sources */,
 				5A04B32C219C688600E362A6 /* BaseViewController.swift in Sources */,
+				5ABE9DAB21CEF4E700E3B0E5 /* PickerViewDelegate.swift in Sources */,
 				5A0452802165BAAF00F2B2B6 /* AuthSettings.swift in Sources */,
 				5ABE9D3A21AAE45B00E3B0E5 /* ChatControllerMessageCellProtocol.swift in Sources */,
 				5A04B3DF21A9DF0500E362A6 /* ChatMessageAttachmentView.swift in Sources */,
 				5ABE9CB621AA004000E3B0E5 /* PinMessageRequest.swift in Sources */,
+				5ABE9D9021CEC85C00E3B0E5 /* ChatControllerDocuments.swift in Sources */,
 				5ABE9D3121AAE3A600E3B0E5 /* NSAttributedString+CustomEmojis.swift in Sources */,
 				5A0452F3217A23B200F2B2B6 /* APIResponse.swift in Sources */,
 				5ABE9D3321AAE3A600E3B0E5 /* EmojiSearcher.swift in Sources */,
@@ -2085,6 +2204,7 @@
 				5ABE9D0221AAE33000E3B0E5 /* ReactorListViewController.swift in Sources */,
 				5A0452A82178CF1400F2B2B6 /* ThemeManager.swift in Sources */,
 				5ABE9D4D21AAE52D00E3B0E5 /* ChannelInfoCellProtocol.swift in Sources */,
+				5ABE9DA221CEF44C00E3B0E5 /* ShowMoreSeparatorTableViewCell.swift in Sources */,
 				5ABE9D7F21B5970400E3B0E5 /* UploadManager.swift in Sources */,
 				5ABE9D3221AAE3A600E3B0E5 /* RCEmojiKitLocalizable.swift in Sources */,
 				5A0453372193733200F2B2B6 /* MessageExtensions.swift in Sources */,

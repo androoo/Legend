@@ -63,7 +63,7 @@ extension AuthTableViewController {
                         self?.performSegue(withIdentifier: "RequestUsername", sender: nil)
                     }
 
-                    AnalyticsManager.log(event: .login)
+//                    AnalyticsManager.log(event: .login)
                 } else {
                     self?.stopLoading()
                     Alert(key: "error.socket.default_error").present()

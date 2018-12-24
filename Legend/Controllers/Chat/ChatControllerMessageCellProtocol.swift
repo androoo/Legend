@@ -124,7 +124,8 @@ extension ChatViewController: ChatMessageCellProtocol, UserActionSheetPresenter 
     }
     
     func openImageFromCell(attachment: Attachment, thumbnail: FLAnimatedImageView) {
-        textView.resignFirstResponder()
+//        textView.resignFirstResponder()
+        messageView.resignFirstResponder()
         
         if thumbnail.animatedImage != nil || thumbnail.image != nil {
             let configuration = ImageViewerConfiguration { config in

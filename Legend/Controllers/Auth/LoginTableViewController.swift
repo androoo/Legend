@@ -42,7 +42,7 @@ class LoginTableViewController: BaseTableViewController {
                 string: localized("auth.login.create_account_prefix"),
                 attributes: [
                     NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13, weight: .regular),
-                    NSAttributedStringKey.foregroundColor: UIColor.RCTextFieldGray()
+                    NSAttributedStringKey.foregroundColor: UIColor.LGTextFieldGray()
                 ]
             )
 
@@ -50,7 +50,7 @@ class LoginTableViewController: BaseTableViewController {
                 string: localized("auth.login.create_account"),
                 attributes: [
                     NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13, weight: .semibold),
-                    NSAttributedStringKey.foregroundColor: UIColor.RCSkyBlue()
+                    NSAttributedStringKey.foregroundColor: UIColor.LGSkyBlue()
                 ]
             )
 
@@ -72,9 +72,10 @@ class LoginTableViewController: BaseTableViewController {
     }
 
     @IBOutlet weak var onePasswordButton: UIButton! {
-        didSet {
-            onePasswordButton.isHidden = !OnePasswordExtension.shared().isAppExtensionAvailable()
-        }
+//        didSet {
+//            onePasswordButton.isHidden = !OnePasswordExtension.shared().isAppExtensionAvailable()
+//        }
+        print("One Password Tapped")
     }
 
     var serverVersion: Version?
@@ -165,17 +166,17 @@ class LoginTableViewController: BaseTableViewController {
     // MARK: Actions
 
     @IBAction func buttonOnePasswordDidPressed(_ sender: Any) {
-        let siteURL = serverPublicSettings?.siteURL ?? ""
-        OnePasswordExtension.shared().findLogin(forURLString: siteURL, for: self, sender: sender) { [weak self] (login, _) in
-            if login == nil {
-                return
-            }
-
-            self?.textFieldUsername.text = login?[AppExtensionUsernameKey] as? String
-            self?.textFieldPassword.text = login?[AppExtensionPasswordKey] as? String
-            self?.temporary2FACode = login?[AppExtensionTOTPKey] as? String
-            self?.authenticateWithUsernameOrEmail()
-        }
+//        let siteURL = serverPublicSettings?.siteURL ?? ""
+//        OnePasswordExtension.shared().findLogin(forURLString: siteURL, for: self, sender: sender) { [weak self] (login, _) in
+//            if login == nil {
+//                return
+//            }
+//
+//            self?.textFieldUsername.text = login?[AppExtensionUsernameKey] as? String
+//            self?.textFieldPassword.text = login?[AppExtensionPasswordKey] as? String
+//            self?.temporary2FACode = login?[AppExtensionTOTPKey] as? String
+//            self?.authenticateWithUsernameOrEmail()
+//        }
     }
 
     @IBAction func forgotPasswordPressed(_ sender: UIButton) {

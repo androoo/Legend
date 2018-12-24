@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-final class ConnectServerViewController: BaseViewControler {
+final class ConnectServerViewController: BaseViewController {
     
     internal let defaultURL = "https://legend.fyi"
     internal var connecting = false

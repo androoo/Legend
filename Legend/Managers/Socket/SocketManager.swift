@@ -175,7 +175,7 @@ extension SocketManager {
                     SubscriptionManager.subscribeInAppNotifications()
                     PermissionManager.changes()
                     infoClient.fetchPermissions()
-//                    CustomEmojiManager.sync()
+                    CustomEmojiManager.sync()
                     
                     commandsClient.fetchCommands()
                     
@@ -221,52 +221,52 @@ extension SocketManager {
 
 extension SocketManager: WebSocketDelegate {
     
-    func websocketDidConnect(socket: WebSocket) {
+    func websocketDidConnect(socket: WebSocketClient) {
         Log.debug("[WebSocket] \(socket.currentURL)\n -  did connect")
-
+        
         let object = [
             "msg": "connect",
             "version": "1",
             "support": ["1", "pre2", "pre1"]
             ] as [String: Any]
-
+        
         SocketManager.send(object)
     }
     
-    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         Log.debug("[WebSocket] \(socket.currentURL)\n - did disconnect with error (\(String(describing: error)))")
-
+        
         if let handler = internalConnectionHandler {
             internalConnectionHandler = nil
             handler(socket, socket.isConnected)
         }
-
+        
         isUserAuthenticated = false
         events = [:]
         queue = [:]
         state = .waitingForNetwork
     }
     
-    func websocketDidReceiveData(socket: WebSocket, data: Data) {
+    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         Log.debug("[WebSocket] did receive data (\(data))")
     }
     
     static let jsonParseQueue = DispatchQueue(label: "chat.rocket.json.parse", qos: .background)
     
-    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         SocketManager.jsonParseQueue.async {
             let json = JSON(parseJSON: text)
-
+            
             // JSON is invalid
             guard json.exists() else {
                 Log.debug("[WebSocket] \(socket.currentURL)\n - did receive invalid JSON object:\n\(text)")
                 return
             }
-
+            
             if let raw = json.rawString() {
                 Log.debug("[WebSocket] \(socket.currentURL)\n - did receive JSON message:\n\(raw)")
             }
-
+            
             DispatchQueue.main.async {
                 self.handleMessage(json, socket: socket)
             }
@@ -278,9 +278,13 @@ extension SocketManager: WebSocketDelegate {
 // MARK: WebSocketPongDelegate
 
 extension SocketManager: WebSocketPongDelegate {
-    
-    func websocketDidReceivePong(socket: WebSocket, data: Data?) {
+    func websocketDidReceivePong(socket: WebSocketClient, data: Data?) {
         Log.debug("[WebSocket] did receive pong")
     }
+    
+    
+//    func websocketDidReceivePong(socket: WebSocket, data: Data?) {
+//        Log.debug("[WebSocket] did receive pong")
+//    }
     
 }

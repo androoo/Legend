@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewControler: UIViewController {
+class BaseViewController: UIViewController {
     var isNavigationBarTransparent: Bool {
         return false
     }
@@ -27,7 +27,7 @@ class BaseViewControler: UIViewController {
     }
     
     func willBePopped(animated: Bool) {
-        if let controller = navigationController?.topViewController as? BaseViewControler {
+        if let controller = navigationController?.topViewController as? BaseViewController {
             controller.updateNavigationBarTransparency()
         } else {
             navigationController?.navigationBar.setNonTransparent()

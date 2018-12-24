@@ -71,7 +71,7 @@ final class EmojiPickerController: UIViewController, RCEmojiKitLocalizable {
         emojiPicker.endEditing(true)
     }
 
-    @objc func keyboardWillShow(_ notification: Notification) {
+    @objc override func keyboardWillShow(_ notification: Notification) {
         guard UIDevice.current.userInterfaceIdiom == .phone else { return }
 
         guard
@@ -92,7 +92,7 @@ final class EmojiPickerController: UIViewController, RCEmojiKitLocalizable {
         }
     }
 
-    @objc func keyboardWillHide(_ notification: Notification) {
+    @objc override func keyboardWillHide(_ notification: Notification) {
         guard UIDevice.current.userInterfaceIdiom == .phone else { return }
 
         guard

@@ -362,7 +362,7 @@ final class ChatViewController: MessageViewController {
         messageView.textView.resignFirstResponder()
     }
     
-    @objc func keyboardWillShow(_ notification: Notification) {
+    @objc override func keyboardWillShow(_ notification: Notification) {
         // Scroll to the bottom when the collectionView has scrolled more
         // than scrollToBottomHeightMultiplier times the view's height.
         let scrollToBottomHeightMultiplier: CGFloat = 1.2
@@ -790,7 +790,7 @@ final class ChatViewController: MessageViewController {
                 return
         }
         messageList.data.subscription = subscription
-        messageList.data.isSearchMessages = true
+        messageList.data.isSearchingMessages = true
         let searchMessagesNav = BaseNavigationController(rootViewController: messageList)
         present(searchMessagesNav, animated: true, completion: nil)
     }

@@ -286,7 +286,7 @@ final class ChatMessageCell: UICollectionViewCell {
             labelDate.text = LGDateFormatter.time(createdAt)
         }
 
-        avatarView.emoji = message.emoji
+//        avatarView.emoji = message.emoji
         avatarView.user = message.user
 
         if let avatar = message.avatar {
